@@ -86,7 +86,7 @@
       </button>
       <button
         class="flex h-8 w-8 items-center justify-center rounded-lg border border-white/15 bg-slate-900/90 text-slate-400 backdrop-blur transition hover:bg-white/10 hover:text-white"
-        title="重置视图"
+        title="Reset View"
         @click.stop="resetView"
       >
         <RotateCcw class="h-3.5 w-3.5" />

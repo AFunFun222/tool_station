@@ -38,7 +38,7 @@
             <div class="grid gap-6 lg:grid-cols-2">
               <!-- 左：基础属性 -->
               <div>
-                <h3 class="text-sm font-semibold text-sky-400 mb-4">基础属性</h3>
+                <h3 class="text-sm font-semibold text-sky-400 mb-4">Basic Stats</h3>
                 <div class="space-y-4">
                   <div v-for="stat in pal.statsPanel" :key="stat.label" class="flex items-center gap-3">
                     <!-- 图标 -->
@@ -64,7 +64,7 @@
 
               <!-- 右：工作适应性 -->
               <div>
-                <h3 class="text-sm font-semibold text-sky-400 mb-4">工作适应性</h3>
+                <h3 class="text-sm font-semibold text-sky-400 mb-4">Work Suitability</h3>
                 <div class="grid grid-cols-3 gap-2 sm:grid-cols-4 lg:grid-cols-3 xl:grid-cols-4">
                   <div
                     v-for="item in pal.workSuitability"
@@ -87,7 +87,7 @@
             <div class="mt-6 grid gap-4 md:grid-cols-2">
               <!-- 被动技能 -->
               <div class="rounded-2xl p-4" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
-                <p class="text-xs font-semibold text-slate-400 mb-3">被动技能</p>
+                <p class="text-xs font-semibold text-slate-400 mb-3">Passive Skill</p>
                 <div class="flex items-start gap-3">
                   <div class="w-11 h-11 rounded-xl flex items-center justify-center shrink-0"
                        style="background: rgba(139, 92, 246, 0.2); border: 1px solid rgba(139, 92, 246, 0.3);">
@@ -103,10 +103,10 @@
               <!-- 主动技能 -->
               <div class="rounded-2xl p-4" style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);">
                 <div class="flex items-start justify-between gap-2 mb-3">
-                  <p class="text-xs font-semibold text-slate-400">主动技能</p>
+                  <p class="text-xs font-semibold text-slate-400">Active Skill</p>
                   <span v-if="pal.activeSkills.length" class="text-xs px-2 py-0.5 rounded-full"
                         style="background: rgba(56,189,248,0.12); color: #38bdf8; border: 1px solid rgba(56,189,248,0.25);">
-                    查属性
+                    View Details
                   </span>
                 </div>
                 <div class="flex items-start gap-3">
@@ -125,7 +125,7 @@
 
             <!-- 掉落物 -->
             <div class="mt-6">
-              <h3 class="text-sm font-semibold text-sky-400 mb-4">掉落物</h3>
+              <h3 class="text-sm font-semibold text-sky-400 mb-4">Drops</h3>
               <div class="grid gap-3 grid-cols-2 md:grid-cols-3">
                 <div
                   v-for="drop in pal.drops"
@@ -139,7 +139,7 @@
                   </div>
                   <div class="min-w-0">
                     <p class="text-sm font-medium text-white truncate">{{ drop.name }}</p>
-                    <p class="text-xs text-slate-400">掉落率：{{ drop.rate }}</p>
+                    <p class="text-xs text-slate-400">Drop Rate: {{ drop.rate }}</p>
                   </div>
                 </div>
               </div>
@@ -162,7 +162,7 @@
                 </span>
               </div>
               <p class="text-xs text-slate-300 leading-relaxed">{{ skill.description }}</p>
-              <p class="mt-2 text-xs text-sky-300">威力 {{ skill.power }} · 冷却 {{ skill.cooltime }}s</p>
+              <p class="mt-2 text-xs text-sky-300">Power {{ skill.power }} · Cooldown {{ skill.cooltime }}s</p>
             </div>
           </div>
 
@@ -248,7 +248,7 @@
                 <span class="text-xs text-slate-400 text-center truncate w-full">{{ item.child.name }}</span>
               </div>
               <div class="ml-auto flex items-center gap-1.5 text-sky-400 group-hover:text-sky-300 text-sm font-medium shrink-0">
-                查看
+                View
                 <ChevronRightIcon :size="16" />
               </div>
             </RouterLink>
@@ -256,7 +256,7 @@
 
           <div v-else class="rounded-2xl p-8 text-sm text-slate-400 text-center"
                style="background: rgba(255,255,255,0.03); border: 1px dashed rgba(255,255,255,0.1);">
-            暂无数据
+            No Data
           </div>
         </div>
       </div>
@@ -266,7 +266,7 @@
     <section class="mt-6 space-y-5">
       <div class="flex items-center gap-3">
         <HeartIcon :size="18" class="text-sky-400" />
-        <h2 class="text-lg font-semibold text-white">相关配种</h2>
+        <h2 class="text-lg font-semibold text-white">Related Breeding</h2>
       </div>
       <div class="flex flex-wrap gap-4">
         <RouterLink
@@ -309,7 +309,7 @@
             <span class="text-xs text-slate-400 text-center truncate w-full">{{ item.child.name }}</span>
           </div>
           <div class="ml-auto flex items-center gap-1 text-sky-400 group-hover:text-sky-300 text-sm font-medium shrink-0">
-            查看 <ChevronRightIcon :size="15" />
+            View <ChevronRightIcon :size="15" />
           </div>
         </RouterLink>
       </div>
@@ -356,19 +356,19 @@ const route = useRoute()
 const activeTab = ref('stats')
 
 const tabs = [
-  { key: 'stats', label: '属性', icon: BarChart2Icon },
-  { key: 'skills', label: '技能', icon: SwordsIcon },
-  { key: 'work', label: '工作', icon: BriefcaseIcon },
-  { key: 'drops', label: '掉落', icon: ShoppingBagIcon },
-  { key: 'breeding', label: '配种', icon: HeartIcon },
+  { key: 'stats', label: 'Stats', icon: BarChart2Icon },
+  { key: 'skills', label: 'Skills', icon: SwordsIcon },
+  { key: 'work', label: 'Work', icon: BriefcaseIcon },
+  { key: 'drops', label: 'Drops', icon: ShoppingBagIcon },
+  { key: 'breeding', label: 'Breeding', icon: HeartIcon },
 ]
 
 const statIconMap: Record<string, unknown> = {
-  生命: Heart,
-  攻击: Swords,
-  防御: ShieldIcon,
-  速度: ZapIcon,
-  工作: WrenchIcon,
+  HP: Heart,
+  ATK: Swords,
+  DEF: ShieldIcon,
+  SPD: ZapIcon,
+  Work: WrenchIcon,
 }
 
 const workIconMap: Record<string, unknown> = {
@@ -390,8 +390,8 @@ const fallbackPal = Object.values(palDetails)[0]
 const pal = computed(() => palDetails[String(route.params.id)] ?? fallbackPal)
 
 const breadcrumbs = computed(() => [
-  { label: '首页', route: '/' },
-  { label: '图鉴', route: `/pals` },
+  { label: 'Home', route: '/' },
+  { label: 'Pal Encyclopedia', route: `/pals` },
   { label: pal.value.name },
 ])
 </script>

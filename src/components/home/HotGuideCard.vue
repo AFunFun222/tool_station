@@ -13,7 +13,7 @@
         <div class="mt-auto flex flex-wrap items-center gap-3 text-xs text-slate-400">
           <span>{{ guide.sourceLabel }}</span>
           <span>·</span>
-          <span>{{ guide.viewCount }} 浏览</span>
+          <span>{{ guide.viewCount }} Views</span>
         </div>
       </div>
     </RouterLink>

@@ -9,7 +9,7 @@
         <div class="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-sm font-semibold text-white">
           {{ step.level }}
         </div>
-        <StatusBadge v-if="step.active" label="当前阶段" tone="teal" />
+        <StatusBadge v-if="step.active" label="Current Stage" tone="teal" />
       </div>
       <h3 class="mt-4 text-lg font-semibold text-white">{{ step.title }}</h3>
       <p class="mt-2 text-sm leading-6 text-slate-300">{{ step.description }}</p>

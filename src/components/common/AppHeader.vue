@@ -5,7 +5,7 @@
         <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-teal-400/15 text-teal-300">
           <Sparkles class="h-5 w-5" />
         </div>
-        帕鲁智库
+        Pal Knowledge Hub
       </RouterLink>
 
       <nav class="hidden items-center gap-5 md:flex">
@@ -23,7 +23,7 @@
         <Search class="h-4 w-4 text-slate-400" />
         <input
           class="w-full bg-transparent text-sm text-white outline-none placeholder:text-slate-500"
-          placeholder="搜索帕鲁 / 攻略 / 配种"
+          placeholder="Search Pals / Guides / Breeding"
         />
       </div>
     </div>

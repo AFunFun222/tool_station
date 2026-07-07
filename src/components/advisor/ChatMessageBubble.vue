@@ -9,10 +9,10 @@
           class="rounded-full px-2.5 py-1"
           :class="message.role === 'user' ? 'bg-slate-950/10 text-slate-900' : 'bg-white/10 text-slate-300'"
         >
-          {{ message.role === 'user' ? '我' : 'AI 顾问' }}
+          {{ message.role === 'user' ? 'Me' : 'AI Advisor' }}
         </span>
-        <span v-if="message.status === 'streaming'" class="text-teal-300">正在生成中</span>
-        <span v-else-if="message.status === 'error'" class="text-rose-300">生成失败</span>
+        <span v-if="message.status === 'streaming'" class="text-teal-300">Generating...</span>
+        <span v-else-if="message.status === 'error'" class="text-rose-300">Generation Failed</span>
       </div>
 
       <div class="space-y-3 text-sm leading-7">
@@ -50,7 +50,7 @@
           </p>
         </template>
       </div>
-      <p v-if="message.status === 'streaming'" class="mt-3 text-xs text-teal-300">正在生成回答...</p>
+      <p v-if="message.status === 'streaming'" class="mt-3 text-xs text-teal-300">Generating answer...</p>
       <p v-if="message.status === 'error' && message.errorMessage" class="mt-2 text-xs text-rose-300">
         {{ message.errorMessage }}
       </p>
@@ -59,9 +59,9 @@
           {{ message.structured.formula }}
         </div>
         <div class="mt-4 grid gap-3 text-sm text-slate-200 md:grid-cols-3">
-          <div class="rounded-2xl bg-white/5 p-3">所需材料：{{ message.structured.materials }}</div>
-          <div class="rounded-2xl bg-white/5 p-3">预计时间：{{ message.structured.estimatedTime }}</div>
-          <div class="rounded-2xl bg-white/5 p-3">成功率：{{ message.structured.successRate }}</div>
+          <div class="rounded-2xl bg-white/5 p-3">Required Materials: {{ message.structured.materials }}</div>
+          <div class="rounded-2xl bg-white/5 p-3">Estimated Time: {{ message.structured.estimatedTime }}</div>
+          <div class="rounded-2xl bg-white/5 p-3">Success Rate: {{ message.structured.successRate }}</div>
         </div>
         <div class="mt-4 flex flex-wrap gap-2">
           <TagChip v-for="item in message.structured.alternatives" :key="item" :label="item" />

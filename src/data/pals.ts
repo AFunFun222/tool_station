@@ -51,30 +51,30 @@ const breedingTable = breedingTableRaw as {
 }
 
 const elementLabelMap: Record<string, string> = {
-  Neutral: '无',
-  Grass: '草',
-  Fire: '火',
-  Water: '水',
-  Electric: '雷',
-  Ice: '冰',
-  Ground: '地',
-  Dark: '暗',
-  Dragon: '龙',
+  Neutral: 'None',
+  Grass: 'Grass',
+  Fire: 'Fire',
+  Water: 'Water',
+  Electric: 'Electric',
+  Ice: 'Ice',
+  Ground: 'Ground',
+  Dark: 'Dark',
+  Dragon: 'Dragon',
 }
 
 const workLabelMap: Record<string, string> = {
-  Kindling: '生火',
-  Watering: '浇水',
-  Planting: '播种',
-  GeneratingElectricity: '发电',
-  Handiwork: '手工作业',
-  Gathering: '采集',
-  Lumbering: '伐木',
-  Mining: '采矿',
-  MedicineProduction: '制药',
-  Cooling: '冷却',
-  Transporting: '搬运',
-  Farming: '牧场',
+  Kindling: 'Kindling',
+  Watering: 'Watering',
+  Planting: 'Planting',
+  GeneratingElectricity: 'Generating Electricity',
+  Handiwork: 'Handiwork',
+  Gathering: 'Gathering',
+  Lumbering: 'Lumbering',
+  Mining: 'Mining',
+  MedicineProduction: 'Medicine Production',
+  Cooling: 'Cooling',
+  Transporting: 'Transporting',
+  Farming: 'Ranching',
 }
 
 const accentPalette = ['#4ECDC4', '#38BDF8', '#8B5CF6', '#FF8C42', '#F472B6', '#A3E635']
@@ -106,10 +106,10 @@ const getRecommendation = (pal: RawPalDetail | RawPalListItem, workSuitability: 
   const rarity = Number((pal as RawPalDetail).stats?.Rarity ?? 1)
 
   if (topWork) {
-    return `擅长${topWork.label} Lv${topWork.level}，适合${rarity >= 4 ? '中后期重点培养' : '前中期开荒补强'}。`
+    return `Good at ${topWork.label} Lv${topWork.level}, suitable for ${rarity >= 4 ? 'mid-late game focused training' : 'early-mid game exploration and support'}.`
   }
 
-  return `${mapElement(pal.element)}属性帕鲁，适合补充队伍属性覆盖与图鉴收集。`
+  return `${mapElement(pal.element)} element Pal, suitable for supplementing team element coverage and Pokedex collection.`
 }
 
 const getBattleStats = (detail?: RawPalDetail) => {
@@ -140,7 +140,7 @@ const buildSummary = (pal: RawPalListItem): PalSummary => {
     accent: getAccent(pal.id),
     recommendation: getRecommendation(detail ?? pal, workSuitability),
     stats: getBattleStats(detail),
-    versionNote: pal.name.includes('Noct') || pal.name.includes('Cryst') || pal.name.includes('Ignis') ? '含变种形态' : undefined,
+    versionNote: pal.name.includes('Noct') || pal.name.includes('Cryst') || pal.name.includes('Ignis') ? 'Variant forms available' : undefined,
     workSuitability,
     detailUrl: pal.detail_url,
   }
@@ -178,28 +178,28 @@ const getBreedingRelations = (palName: string) =>
     })
 
 const cleanSkillDesc = (desc?: string) => {
-  if (!desc) return '暂无被动技能说明。'
-  // 截断 "Technology XX Lv." 之前的纯描述部分
+  if (!desc) return 'No passive skill description available.'
+  // Truncate the pure description part before "Technology XX Lv."
   const cutIdx = desc.search(/\s+Technology\s+\d+\s+Lv\./i)
   return cutIdx > 0 ? desc.slice(0, cutIdx).trim() : desc.trim()
 }
 
 const getPassiveSkill = (detail: RawPalDetail) => {
-  const partnerSkillName = detail.partner_skill ?? '伙伴技能'
+  const partnerSkillName = detail.partner_skill ?? 'Partner Skill'
   const matchedPassive = passiveSkillMap.get(partnerSkillName.toLowerCase())
 
   return {
     name: partnerSkillName,
-    description: matchedPassive?.effects.join('；') ?? cleanSkillDesc(detail.partner_skill_desc),
+    description: matchedPassive?.effects.join('; ') ?? cleanSkillDesc(detail.partner_skill_desc),
   }
 }
 
 const getDrops = (detail: RawPalDetail) =>
   (detail.drops ?? []).slice(0, 6).map((drop) => {
-    if (typeof drop === 'string') return { name: drop, rate: '资料未标注' }
+    if (typeof drop === 'string') return { name: drop, rate: 'Not specified' }
     return {
       name: drop.item,
-      rate: drop.probability ? `${drop.probability}` : '资料未标注',
+      rate: drop.probability ? `${drop.probability}` : 'Not specified',
     }
   })
 
@@ -211,23 +211,23 @@ const buildDetail = (summary: PalSummary): PalDetail => {
 
   return {
     ...summary,
-    description: detail?.partner_skill_desc ?? `${summary.name}为${summary.elements.join('/')}属性帕鲁，适合用于战斗、工作与图鉴收集。`,
-    passiveSkill: getPassiveSkill(detail ?? { ...summary, partner_skill: '伙伴技能', partner_skill_desc: '暂无说明' } as unknown as RawPalDetail),
+    description: detail?.partner_skill_desc ?? `${summary.name} is a ${summary.elements.join('/')} element Pal, suitable for combat, work, and Pokedex collection.`,
+    passiveSkill: getPassiveSkill(detail ?? { ...summary, partner_skill: 'Partner Skill', partner_skill_desc: 'No description' } as unknown as RawPalDetail),
     activeSkill: topSkill
       ? {
           name: topSkill.name,
           description: topSkill.description,
-          power: `威力 ${topSkill.power} · CD ${topSkill.cooltime}s`,
+          power: `Power ${topSkill.power} · CD ${topSkill.cooltime}s`,
         }
       : {
-          name: '暂无技能数据',
-          description: '当前数据集中未提供主动技能。',
+          name: 'No skill data',
+          description: 'Active skills are not provided in the current dataset.',
         },
     statsPanel: [
-      { label: '生命', value: Math.min(100, Number(detail?.stats?.Health ?? 0)) },
-      { label: '攻击', value: Math.min(100, Number(detail?.stats?.Attack ?? 0)) },
-      { label: '防御', value: Math.min(100, Number(detail?.stats?.Defense ?? 0)) },
-      { label: '工作', value: Math.min(100, Number(detail?.stats?.['Work Speed'] ?? 0)) },
+      { label: 'HP', value: Math.min(100, Number(detail?.stats?.Health ?? 0)) },
+      { label: 'Attack', value: Math.min(100, Number(detail?.stats?.Attack ?? 0)) },
+      { label: 'Defense', value: Math.min(100, Number(detail?.stats?.Defense ?? 0)) },
+      { label: 'Work Speed', value: Math.min(100, Number(detail?.stats?.['Work Speed'] ?? 0)) },
     ],
     workSuitability: summary.workSuitability ?? [],
     drops: getDrops(detail ?? ({} as RawPalDetail)),
@@ -244,7 +244,7 @@ const buildDetail = (summary: PalSummary): PalDetail => {
         ? breedingRelations
         : [
             {
-              formula: `${summary.name} 的配种路线较多，建议前往计算器按目标反查。`,
+              formula: `${summary.name} has many breeding paths, please use the calculator to query by target.`,
               route: '/breeding',
               parentA: { name: summary.name, avatar: summary.avatar },
               parentB: { name: '?', avatar: '' },

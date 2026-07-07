@@ -3,60 +3,60 @@ import type { ChecklistItem, ImpactCard, ImpactDetail, NewContentCard, TransferS
 export const impactCards: ImpactCard[] = [
   {
     id: 'impact-1',
-    title: '⚠️ 被削弱',
-    palName: '空涡龙',
-    note: '飞行速度下调15%，仍为T1坐骑',
+    title: '⚠️ Nerfed',
+    palName: 'Sky Vortex Dragon',
+    note: 'Flying speed reduced by 15%, still a T1 mount',
     tone: 'red',
   },
   {
     id: 'impact-2',
-    title: '✅ 仍然T0',
-    palName: '杰诺多兰',
-    note: '数值未变，新配种路径解锁',
+    title: '✅ Still T0',
+    palName: 'Jeno Dragon',
+    note: 'Stats unchanged, new breeding paths unlocked',
     tone: 'green',
   },
   {
     id: 'impact-3',
-    title: '🆕 推荐培养',
-    palName: '莲花龙(新)',
-    note: '世界树能量变异，水系T0',
+    title: '🆕 Recommended for Training',
+    palName: 'Lotus Dragon (New)',
+    note: 'World Tree energy mutation, water-type T0',
     tone: 'blue',
   },
 ]
 
 export const transferToNewSave: TransferSuggestion[] = [
-  { name: '杰诺多兰', reason: '终局战斗与飞行兼备，1.0 仍是核心战力。', priority: '高' },
-  { name: '空涡龙', reason: '虽然速度下调，但探索效率依旧领先。', priority: '高' },
-  { name: '疾风隼', reason: '前中期过渡优秀，适合快速开图。', priority: '中' },
-  { name: '圣光骑士', reason: '适配新区域 Boss 战，容错率高。', priority: '中' },
+  { name: 'Jeno Dragon', reason: 'Endgame combat and flying combined, still core strength in 1.0.', priority: 'High' },
+  { name: 'Sky Vortex Dragon', reason: 'Although speed is reduced, exploration efficiency remains leading.', priority: 'High' },
+  { name: 'Swift Falcon', reason: 'Excellent early-mid transition, suitable for quick map exploration.', priority: 'Medium' },
+  { name: 'Holy Light Knight', reason: 'Adapts to new area Boss battles, high error tolerance.', priority: 'Medium' },
 ]
 
 export const keepInOldSave: TransferSuggestion[] = [
-  { name: '佩克龙', reason: '1.0 环境下被新水系帕鲁替代。', priority: '低' },
-  { name: '覆海龙', reason: '工作适应性收益下降，旧档保留即可。', priority: '低' },
-  { name: '雷鸣犬', reason: '新机制下泛用性不足。', priority: '低' },
+  { name: 'Peck Dragon', reason: 'Replaced by new water-type Pals in 1.0 environment.', priority: 'Low' },
+  { name: 'Abyssal Dragon', reason: 'Work suitability benefits decreased, can keep in old save.', priority: 'Low' },
+  { name: 'Thunder Hound', reason: 'Insufficient versatility under new mechanics.', priority: 'Low' },
 ]
 
 export const newContentCards: NewContentCard[] = [
-  { title: '世界树(新区域)', description: '终局探索区域，推荐 Lv55+。', route: '/veteran-analysis' },
-  { title: '空岛云海(新区域)', description: '高空垂直探索，飞行坐骑必备。', route: '/veteran-analysis' },
-  { title: '人帕一体(新机制)', description: '部分帕鲁可化身武器参与战斗。', route: '/advisor' },
-  { title: '50+新帕鲁', description: '新增大量终局与功能型帕鲁。', route: '/pals/kongwolong' },
-  { title: '禁猎区2.0', description: '新增能量屏障与巡逻无人机。', route: '/veteran-analysis' },
-  { title: '多结局剧情', description: '完整主线补全，新增剧情分支。', route: '/veteran-analysis' },
+  { title: 'World Tree (New Area)', description: 'Endgame exploration area, recommended Lv55+.', route: '/veteran-analysis' },
+  { title: 'Sky Island Cloud Sea (New Area)', description: 'High-altitude vertical exploration, flying mount required.', route: '/veteran-analysis' },
+  { title: 'Human-Pal Integration (New Mechanic)', description: 'Some Pals can transform into weapons to participate in combat.', route: '/advisor' },
+  { title: '50+ New Pals', description: 'Added many endgame and functional Pals.', route: '/pals/kongwolong' },
+  { title: 'Forbidden Hunting Area 2.0', description: 'Added energy barriers and patrol drones.', route: '/veteran-analysis' },
+  { title: 'Multiple Ending Stories', description: 'Complete main storyline completion, added story branches.', route: '/veteran-analysis' },
 ]
 
 export const impactDetails: ImpactDetail[] = [
-  { name: '空涡龙', status: '削弱', description: '飞行速度-15%，耐力+10%，综合仍为T1坐骑', action: '查看替代方案' },
-  { name: '杰诺多兰', status: '不变', description: '数值未变，新配种路径解锁', action: '保持培养' },
-  { name: '疾风隼', status: '增强', description: '前中期骑乘体验优化，转向更灵活', action: '保持培养' },
-  { name: '覆海龙', status: '削弱', description: '工作适应性收益下降，建议转功能位', action: '查看替代方案' },
-  { name: '佩克龙', status: '新配种', description: '新增与莲花龙的联动配种路线', action: '查看替代方案' },
+  { name: 'Sky Vortex Dragon', status: 'Nerfed', description: 'Flying speed -15%, endurance +10%, comprehensive still T1 mount', action: 'View alternatives' },
+  { name: 'Jeno Dragon', status: 'Unchanged', description: 'Stats unchanged, new breeding paths unlocked', action: 'Keep training' },
+  { name: 'Swift Falcon', status: 'Enhanced', description: 'Early-mid riding experience optimized, more flexible turning', action: 'Keep training' },
+  { name: 'Abyssal Dragon', status: 'Nerfed', description: 'Work suitability benefits decreased, recommend transferring to functional position', action: 'View alternatives' },
+  { name: 'Peck Dragon', status: 'New Breeding', description: 'Added linkage breeding path with Lotus Dragon', action: 'View alternatives' },
 ]
 
 export const worldTreeChecklist: ChecklistItem[] = [
-  { label: '推荐等级: Lv55+', checked: true },
-  { label: '推荐坐骑: 空涡龙/杰诺多兰（飞行）', checked: true },
-  { label: '推荐战斗帕鲁: 莲花龙(新) + 圣光骑士', checked: false },
-  { label: '物资准备: 高级帕鲁球x20, 治疗药剂x10', checked: false },
+  { label: 'Recommended Level: Lv55+', checked: true },
+  { label: 'Recommended Mount: Sky Vortex Dragon/Jeno Dragon (Flying)', checked: true },
+  { label: 'Recommended Combat Pal: Lotus Dragon (New) + Holy Light Knight', checked: false },
+  { label: 'Resources Preparation: Advanced Pal Sphere x20, Healing Potion x10', checked: false },
 ]

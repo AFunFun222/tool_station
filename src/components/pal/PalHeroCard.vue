@@ -48,7 +48,7 @@
          class="mx-4 mb-4 flex items-center gap-2 rounded-xl px-4 py-2.5"
          style="background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.35);">
       <AlertCircleIcon :size="15" class="text-amber-400 shrink-0" />
-      <span class="text-xs font-semibold text-amber-400">1.0变更</span>
+      <span class="text-xs font-semibold text-amber-400">v1.0 Changes</span>
       <span class="text-xs text-amber-300/80">{{ pal.versionNote }}</span>
     </div>
   </div>

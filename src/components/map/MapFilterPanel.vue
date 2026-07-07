@@ -3,7 +3,7 @@
     <!-- 标题 -->
     <div class="flex items-center gap-2 pb-1 border-b border-white/10">
       <Map class="h-4 w-4 text-teal-400" />
-      <span class="text-sm font-semibold text-white">地图筛选</span>
+      <span class="text-sm font-semibold text-white">Map Filter</span>
     </div>
 
     <!-- 搜索框 -->
@@ -12,7 +12,7 @@
       <input
         v-model="searchKeyword"
         class="w-full bg-transparent text-xs text-white outline-none placeholder:text-slate-500"
-        placeholder="搜索标记..."
+        placeholder="Search markers..."
       />
       <button
         v-if="searchKeyword"
@@ -28,11 +28,11 @@
       <button
         class="flex-1 rounded-lg bg-white/5 border border-white/10 py-1 text-xs text-slate-300 hover:bg-white/10 transition"
         @click="toggleAll(true)"
-      >全选</button>
+      >Select All</button>
       <button
         class="flex-1 rounded-lg bg-white/5 border border-white/10 py-1 text-xs text-slate-300 hover:bg-white/10 transition"
         @click="toggleAll(false)"
-      >清空</button>
+      >Clear</button>
     </div>
 
     <!-- 类别列表 -->
@@ -56,7 +56,7 @@
           <p class="truncate text-xs font-medium" :class="cat.enabled ? 'text-white' : 'text-slate-400'">
             {{ cat.label }}
           </p>
-          <p class="text-[10px] text-slate-500">{{ cat.types.length }} 种类型</p>
+          <p class="text-[10px] text-slate-500">{{ cat.types.length }} Types</p>
         </div>
 
         <!-- 开关状态 -->
@@ -75,9 +75,9 @@
     <!-- 统计信息 -->
     <div class="mt-auto rounded-xl border border-white/10 bg-white/5 p-3">
       <p class="text-[11px] text-slate-400">
-        当前显示
+        Currently showing
         <span class="font-semibold text-teal-400">{{ filteredCount }}</span>
-        个标记
+        markers
       </p>
     </div>
   </aside>

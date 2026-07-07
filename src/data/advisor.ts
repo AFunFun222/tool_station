@@ -1,27 +1,27 @@
 import type { ChatMessage } from '@/types/chat'
 
-export const recentChats = ['世界树怎么去', '最强战斗帕鲁怎么配', '基地最佳分工']
+export const recentChats = ['How to reach World Tree', 'Best combat Pal lineup', 'Optimal base division of labor']
 
-export const hotQuestions = ['推荐前期坐骑', '最强战斗帕鲁', '基地最佳分工']
+export const hotQuestions = ['Recommended early-stage mounts', 'Strongest combat Pal', 'Optimal base division of labor']
 
 export const initialMessages: ChatMessage[] = [
   {
     id: 'msg-user-1',
     role: 'user',
-    text: '我有 Lv30 疾风隼和 Lv25 烽歌龙，想配一个飞行坐骑',
+    text: 'I have Lv30 Swift Falcon and Lv25 Phoenix Dragon, want to breed a flying mount',
     status: 'done',
   },
   {
     id: 'msg-ai-1',
     role: 'assistant',
-    text: '为你找到以下配种方案：',
+    text: 'Found the following breeding plan for you:',
     status: 'done',
     structured: {
-      formula: '疾风隼 × 烽歌龙 = 空涡龙',
-      materials: '高级帕鲁球 x5',
-      estimatedTime: '~2小时',
+      formula: 'Swift Falcon × Phoenix Dragon = Sky Vortex Dragon',
+      materials: 'Advanced Pal Sphere x5',
+      estimatedTime: '~2 hours',
       successRate: '85%',
-      alternatives: ['替代方案: 疾风隼 × 紫霞鹿', '替代方案: 烽歌龙 × 云海鹿'],
+      alternatives: ['Alternative: Swift Falcon × Purple Glow Deer', 'Alternative: Phoenix Dragon × Cloud Sea Deer'],
       detailRoute: '/pals/kongwolong',
     },
   },

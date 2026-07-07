@@ -6,22 +6,22 @@
     ></div>
     <section class="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
       <div>
-        <p class="mb-4 text-sm uppercase tracking-[0.35em] text-teal-300">AI 驱动 · 千人千面 · 实时更新</p>
+        <p class="mb-4 text-sm uppercase tracking-[0.35em] text-teal-300">AI Powered · Personalized · Real-time Updates</p>
         <h1 class="max-w-3xl text-5xl font-semibold leading-tight text-white sm:text-6xl">
-          <span class="text-gradient">你的专属帕鲁百科</span>
+          <span class="text-gradient">Your Personal Pal Encyclopedia</span>
         </h1>
         <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-          AI 自动聚合全网攻略、结构化清洗核心数据，并根据你的玩家身份与即时意图，动态推荐最适合当前阶段的内容入口。
+          AI automatically aggregates guides from across the web, cleanses structured data, and dynamically recommends the most suitable content based on your player type and current needs.
         </p>
       </div>
 
       <BaseCard class="overflow-hidden p-0">
-        <img src="/pic/banner.jpg" alt="帕鲁智库视觉封面" class="h-full min-h-[320px] w-full object-cover" />
+        <img src="/pic/banner.jpg" alt="Pal Encyclopedia Visual Cover" class="h-full min-h-[320px] w-full object-cover" />
       </BaseCard>
     </section>
 
     <section class="space-y-6">
-      <SectionTitle title="你是哪种玩家？" description="选择你的身份后，首页内容将立即切换为对应模式。" />
+      <SectionTitle title="What Type of Player Are You?" description="Select your player type to instantly switch the home page content to the corresponding mode." />
       <div class="grid gap-5 xl:grid-cols-3">
         <IdentityEntryCard
           v-for="entry in identityEntries"
@@ -40,7 +40,7 @@
 
     <!-- 互动地图入口：位于攻略与 1.0 变更之间 -->
     <section class="space-y-6">
-      <SectionTitle title="互动地图" description="探索帕鲁世界 · 查看 Boss / NPC / 资源 / 传送点分布。" />
+      <SectionTitle title="Interactive Map" description="Explore the Pal World · View Boss / NPC / Resource / Fast Travel Point Distribution." />
       <RouterLink to="/map" class="block group">
         <BaseCard class="relative overflow-hidden p-0 transition-all duration-300 hover:border-purple-500/40 hover:shadow-[0_0_32px_rgba(168,85,247,0.15)]">
           <!-- 背景渐变装饰 -->
@@ -53,14 +53,14 @@
             <!-- 文字 -->
             <div class="flex-1 min-w-0">
               <div class="flex items-center gap-2 mb-1">
-                <h3 class="text-lg font-semibold text-white">帕鲁世界互动地图</h3>
+                <h3 class="text-lg font-semibold text-white">Pal World Interactive Map</h3>
                 <span class="rounded-full bg-purple-500/20 px-2 py-0.5 text-[10px] font-medium text-purple-400 ring-1 ring-purple-500/30">NEW</span>
               </div>
               <p class="text-sm text-slate-400 leading-relaxed">
-                涵盖 Alpha Boss · 黑市商人 · 传送点 · 洞穴 · 矿脉 · 钓鱼点等全类别标记，支持分类筛选与位置详情查看。
+                Covers Alpha Bosses · Black Market Merchants · Fast Travel Points · Caves · Ore Deposits · Fishing Spots and more, with category filtering and detailed location viewing.
               </p>
               <div class="mt-3 flex flex-wrap gap-2">
-                <span v-for="tag in ['Alpha Pal', 'Boss Tower', '黑市 NPC', '传送点', '洞穴', '矿脉']" :key="tag"
+                <span v-for="tag in ['Alpha Pal', 'Boss Tower', 'Black Market NPC', 'Fast Travel Points', 'Caves', 'Ore Deposits']" :key="tag"
                   class="rounded-lg bg-white/5 px-2 py-1 text-[11px] text-slate-400 ring-1 ring-white/10"
                 >{{ tag }}</span>
               </div>
@@ -73,12 +73,12 @@
     </section>
 
     <section class="space-y-6">
-      <SectionTitle title="核心工具集" description="围绕配种、图鉴、AI 顾问与 1.0 变更分析，构建一站式工具体验。" />
+      <SectionTitle title="Core Tools" description="Comprehensive tools for Breeding, Pal Encyclopedia, AI Advisor, and Version 1.0 Change Analysis." />
       <QuickToolGrid :tools="quickTools" />
     </section>
 
     <section class="space-y-6">
-      <SectionTitle title="今日热门" description="AI 聚合高质量攻略，按热度与时效性排序。" />
+      <SectionTitle title="Today's Hot Guides" description="AI aggregated high-quality guides sorted by popularity and timeliness." />
       <div class="grid gap-5">
         <HotGuideCard v-for="guide in hotGuides" :key="guide.id" :guide="guide" />
       </div>
@@ -104,27 +104,27 @@ const router = useRouter()
 const identityEntries = [
   {
     id: 'beginner',
-    title: '刚入坑',
-    subtitle: '从零开始，一步步教你上手',
-    tags: ['入门路线', '基础捕捉', '早期帕鲁推荐'],
+    title: 'Just Started',
+    subtitle: 'Start from scratch, learn step by step',
+    tags: ['Beginner Route', 'Basic Catching', 'Early Pal Recommendations'],
     icon: 'Leaf' as const,
     accent: '#4ECDC4',
     route: '/beginner',
   },
   {
     id: 'veteran',
-    title: '玩过EA版',
-    subtitle: '1.0变了什么？一键分析你的存档',
-    tags: ['变更影响', '回坑指南', '新区域攻略'],
+    title: 'Played EA Version',
+    subtitle: 'What Changed in 1.0? Analyze your save file instantly',
+    tags: ['Changes Impact', 'Return Guide', 'New Area Guides'],
     icon: 'RotateCcw' as const,
     accent: '#FF8C42',
     route: '/veteran-analysis',
   },
   {
     id: 'hardcore',
-    title: '硬核效率党',
-    subtitle: '最优配种树 · DPS计算 · 基地效率',
-    tags: ['Tier List', '词条搭配', '效率对比'],
+    title: 'Hardcore Efficiency',
+    subtitle: 'Optimal Breeding Tree · DPS Calculation · Base Efficiency',
+    tags: ['Tier List', 'Skill Combinations', 'Efficiency Comparison'],
     icon: 'Trophy' as const,
     accent: '#8B5CF6',
     route: '/breeding?mode=hardcore',

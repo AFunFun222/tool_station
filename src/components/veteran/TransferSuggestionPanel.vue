@@ -8,7 +8,7 @@
       <div v-for="item in items" :key="item.name" class="rounded-2xl border border-white/10 bg-white/5 p-4">
         <div class="flex items-center justify-between gap-3">
           <p class="font-medium text-white">{{ item.name }}</p>
-          <span v-if="item.priority" class="text-xs text-slate-400">优先级 {{ item.priority }}</span>
+          <span v-if="item.priority" class="text-xs text-slate-400">Priority {{ item.priority }}</span>
         </div>
         <p class="mt-2 text-sm leading-6 text-slate-300">{{ item.reason }}</p>
       </div>

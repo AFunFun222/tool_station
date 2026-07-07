@@ -3,17 +3,17 @@
     <BreadcrumbBar :items="breadcrumbs" />
 
     <div class="flex flex-wrap items-center justify-between gap-4">
-      <SectionTitle title="新手首页" description="围绕开荒路线、推荐帕鲁与 AI 建议，帮助你在 5 秒内找到下一步。" />
-      <StatusBadge label="新手模式" tone="teal" />
+      <SectionTitle title="Beginner Home" description="Around the clearing route, recommended Pals and AI suggestions, help you find the next step in 5 seconds." />
+      <StatusBadge label="Beginner Mode" tone="teal" />
     </div>
 
     <section class="space-y-6">
-      <SectionTitle title="开荒路线图" eyebrow="Roadmap" />
+      <SectionTitle title="Clearing Roadmap" eyebrow="Roadmap" />
       <RoadmapStepper :steps="roadmapSteps" />
     </section>
 
     <section class="space-y-6">
-      <SectionTitle title="今日推荐帕鲁" eyebrow="Recommended Pals" />
+      <SectionTitle title="Today's Recommended Pals" eyebrow="Recommended Pals" />
       <div class="grid gap-5 xl:grid-cols-3">
         <RecommendedPalCard v-for="pal in recommendedPals" :key="pal.id" :pal="pal" />
       </div>
@@ -24,25 +24,25 @@
         <div class="flex items-start justify-between gap-4">
           <div>
             <p class="text-sm uppercase tracking-[0.3em] text-teal-300">AI Suggestion</p>
-            <h3 class="mt-3 text-2xl font-semibold text-white">你应该做什么</h3>
+            <h3 class="mt-3 text-2xl font-semibold text-white">What You Should Do</h3>
             <p class="mt-4 max-w-2xl text-sm leading-7 text-slate-200">{{ beginnerSuggestion }}</p>
           </div>
           <Sparkles class="h-8 w-8 text-teal-300" />
         </div>
-        <BaseButton class="mt-6" tone="teal">下一步</BaseButton>
+        <BaseButton class="mt-6" tone="teal">Next Step</BaseButton>
       </BaseCard>
 
       <BaseCard class="overflow-hidden p-0">
         <img
           :src="recommendedPals[0]?.avatar"
-          alt="新手模式视觉图"
+          alt="Beginner Mode Visual"
           class="h-full min-h-[280px] w-full object-cover"
         />
       </BaseCard>
     </section>
 
     <section class="space-y-6">
-      <SectionTitle title="新手必看攻略" eyebrow="Guides" />
+      <SectionTitle title="Essential Beginner Guides" eyebrow="Guides" />
       <div class="space-y-4">
         <GuideListItem v-for="guide in beginnerGuides" :key="guide.id" :guide="guide" />
       </div>
@@ -65,7 +65,7 @@ import { beginnerGuides, beginnerSuggestion, roadmapSteps } from '@/data/beginne
 import { recommendedPals } from '@/data/pals'
 
 const breadcrumbs = [
-  { label: '首页', route: '/' },
-  { label: '新手指南' },
+  { label: 'Home', route: '/' },
+  { label: 'Beginner Guide' },
 ]
 </script>

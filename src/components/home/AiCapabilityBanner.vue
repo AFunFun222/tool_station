@@ -5,9 +5,9 @@
         <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-teal-400/15 text-teal-300">
           <Sparkles class="h-5 w-5" />
         </div>
-        <p class="text-sm text-slate-100 sm:text-base">AI 实时爬取全网攻略 · 自动清洗结构化 · 个性化分发</p>
+        <p class="text-sm text-slate-100 sm:text-base">AI Real-time Guide Crawling · Auto Data Cleaning · Personalized Distribution</p>
       </div>
-      <StatusBadge label="实时更新" tone="teal" />
+      <StatusBadge label="Real-time Updates" tone="teal" />
     </div>
   </BaseCard>
 </template>

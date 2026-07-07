@@ -3,13 +3,13 @@
     <BreadcrumbBar :items="breadcrumbs" />
 
     <div class="flex flex-wrap items-center justify-between gap-4">
-      <SectionTitle title="智能帕鲁顾问" description="用自然语言提问，获得可执行的养成建议。" />
-      <StatusBadge label="AI 顾问在线" tone="teal" />
+      <SectionTitle title="AI Pal Advisor" description="Ask in natural language to get actionable breeding advice." />
+      <StatusBadge label="AI Advisor Online" tone="teal" />
     </div>
 
     <section class="grid gap-5 xl:grid-cols-[280px_1fr]">
       <BaseCard>
-        <h3 class="text-lg font-semibold text-white">最近对话</h3>
+        <h3 class="text-lg font-semibold text-white">Recent Chats</h3>
         <div class="mt-4 space-y-3">
           <button
             v-for="item in recentChats"
@@ -21,7 +21,7 @@
           </button>
         </div>
 
-        <h3 class="mt-8 text-lg font-semibold text-white">热门问题</h3>
+        <h3 class="mt-8 text-lg font-semibold text-white">Popular Questions</h3>
         <div class="mt-4 flex flex-wrap gap-2">
           <TagChip v-for="item in hotQuestions" :key="item" :label="item" />
         </div>
@@ -30,11 +30,11 @@
       <BaseCard class="flex min-h-[720px] flex-col overflow-hidden">
         <div class="mb-4 flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
           <div>
-            <p class="text-sm font-semibold text-white">对话窗口</p>
-            <p class="mt-1 text-xs text-slate-400">支持流式输出，回答会自动分段展示。</p>
+            <p class="text-sm font-semibold text-white">Chat Window</p>
+            <p class="mt-1 text-xs text-slate-400">Supports streaming output, answers are displayed in segments automatically.</p>
           </div>
           <div class="rounded-full border border-teal-400/30 bg-teal-400/10 px-3 py-1 text-xs text-teal-200">
-            {{ isSending ? '机器人思考中' : '可开始提问' }}
+            {{ isSending ? 'Bot Thinking' : 'Ready to Ask' }}
           </div>
         </div>
 
@@ -56,17 +56,17 @@
 
           <div class="flex flex-col gap-3 md:flex-row">
             <div class="flex-1 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 transition focus-within:border-teal-400/60 focus-within:bg-white/8">
-              <p class="mb-2 text-xs text-slate-400">输入问题</p>
+              <p class="mb-2 text-xs text-slate-400">Enter Question</p>
               <input
                 v-model="draft"
                 class="min-h-[28px] w-full bg-transparent text-sm text-white outline-none placeholder:text-slate-500"
-                placeholder="输入你的问题，例如：怎么配出最强战斗帕鲁？"
+                placeholder="Enter your question, e.g.: How to breed the strongest combat Pal?"
                 :disabled="isSending"
                 @keydown.enter="sendMessage"
               />
             </div>
             <BaseButton tone="teal" :disabled="isSending" @click="sendMessage">
-              {{ isSending ? '发送中...' : '发送' }}
+              {{ isSending ? 'Sending...' : 'Send' }}
             </BaseButton>
           </div>
         </div>
@@ -89,8 +89,8 @@ import { hotQuestions, initialMessages, recentChats } from '@/data/advisor'
 import type { ChatMessage } from '@/types/chat'
 
 const breadcrumbs = [
-  { label: '首页', route: '/' },
-  { label: 'AI帕鲁顾问' },
+  { label: 'Home', route: '/' },
+  { label: 'AI Pal Advisor' },
 ]
 
 const draft = ref('')
@@ -170,7 +170,7 @@ const sendMessage = async () => {
     })
 
     if (!response.ok || !response.body) {
-      throw new Error(`请求失败：${response.status}`)
+      throw new Error(`Request failed: ${response.status}`)
     }
 
     const reader = response.body.getReader()
@@ -198,7 +198,7 @@ const sendMessage = async () => {
             appendAssistantChunk(assistantMessageId, parsed.answer)
           }
         } catch {
-          // 忽略非 JSON 流片段
+          // Ignore non-JSON stream chunks
         }
       }
     }
@@ -208,13 +208,13 @@ const sendMessage = async () => {
       status: 'done',
       text: assistantMessage?.text?.trim()
         ? formatAssistantText(assistantMessage.text)
-        : '暂未获取到有效回答，请稍后重试。',
+        : 'Failed to get a valid response. Please try again later.',
     })
   } catch (error) {
     updateAssistantMessage(assistantMessageId, {
       status: 'error',
-      text: '问答机器人暂时不可用。',
-      errorMessage: error instanceof Error ? error.message : '未知错误',
+      text: 'The Q&A bot is temporarily unavailable.',
+      errorMessage: error instanceof Error ? error.message : 'Unknown error',
     })
   } finally {
     isSending.value = false

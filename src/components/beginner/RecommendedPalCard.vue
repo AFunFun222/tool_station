@@ -8,7 +8,7 @@
         <div>
           <p class="text-xs uppercase tracking-[0.25em] text-slate-400">{{ pal.number }}</p>
           <h3 class="text-xl font-semibold text-white">{{ pal.name }}</h3>
-          <p class="mt-2 text-sm text-slate-300">推荐理由：{{ pal.recommendation }}</p>
+          <p class="mt-2 text-sm text-slate-300">Recommendation: {{ pal.recommendation }}</p>
         </div>
         <StatusBadge :label="pal.elements.join(' / ')" tone="teal" />
       </div>
@@ -36,7 +36,7 @@
       </div>
 
       <RouterLink :to="`/pals/${pal.id}`" class="block">
-        <BaseButton tone="ghost" class="w-full">查看详情</BaseButton>
+        <BaseButton tone="ghost" class="w-full">View Details</BaseButton>
       </RouterLink>
     </div>
   </BaseCard>
@@ -55,8 +55,8 @@ const props = defineProps<{
 }>()
 
 const statItems = computed(() => [
-  { label: '战斗', value: props.pal.stats?.battle ?? 0 },
-  { label: '采集', value: props.pal.stats?.gather ?? 0 },
-  { label: '工作', value: props.pal.stats?.work ?? 0 },
+  { label: 'Battle', value: props.pal.stats?.battle ?? 0 },
+  { label: 'Gathering', value: props.pal.stats?.gather ?? 0 },
+  { label: 'Work', value: props.pal.stats?.work ?? 0 },
 ])
 </script>

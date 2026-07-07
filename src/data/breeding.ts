@@ -21,8 +21,8 @@ const normalizeId = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, 
 const variantPattern = /noct|cryst|ignis|terra|lux|aqua|gild|botan|libero|ryu/i
 
 const buildRecipeMeta = (childName: string, index: number) => ({
-  materials: '配种牧场 + 蛋糕',
-  estimatedTime: `${1 + (index % 4)}小时`,
+  materials: 'Breeding Farm + Cake',
+  estimatedTime: `${1 + (index % 4)} hours`,
   successRate: `${88 - (index % 9)}%`,
   isNewInV1: variantPattern.test(childName),
 })

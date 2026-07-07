@@ -9,15 +9,15 @@
         <Map class="h-4 w-4" />
       </div>
       <div>
-        <h1 class="text-sm font-semibold text-white leading-none">互动地图</h1>
-        <p class="mt-0.5 text-[11px] text-slate-500">帕鲁世界 · Boss / NPC / 资源 / 传送点</p>
+        <h1 class="text-sm font-semibold text-white leading-none">Interactive Map</h1>
+        <p class="mt-0.5 text-[11px] text-slate-500">Pal World · Boss / NPC / Resources / Fast Travel Points</p>
       </div>
       <div class="ml-auto flex items-center gap-2 text-xs text-slate-500">
-        <span>拖拽移动</span>
+        <span>Drag to Move</span>
         <span class="text-slate-700">·</span>
-        <span>滚轮缩放</span>
+        <span>Scroll to Zoom</span>
         <span class="text-slate-700">·</span>
-        <span>点击查看详情</span>
+        <span>Click for Details</span>
       </div>
     </div>
 
