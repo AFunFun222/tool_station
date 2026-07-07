@@ -45,6 +45,12 @@ const router = createRouter({
       component: () => import('@/pages/PalDetailPage.vue'),
       meta: { title: '帕鲁图鉴', accent: 'blue' },
     },
+    {
+      path: '/map',
+      name: 'map',
+      component: () => import('@/pages/MapPage.vue'),
+      meta: { title: '互动地图', accent: 'purple' },
+    },
   ],
   scrollBehavior() {
     return { top: 0 }

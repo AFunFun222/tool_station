@@ -35,14 +35,6 @@ export const quickTools: QuickTool[] = [
     icon: 'Sparkles',
   },
   {
-    id: 'analysis',
-    title: '1.0变更',
-    description: '输入存档信息，生成个性化回坑指南。',
-    route: '/veteran-analysis',
-    accent: 'orange',
-    icon: 'Radar',
-  },
-  {
     id: 'map',
     title: '互动地图',
     description: '查看区域、Boss、洞穴、黑市与帕鲁昼夜分布。',
