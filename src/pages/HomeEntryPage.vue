@@ -2,7 +2,7 @@
   <AppShell>
     <div
       class="absolute inset-0 -z-10"
-      style="background-image: linear-gradient(180deg, rgba(15, 25, 35, 0.72) 0%, rgba(15, 25, 35, 0.88) 35%, rgba(11, 19, 28, 0.96) 100%), url('/pic/gundongchangtu.png'); background-size: cover; background-position: top center; background-repeat: no-repeat;"
+      style="background-image: linear-gradient(180deg, rgba(15, 25, 35, 0.72) 0%, rgba(15, 25, 35, 0.88) 35%, rgba(11, 19, 28, 0.96) 100%), url('/pic/palworld_guide_bg.png'); background-size: cover; background-position: top center; background-repeat: no-repeat;"
     ></div>
     <section class="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
       <div>
@@ -21,18 +21,39 @@
     </section>
 
     <section class="space-y-6">
-      <SectionTitle title="What Type of Player Are You?" description="Select your player type to instantly switch the home page content to the corresponding mode." />
-      <div class="grid gap-5 xl:grid-cols-3">
-        <IdentityEntryCard
-          v-for="entry in identityEntries"
-          :key="entry.id"
-          :title="entry.title"
-          :subtitle="entry.subtitle"
-          :tags="entry.tags"
-          :icon="entry.icon"
-          :accent="entry.accent"
-          @select="goTo(entry.route)"
-        />
+      <div class="flex flex-wrap items-center justify-between gap-4">
+        <SectionTitle title="AI Advisor" eyebrow="Ask Anything" description="Select your player type and pick a question to get personalized AI advice." />
+        <div class="rounded-full border border-teal-400/30 bg-teal-400/10 px-3 py-1 text-xs text-teal-200">AI Online</div>
+      </div>
+
+      <!-- Tabs -->
+      <div class="flex gap-2 flex-wrap">
+        <button
+          v-for="tab in advisorTabs"
+          :key="tab.id"
+          class="rounded-full border px-4 py-2 text-sm font-medium transition"
+          :class="activeTab === tab.id
+            ? 'border-teal-400/60 bg-teal-400/15 text-teal-200'
+            : 'border-white/10 bg-white/5 text-slate-400 hover:bg-white/10 hover:text-slate-200'"
+          @click="activeTab = tab.id"
+        >
+          {{ tab.label }}
+        </button>
+      </div>
+
+      <!-- Question chips -->
+      <div class="grid gap-3 sm:grid-cols-3">
+        <button
+          v-for="q in currentTabQuestions"
+          :key="q"
+          class="rounded-2xl border border-white/10 bg-white/5 px-5 py-4 text-left text-sm text-slate-200 transition hover:border-teal-400/40 hover:bg-teal-400/10 hover:text-white"
+          @click="goToAdvisor(q)"
+        >
+          <div class="mb-2 flex h-7 w-7 items-center justify-center rounded-full bg-teal-400/15 text-teal-300">
+            <MessageCircle class="h-4 w-4" />
+          </div>
+          {{ q }}
+        </button>
       </div>
     </section>
 
@@ -120,11 +141,11 @@
 </template>
 
 <script setup lang="ts">
+import { ref, computed } from 'vue'
 import { useRouter, RouterLink } from 'vue-router'
-import { Map as MapIcon, ArrowRight, Users } from 'lucide-vue-next'
+import { Map as MapIcon, ArrowRight, Users, MessageCircle } from 'lucide-vue-next'
 import AiCapabilityBanner from '@/components/home/AiCapabilityBanner.vue'
 import HotGuideCard from '@/components/home/HotGuideCard.vue'
-import IdentityEntryCard from '@/components/home/IdentityEntryCard.vue'
 import QuickToolGrid from '@/components/home/QuickToolGrid.vue'
 import BaseCard from '@/components/common/BaseCard.vue'
 import SectionTitle from '@/components/common/SectionTitle.vue'
@@ -134,37 +155,35 @@ import { quickTools } from '@/data/site'
 
 const router = useRouter()
 
-const identityEntries = [
-  {
-    id: 'beginner',
-    title: 'Just Started',
-    subtitle: 'Start from scratch, learn step by step',
-    tags: ['Beginner Route', 'Basic Catching', 'Early Pal Recommendations'],
-    icon: 'Leaf' as const,
-    accent: '#4ECDC4',
-    route: '/beginner',
-  },
-  {
-    id: 'veteran',
-    title: 'Played EA Version',
-    subtitle: 'What Changed in 1.0? Analyze your save file instantly',
-    tags: ['Changes Impact', 'Return Guide', 'New Area Guides'],
-    icon: 'RotateCcw' as const,
-    accent: '#FF8C42',
-    route: '/veteran-analysis',
-  },
-  {
-    id: 'hardcore',
-    title: 'Hardcore Efficiency',
-    subtitle: 'Optimal Breeding Tree · DPS Calculation · Base Efficiency',
-    tags: ['Tier List', 'Skill Combinations', 'Efficiency Comparison'],
-    icon: 'Trophy' as const,
-    accent: '#8B5CF6',
-    route: '/breeding?mode=hardcore',
-  },
+const advisorTabs = [
+  { id: 'beginner', label: '新手' },
+  { id: 'veteran', label: '老手' },
+  { id: 'crossgame', label: '有其他游戏经验' },
 ]
 
-const goTo = (route: string) => {
-  router.push(route)
+const activeTab = ref('beginner')
+
+const tabQuestions: Record<string, string[]> = {
+  beginner: [
+    '刚进游戏我应该先做什么？',
+    '新手阶段最适合捕捉哪些帕鲁？',
+    '怎么快速搭建第一个稳定的基地？',
+  ],
+  veteran: [
+    'EA 版到 1.0 最大的变化有哪些？',
+    '回归玩家需要优先重做哪些内容？',
+    '1.0 版本新增了哪些强力帕鲁？',
+  ],
+  crossgame: [
+    '玩过《幻兽帕鲁》类似游戏，上手需要注意什么？',
+    '和宝可梦相比，帕鲁的培育系统有哪些独特之处？',
+    '有 ARK 经验的玩家如何快速掌握基地建造？',
+  ],
+}
+
+const currentTabQuestions = computed(() => tabQuestions[activeTab.value] ?? [])
+
+const goToAdvisor = (question: string) => {
+  router.push({ path: '/advisor', query: { q: question } })
 }
 </script>
