@@ -33,11 +33,13 @@
       </BaseCard>
 
       <BaseCard class="overflow-hidden p-0">
-        <img
-          :src="recommendedPals[0]?.avatar"
-          alt="Beginner Mode Visual"
-          class="h-full min-h-[280px] w-full object-cover"
-        />
+        <div class="flex h-full min-h-[280px] w-full items-end justify-center bg-gradient-to-b from-white/5 to-white/10">
+          <img
+            :src="recommendedPals[0]?.avatar"
+            alt="Beginner Mode Visual"
+            class="h-[280px] w-full object-contain object-bottom drop-shadow-xl"
+          />
+        </div>
       </BaseCard>
     </section>
 

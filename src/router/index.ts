@@ -63,6 +63,12 @@ const router = createRouter({
       component: () => import('@/pages/CommunityDetailPage.vue'),
       meta: { title: 'Community Hub', accent: 'indigo' },
     },
+    {
+      path: '/changelog',
+      name: 'changelog',
+      component: () => import('@/pages/PalworldUpdatePage.vue'),
+      meta: { title: '1.0 版本更新', accent: 'orange' },
+    },
   ],
   scrollBehavior() {
     return { top: 0 }

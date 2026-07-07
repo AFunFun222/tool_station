@@ -1,7 +1,14 @@
 <template>
   <BaseCard interactive class="overflow-hidden p-0">
     <RouterLink :to="`/pals/${pal.id}`">
-      <img :src="pal.avatar" :alt="pal.name" class="h-44 w-full object-cover" />
+      <!-- 图片区域：固定高度容器 + object-contain 完整展示帕鲁 -->
+      <div class="flex h-52 w-full items-end justify-center bg-gradient-to-b from-white/5 to-white/10 overflow-hidden">
+        <img
+          :src="pal.avatar"
+          :alt="pal.name"
+          class="h-full w-full object-contain object-bottom drop-shadow-lg"
+        />
+      </div>
     </RouterLink>
     <div class="space-y-4 p-5">
       <div class="flex items-start justify-between gap-3">

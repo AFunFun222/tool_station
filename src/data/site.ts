@@ -7,7 +7,7 @@ export const navItems: NavItem[] = [
   { label: 'Strategy', route: '/beginner' },
   { label: 'Map', route: '/map' },
   { label: 'Community', route: '/community' },
-  { label: 'Change', route: '/veteran-analysis' },
+  { label: 'Change', route: '/changelog' },
 ]
 
 export const quickTools: QuickTool[] = [
