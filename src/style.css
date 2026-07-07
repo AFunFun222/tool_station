@@ -17,7 +17,7 @@ body {
   background:
     radial-gradient(circle at top left, rgba(78, 205, 196, 0.18), transparent 28%),
     radial-gradient(circle at top right, rgba(255, 140, 66, 0.14), transparent 24%),
-    url('/pic/palworld_guide_bg.png') center / cover no-repeat fixed;
+    linear-gradient(180deg, #0f1923 0%, #0b131c 100%);
 }
 
 #app {

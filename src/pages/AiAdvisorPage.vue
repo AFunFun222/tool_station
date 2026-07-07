@@ -77,7 +77,6 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { useRoute } from 'vue-router'
 import BaseButton from '@/components/common/BaseButton.vue'
 import BaseCard from '@/components/common/BaseCard.vue'
 import BreadcrumbBar from '@/components/common/BreadcrumbBar.vue'
@@ -89,14 +88,12 @@ import AppShell from '@/layouts/AppShell.vue'
 import { hotQuestions, initialMessages, recentChats } from '@/data/advisor'
 import type { ChatMessage } from '@/types/chat'
 
-const route = useRoute()
-
 const breadcrumbs = [
   { label: 'Home', route: '/' },
   { label: 'AI Pal Advisor' },
 ]
 
-const draft = ref((route.query.q as string) ?? '')
+const draft = ref('')
 const messages = ref([...initialMessages])
 const isSending = ref(false)
 
