@@ -14,6 +14,13 @@ type RawPalListItem = {
   detail_url?: string
 }
 
+type RawDropItem = {
+  item: string
+  item_link?: string
+  quantity?: string
+  probability?: string
+}
+
 type RawPalDetail = RawPalListItem & {
   stats?: Record<string, string | number>
   partner_skill?: string
@@ -26,7 +33,7 @@ type RawPalDetail = RawPalListItem & {
     power: number
     description: string
   }>
-  drops?: string[]
+  drops?: Array<string | RawDropItem>
 }
 
 type RawPassiveSkill = {
@@ -149,6 +156,10 @@ const breedingEntries = Object.entries(breedingTable.breeding_table ?? {}).flatM
   Object.entries(children).map(([parentB, child]) => ({ parentA, parentB, child })),
 )
 
+const palAvatarByName = new Map(palsList.map((p) => [p.name, p.icon_url]))
+
+const getPalAvatar = (name: string) => palAvatarByName.get(name) ?? ''
+
 const getBreedingRelations = (palName: string) =>
   breedingEntries
     .filter(({ child }) => (breedingTable.code_to_name[child] ?? child) === palName)
@@ -160,8 +171,18 @@ const getBreedingRelations = (palName: string) =>
       return {
         formula: `${childName} = ${parentAName} × ${parentBName}`,
         route: `/breeding?parentA=${normalizeId(parentAName)}&parentB=${normalizeId(parentBName)}`,
+        parentA: { name: parentAName, avatar: getPalAvatar(parentAName) },
+        parentB: { name: parentBName, avatar: getPalAvatar(parentBName) },
+        child: { name: childName, avatar: getPalAvatar(childName) },
       }
     })
+
+const cleanSkillDesc = (desc?: string) => {
+  if (!desc) return '暂无被动技能说明。'
+  // 截断 "Technology XX Lv." 之前的纯描述部分
+  const cutIdx = desc.search(/\s+Technology\s+\d+\s+Lv\./i)
+  return cutIdx > 0 ? desc.slice(0, cutIdx).trim() : desc.trim()
+}
 
 const getPassiveSkill = (detail: RawPalDetail) => {
   const partnerSkillName = detail.partner_skill ?? '伙伴技能'
@@ -169,12 +190,18 @@ const getPassiveSkill = (detail: RawPalDetail) => {
 
   return {
     name: partnerSkillName,
-    description: matchedPassive?.effects.join('；') ?? detail.partner_skill_desc ?? '暂无被动技能说明。',
+    description: matchedPassive?.effects.join('；') ?? cleanSkillDesc(detail.partner_skill_desc),
   }
 }
 
 const getDrops = (detail: RawPalDetail) =>
-  (detail.drops ?? []).slice(0, 6).map((name) => ({ name, rate: '资料未标注' }))
+  (detail.drops ?? []).slice(0, 6).map((drop) => {
+    if (typeof drop === 'string') return { name: drop, rate: '资料未标注' }
+    return {
+      name: drop.item,
+      rate: drop.probability ? `${drop.probability}` : '资料未标注',
+    }
+  })
 
 const buildDetail = (summary: PalSummary): PalDetail => {
   const detail = palDetailByIdMap.get(summary.id) ?? pals.find((item) => normalizeId(item.link) === summary.id)
@@ -219,6 +246,9 @@ const buildDetail = (summary: PalSummary): PalDetail => {
             {
               formula: `${summary.name} 的配种路线较多，建议前往计算器按目标反查。`,
               route: '/breeding',
+              parentA: { name: summary.name, avatar: summary.avatar },
+              parentB: { name: '?', avatar: '' },
+              child: { name: summary.name, avatar: summary.avatar },
             },
           ],
   }

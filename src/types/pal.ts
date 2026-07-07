@@ -57,5 +57,8 @@ export interface PalDetail extends PalSummary {
   breedingRelations: Array<{
     formula: string
     route: string
+    parentA: { name: string; avatar: string }
+    parentB: { name: string; avatar: string }
+    child: { name: string; avatar: string }
   }>
 }
