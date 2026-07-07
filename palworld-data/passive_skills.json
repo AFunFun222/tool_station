@@ -1,0 +1,3126 @@
+[
+  {
+    "name": "Remarkable Craftsmanship",
+    "rank": 4,
+    "effects": [
+      "Work Speed +75% (ToSelf)"
+    ],
+    "weight": 5,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Diamond Body",
+    "rank": 4,
+    "effects": [
+      "Defense +30% (ToSelf)"
+    ],
+    "weight": 5,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Lucky",
+    "rank": 4,
+    "effects": [
+      "Work Speed +15% (ToSelf)",
+      "Attack +15% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": [
+      "RarePal"
+    ]
+  },
+  {
+    "name": "Legend",
+    "rank": 4,
+    "effects": [
+      "Attack +20% Defense +20% Movement Speed increases 15%"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Siren of the Void",
+    "rank": 4,
+    "effects": [
+      "30% increase in Dark attack damage. 30% increase in Ice attack damage."
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Eternal Flame",
+    "rank": 4,
+    "effects": [
+      "30% increase to Fire attack damage. 30% increase to Lightning attack damage."
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Invader",
+    "rank": 4,
+    "effects": [
+      "30% increase in Dark attack damage. 30% increase in Dragon attack damage."
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Demon God",
+    "rank": 4,
+    "effects": [
+      "Attack +30% (ToSelf)",
+      "Defense +5% (ToSelf)"
+    ],
+    "weight": 5,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Mastery of Fasting",
+    "rank": 4,
+    "effects": [
+      "Hunger decreases +20.0% slower."
+    ],
+    "weight": 5,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Heart of the Immovable King",
+    "rank": 4,
+    "effects": [
+      "SAN drops +20.0% slower."
+    ],
+    "weight": 5,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Swift",
+    "rank": 4,
+    "effects": [
+      "30% increase to movement speed."
+    ],
+    "weight": 5,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Eternal Engine",
+    "rank": 4,
+    "effects": [
+      "Max stamina +75% *This effect is only valid for rideable pals."
+    ],
+    "weight": 5,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Vampiric",
+    "rank": 4,
+    "effects": [
+      "Absorbs a portion of the damage dealt to restore Health.  Does not sleep at night and continues to work."
+    ],
+    "weight": 5,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Lunker",
+    "rank": 4,
+    "effects": [
+      "20% increase to Water attack damage  20% increase to Ice attack damage  20% increase to defense."
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "King of the Waves",
+    "rank": 4,
+    "effects": [
+      "50% increase movement speed on water."
+    ],
+    "weight": 5,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Savior",
+    "rank": 4,
+    "effects": [
+      "30% increase in Neutral attack damage. 30% increase in Grass attack damage."
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Artisan",
+    "rank": 3,
+    "effects": [
+      "Work Speed +50% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Burly Body",
+    "rank": 3,
+    "effects": [
+      "Defense +20% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Ferocious",
+    "rank": 3,
+    "effects": [
+      "Attack +20% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Vanguard",
+    "rank": 3,
+    "effects": [
+      "10% increase in Player Attack."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Stronghold Strategist",
+    "rank": 3,
+    "effects": [
+      "10% increase in Player Defense."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Motivational Leader",
+    "rank": 3,
+    "effects": [
+      "25% increase in Player Work Speed."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Mine Foreman",
+    "rank": 3,
+    "effects": [
+      "25% increase in Player Mining Efficiency."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Logging Foreman",
+    "rank": 3,
+    "effects": [
+      "25% increase in Player Logging Efficiency."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Diet Lover",
+    "rank": 3,
+    "effects": [
+      "Hunger decreases +15.0% slower."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Workaholic",
+    "rank": 3,
+    "effects": [
+      "SAN drops +15.0% slower."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Celestial Emperor",
+    "rank": 3,
+    "effects": [
+      "20% increase in Neutral attack damage."
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Flame Emperor",
+    "rank": 3,
+    "effects": [
+      "20% increase in Fire attack damage."
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Lord of the Sea",
+    "rank": 3,
+    "effects": [
+      "20% increase in Water attack damage."
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Lord of Lightning",
+    "rank": 3,
+    "effects": [
+      "20% increase in Lightning attack damage."
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Spirit Emperor",
+    "rank": 3,
+    "effects": [
+      "20% increase in Grass attack damage."
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Ice Emperor",
+    "rank": 3,
+    "effects": [
+      "20% increase in Ice attack damage."
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Earth Emperor",
+    "rank": 3,
+    "effects": [
+      "20% increase in Earth attack damage."
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Lord of the Underworld",
+    "rank": 3,
+    "effects": [
+      "20% increase in Dark attack damage."
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Divine Dragon",
+    "rank": 3,
+    "effects": [
+      "20% increase in Dragon attack damage."
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Runner",
+    "rank": 3,
+    "effects": [
+      "20% increase to movement speed."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Philanthropist",
+    "rank": 3,
+    "effects": [
+      "When assigned to a Breeding Farm, breeding speed is increased by 100%."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Serenity",
+    "rank": 3,
+    "effects": [
+      "Active skill cooldown reduction 30% Attack +10%"
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Infinite Stamina",
+    "rank": 3,
+    "effects": [
+      "Max stamina +50% *This effect is only valid for rideable pals."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Noble",
+    "rank": 3,
+    "effects": [
+      "Increases the value of items when sold by +5%"
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Ace Swimmer",
+    "rank": 3,
+    "effects": [
+      "40% increase movement speed on water."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Musclehead",
+    "rank": 2,
+    "effects": [
+      "Attack +30% (ToSelf)",
+      "Work Speed -50% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Serious",
+    "rank": 1,
+    "effects": [
+      "Work Speed +20% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Hard Skin",
+    "rank": 1,
+    "effects": [
+      "Defense +10% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Brave",
+    "rank": 1,
+    "effects": [
+      "Attack +10% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Hooligan",
+    "rank": 1,
+    "effects": [
+      "Attack +15% (ToSelf)",
+      "Work Speed -10% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Conceited",
+    "rank": 1,
+    "effects": [
+      "Work Speed +10% (ToSelf)",
+      "Defense -10% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Sadist",
+    "rank": 1,
+    "effects": [
+      "Attack +15% (ToSelf)",
+      "Defense -15% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Masochist",
+    "rank": 1,
+    "effects": [
+      "Defense +15% (ToSelf)",
+      "Attack -15% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Work Slave",
+    "rank": 1,
+    "effects": [
+      "Work Speed +30% (ToSelf)",
+      "Attack -30% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Aggressive",
+    "rank": 1,
+    "effects": [
+      "Attack +10% (ToSelf)",
+      "Defense -10% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Abnormal",
+    "rank": 1,
+    "effects": [
+      "10% decrease in incoming Neutral damage."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Suntan Lover",
+    "rank": 1,
+    "effects": [
+      "10% decrease in incoming Fire damage."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Waterproof",
+    "rank": 1,
+    "effects": [
+      "10% decrease in incoming Water damage."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Insulated Body",
+    "rank": 1,
+    "effects": [
+      "10% decrease in incoming Lightning damage."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Botanical Barrier",
+    "rank": 1,
+    "effects": [
+      "10% decrease in incoming Grass damage."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Heated Body",
+    "rank": 1,
+    "effects": [
+      "10% decrease in incoming Ice damage."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Earthquake Resistant",
+    "rank": 1,
+    "effects": [
+      "10% decrease in incoming Earth damage."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Cheery",
+    "rank": 1,
+    "effects": [
+      "10% decrease in incoming Dark damage."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Dragonkiller",
+    "rank": 1,
+    "effects": [
+      "10% decrease in incoming Dragon damage."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Zen Mind",
+    "rank": 1,
+    "effects": [
+      "10% increase in Neutral attack damage."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Pyromaniac",
+    "rank": 1,
+    "effects": [
+      "10% increase in Fire attack damage."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Hydromaniac",
+    "rank": 1,
+    "effects": [
+      "10% increase in Water attack damage."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Capacitor",
+    "rank": 1,
+    "effects": [
+      "10% increase in Lightning attack damage."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Fragrant Foliage",
+    "rank": 1,
+    "effects": [
+      "10% increase in Grass attack damage."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Coldblooded",
+    "rank": 1,
+    "effects": [
+      "10% increase in Ice attack damage."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Power of Gaia",
+    "rank": 1,
+    "effects": [
+      "10% increase in Earth attack damage."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Veil of Darkness",
+    "rank": 1,
+    "effects": [
+      "10% increase in Dark attack damage."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Blood of the Dragon",
+    "rank": 1,
+    "effects": [
+      "10% increase in Dragon attack damage."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Dainty Eater",
+    "rank": 1,
+    "effects": [
+      "Hunger decreases +10.0% slower."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Positive Thinker",
+    "rank": 1,
+    "effects": [
+      "SAN drops +10.0% slower."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Nimble",
+    "rank": 1,
+    "effects": [
+      "10% increase to movement speed."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Nocturnal",
+    "rank": 1,
+    "effects": [
+      "Does not sleep and continues to work even at night."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Impatient",
+    "rank": 1,
+    "effects": [
+      "Active skill cooldown reduction 15%"
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Fit as a Fiddle",
+    "rank": 1,
+    "effects": [
+      "Max stamina +25% *This effect is only valid for rideable pals."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Fine Furs",
+    "rank": 1,
+    "effects": [
+      "Increases the value of items when sold by +3%"
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Otherworldly Cells",
+    "rank": 1,
+    "effects": [
+      "Attack +10% Fire damage reduction 15% Lightning damage reduction 15%"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Sleek Stroke",
+    "rank": 1,
+    "effects": [
+      "30% increase movement speed on water."
+    ],
+    "weight": 100,
+    "types": [
+      "Pal"
+    ]
+  },
+  {
+    "name": "Tempest Fury",
+    "rank": 4,
+    "effects": [
+      "Active skill cooldown reduction 0% Attack +0%"
+    ],
+    "weight": 0,
+    "types": []
+  },
+  {
+    "name": "Blood Is Fuel",
+    "rank": 4,
+    "effects": [
+      "Absorbs a portion of the damage dealt to restore Health.  Does not sleep at night and continues to work."
+    ],
+    "weight": 5,
+    "types": []
+  },
+  {
+    "name": "Health Up Lv. 3",
+    "rank": 3,
+    "effects": [
+      "Max Health +30% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Attack Up Lv. 3",
+    "rank": 3,
+    "effects": [
+      "Attack +15% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Defense Up Lv. 3",
+    "rank": 3,
+    "effects": [
+      "Defense +30% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Speedy Worker Lv. 3",
+    "rank": 3,
+    "effects": [
+      "Work Speed +20% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Heat Resistant Lv. 3",
+    "rank": 3,
+    "effects": [
+      "TemperatureResist_Heat +3% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Cold Resistant Lv. 3",
+    "rank": 3,
+    "effects": [
+      "TemperatureResist_Cold +3% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Heat Resistant Lv. 3 / Cold Resistant Lv. 3",
+    "rank": 3,
+    "effects": [
+      "TemperatureResist_Cold +3% (ToSelf)",
+      "TemperatureResist_Heat +3% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Max Carrying Capacity Lv. 3",
+    "rank": 3,
+    "effects": [
+      "Carrying Capacity +200 (ToTrainer)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Neutral Damage Reduction Lv. 3",
+    "rank": 3,
+    "effects": [
+      "ElementResist_Normal +35% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Fire Damage Reduction Lv. 3",
+    "rank": 3,
+    "effects": [
+      "ElementResist_Fire +35% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Water Damage Reduction Lv. 3",
+    "rank": 3,
+    "effects": [
+      "ElementResist_Water +35% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Electric Damage Reduction Lv. 3",
+    "rank": 3,
+    "effects": [
+      "ElementResist_Electricity +35% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Grass Damage Reduction Lv. 3",
+    "rank": 3,
+    "effects": [
+      "ElementResist_Leaf +35% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Ice Damage Reduction Lv. 3",
+    "rank": 3,
+    "effects": [
+      "ElementResist_Ice +35% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Earth Damage Reduction Lv. 3",
+    "rank": 3,
+    "effects": [
+      "ElementResist_Earth +35% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Dark Damage Reduction Lv. 3",
+    "rank": 3,
+    "effects": [
+      "ElementResist_Dark +35% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Dragon Damage Reduction Lv. 3",
+    "rank": 3,
+    "effects": [
+      "ElementResist_Dragon +35% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal Neutral Damage Enhancement Lv. 3",
+    "rank": 3,
+    "effects": [
+      "ElementBoost_Normal +18% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal Fire Damage Enhancement Lv. 3",
+    "rank": 3,
+    "effects": [
+      "ElementBoost_Fire +18% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal Water Damage Enhancement Lv. 3",
+    "rank": 3,
+    "effects": [
+      "ElementBoost_Water +18% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal Electric Damage Enhancement Lv. 3",
+    "rank": 3,
+    "effects": [
+      "ElementBoost_Electricity +18% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal Grass Damage Enhancement Lv. 3",
+    "rank": 3,
+    "effects": [
+      "ElementBoost_Leaf +18% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal Ice Damage Enhancement Lv. 3",
+    "rank": 3,
+    "effects": [
+      "ElementBoost_Ice +18% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal Ground Damage Enhancement Lv. 3",
+    "rank": 3,
+    "effects": [
+      "ElementBoost_Earth +18% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal Dark Damage Enhancement Lv. 3",
+    "rank": 3,
+    "effects": [
+      "ElementBoost_Dark +18% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal Dragon Damage Enhancement Lv. 3",
+    "rank": 3,
+    "effects": [
+      "ElementBoost_Dragon +18% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal Attack Up Lv. 3",
+    "rank": 3,
+    "effects": [
+      "Attack +12% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal Defense Up Lv. 3",
+    "rank": 3,
+    "effects": [
+      "Defense +15% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal EXP Up Lv. 3",
+    "rank": 3,
+    "effects": [
+      "PalExp_Increase +50% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Rayne Syndicate Officer",
+    "rank": 3,
+    "effects": [
+      "Attack +20% Movement Speed increases 10%"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Free Pal Alliance Founder",
+    "rank": 3,
+    "effects": [
+      "Attack +20% (ToSelf)",
+      "MoveSpeed +10% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "PIDF Officer",
+    "rank": 3,
+    "effects": [
+      "Attack +20% (ToSelf)",
+      "MoveSpeed +10% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Brothers of the Eternal Pyre Soul Leader",
+    "rank": 3,
+    "effects": [
+      "Attack +20% (ToSelf)",
+      "MoveSpeed +10% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "PAL Genetic Research Unit Commander",
+    "rank": 3,
+    "effects": [
+      "Attack +20% (ToSelf)",
+      "MoveSpeed +10% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Leader of the Moonflowers",
+    "rank": 3,
+    "effects": [
+      "Attack +20% (ToSelf)",
+      "MoveSpeed +10% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Jarl of Feybreak",
+    "rank": 3,
+    "effects": [
+      "Attack +20% (ToSelf)",
+      "MoveSpeed +10% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Health Up Lv. 2",
+    "rank": 2,
+    "effects": [
+      "Max Health +20% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Attack Up Lv. 2",
+    "rank": 2,
+    "effects": [
+      "Attack +10% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Defense Up Lv. 2",
+    "rank": 2,
+    "effects": [
+      "Defense +20% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Speedy Worker Lv. 2",
+    "rank": 2,
+    "effects": [
+      "Work Speed +15% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Heat Resistant Lv. 2",
+    "rank": 2,
+    "effects": [
+      "TemperatureResist_Heat +2% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Cold Resistant Lv. 2",
+    "rank": 2,
+    "effects": [
+      "TemperatureResist_Cold +2% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Heat Resistant Lv. 2 / Cold Resistant Lv. 2",
+    "rank": 2,
+    "effects": [
+      "TemperatureResist_Cold +2% (ToSelf)",
+      "TemperatureResist_Heat +2% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Neutral Damage Reduction Lv. 2",
+    "rank": 2,
+    "effects": [
+      "ElementResist_Normal +25% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Fire Damage Reduction Lv. 2",
+    "rank": 2,
+    "effects": [
+      "ElementResist_Fire +25% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Water Damage Reduction Lv. 2",
+    "rank": 2,
+    "effects": [
+      "ElementResist_Water +25% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Electric Damage Reduction Lv. 2",
+    "rank": 2,
+    "effects": [
+      "ElementResist_Electricity +25% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Grass Damage Reduction Lv. 2",
+    "rank": 2,
+    "effects": [
+      "ElementResist_Leaf +25% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Ice Damage Reduction Lv. 2",
+    "rank": 2,
+    "effects": [
+      "ElementResist_Ice +25% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Earth Damage Reduction Lv. 2",
+    "rank": 2,
+    "effects": [
+      "ElementResist_Earth +25% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Dark Damage Reduction Lv. 2",
+    "rank": 2,
+    "effects": [
+      "ElementResist_Dark +25% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Dragon Damage Reduction Lv. 2",
+    "rank": 2,
+    "effects": [
+      "ElementResist_Dragon +25% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal Neutral Damage Enhancement Lv. 2",
+    "rank": 2,
+    "effects": [
+      "ElementBoost_Normal +12% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal Fire Damage Enhancement Lv. 2",
+    "rank": 2,
+    "effects": [
+      "ElementBoost_Fire +12% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal Water Damage Enhancement Lv. 2",
+    "rank": 2,
+    "effects": [
+      "ElementBoost_Water +12% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal Electric Damage Enhancement Lv. 2",
+    "rank": 2,
+    "effects": [
+      "ElementBoost_Electricity +12% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal Grass Damage Enhancement Lv. 2",
+    "rank": 2,
+    "effects": [
+      "ElementBoost_Leaf +12% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal Ice Damage Enhancement Lv. 2",
+    "rank": 2,
+    "effects": [
+      "ElementBoost_Ice +12% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal Ground Damage Enhancement Lv. 2",
+    "rank": 2,
+    "effects": [
+      "ElementBoost_Earth +12% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal Dark Damage Enhancement Lv. 2",
+    "rank": 2,
+    "effects": [
+      "ElementBoost_Dark +12% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal Dragon Damage Enhancement Lv. 2",
+    "rank": 2,
+    "effects": [
+      "ElementBoost_Dragon +12% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal Attack Up Lv. 2",
+    "rank": 2,
+    "effects": [
+      "Attack +8% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal Defense Up Lv. 2",
+    "rank": 2,
+    "effects": [
+      "Defense +10% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal EXP Up Lv. 2",
+    "rank": 2,
+    "effects": [
+      "PalExp_Increase +40% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Health Up Lv. 1",
+    "rank": 1,
+    "effects": [
+      "Max Health +10% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Attack Up Lv. 1",
+    "rank": 1,
+    "effects": [
+      "Attack +5% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Defense Up Lv. 1",
+    "rank": 1,
+    "effects": [
+      "Defense +10% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Speedy Worker Lv. 1",
+    "rank": 1,
+    "effects": [
+      "Work Speed +10% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Heat Resistant Lv. 1",
+    "rank": 1,
+    "effects": [
+      "TemperatureResist_Heat +1% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Cold Resistant Lv. 1",
+    "rank": 1,
+    "effects": [
+      "TemperatureResist_Cold +1% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Heat Resistant Lv. 1 / Cold Resistant Lv. 1",
+    "rank": 1,
+    "effects": [
+      "TemperatureResist_Cold +1% (ToSelf)",
+      "TemperatureResist_Heat +1% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Max Carrying Capacity Lv. 1",
+    "rank": 1,
+    "effects": [
+      "Carrying Capacity +50 (ToTrainer)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Max Carrying Capacity Lv. 2",
+    "rank": 1,
+    "effects": [
+      "Carrying Capacity +150 (ToTrainer)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Neutral Damage Reduction Lv. 1",
+    "rank": 1,
+    "effects": [
+      "ElementResist_Normal +15% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Fire Damage Reduction Lv. 1",
+    "rank": 1,
+    "effects": [
+      "ElementResist_Fire +15% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Water Damage Reduction Lv. 1",
+    "rank": 1,
+    "effects": [
+      "ElementResist_Water +15% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Electric Damage Reduction Lv. 1",
+    "rank": 1,
+    "effects": [
+      "ElementResist_Electricity +15% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Grass Damage Reduction Lv. 1",
+    "rank": 1,
+    "effects": [
+      "ElementResist_Leaf +15% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Ice Damage Reduction Lv. 1",
+    "rank": 1,
+    "effects": [
+      "ElementResist_Ice +15% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Earth Damage Reduction Lv. 1",
+    "rank": 1,
+    "effects": [
+      "ElementResist_Earth +15% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Dark Damage Reduction Lv. 1",
+    "rank": 1,
+    "effects": [
+      "ElementResist_Dark +15% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Dragon Damage Reduction Lv. 1",
+    "rank": 1,
+    "effects": [
+      "ElementResist_Dragon +15% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Neutral Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Normal +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Fire Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Fire +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Water Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Water +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Electric Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Electricity +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Grass Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Leaf +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Ice Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Ice +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Ground Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Earth +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Dark Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Dark +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Dragon Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Dragon +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Neutral Damage Enhancement (Medium)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Normal +2% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Fire Damage Enhancement (Medium)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Fire +2% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Water Damage Enhancement (Medium)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Water +2% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Electric Damage Enhancement (Medium)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Electricity +2% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Grass Damage Enhancement (Medium)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Leaf +2% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Ice Damage Enhancement (Medium)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Ice +2% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Ground Damage Enhancement (Medium)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Earth +2% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Dark Damage Enhancement (Medium)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Dark +2% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Dragon Damage Enhancement (Medium)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Dragon +2% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Neutral Damage Enhancement (Large)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Normal +3% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Fire Damage Enhancement (Large)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Fire +3% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Water Damage Enhancement (Large)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Water +3% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Electric Damage Enhancement (Large)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Electricity +3% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Grass Damage Enhancement (Large)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Leaf +3% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Ice Damage Enhancement (Large)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Ice +3% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Ground Damage Enhancement (Large)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Earth +3% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Dark Damage Enhancement (Large)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Dark +3% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Dragon Damage Enhancement (Large)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Dragon +3% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Sphere Weight +1",
+    "rank": 1,
+    "effects": [
+      "CurveType +16% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Sphere Curve +1",
+    "rank": 1,
+    "effects": [
+      "CurveType +7% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Sphere Range +1",
+    "rank": 1,
+    "effects": [
+      "CurveType +1% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Sphere Slider",
+    "rank": 1,
+    "effects": [
+      "CurveType +8% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Sphere Range +2",
+    "rank": 1,
+    "effects": [
+      "CurveType +2% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Sphere Homing",
+    "rank": 1,
+    "effects": [
+      "CurveType +19% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Capture Strength +1",
+    "rank": 1,
+    "effects": [
+      "CaptureLevel +1% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Capture Strength +2",
+    "rank": 1,
+    "effects": [
+      "CaptureLevel +2% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Capture Strength +3",
+    "rank": 1,
+    "effects": [
+      "CaptureLevel +3% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Capture Strength +4",
+    "rank": 1,
+    "effects": [
+      "CaptureLevel +4% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Capture Strength +5",
+    "rank": 1,
+    "effects": [
+      "CaptureLevel +5% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Capture Strength +6",
+    "rank": 1,
+    "effects": [
+      "CaptureLevel +6% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Jump Power Boost",
+    "rank": 1,
+    "effects": [
+      "Jump Power Boost"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Jump Count Increase +1",
+    "rank": 1,
+    "effects": [
+      "Jump Count Increase +1"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Jump Count Increase +2",
+    "rank": 1,
+    "effects": [
+      "Jump Count Increase +2"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Jump Count Increase +3",
+    "rank": 1,
+    "effects": [
+      "Jump Count Increase +3"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Aerial Dash +1",
+    "rank": 1,
+    "effects": [
+      "Aerial Dash +1"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Aerial Dash +2",
+    "rank": 1,
+    "effects": [
+      "Aerial Dash +2"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Aerial Dash +3",
+    "rank": 1,
+    "effects": [
+      "Aerial Dash +3"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Aerial Dash +4",
+    "rank": 1,
+    "effects": [
+      "Aerial Dash +4"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Ice Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Ice +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Ice Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Ice +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Ground Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Earth +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Ground Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Earth +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Water Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Water +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Water Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Water +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Neutral Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Normal +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Neutral Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Normal +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Dragon Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Dragon +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Dark Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Dark +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Neutral Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Normal +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Grass Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Leaf +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Dark Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Dark +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Fire Damage Enhancement (Medium)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Fire +2% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Neutral Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Normal +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Grass Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Leaf +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Electric Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Electricity +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Ground Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Earth +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Water Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Water +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Dragon Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Dragon +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Dragon Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Dragon +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Electric Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Electricity +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Grass Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Leaf +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Electric Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Electricity +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Neutral Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Normal +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Grass Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Leaf +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Grass Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Leaf +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Grass Damage Enhancement (Medium)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Leaf +2% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Grass Damage Enhancement (Medium)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Leaf +2% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Ice Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Ice +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Dark Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Dark +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Fire Damage Enhancement (Large)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Fire +3% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Water Damage Enhancement (Medium)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Water +2% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Ice Damage Enhancement (Medium)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Ice +2% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Electric Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Electricity +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Ground Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Earth +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Dragon Damage Enhancement (Medium)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Dragon +2% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Fire Damage Enhancement (Large)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Fire +3% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Dark Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Dark +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Ground Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Earth +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Ground Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Earth +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Dark Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Dark +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Electric Damage Enhancement (Medium)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Electricity +2% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Dark Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Dark +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Electric Damage Enhancement (Medium)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Electricity +2% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Neutral Damage Enhancement (Medium)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Normal +2% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Dragon Damage Enhancement (Medium)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Dragon +2% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Water Damage Enhancement (Medium)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Water +2% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Dragon Damage Enhancement (Large)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Dragon +3% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Ice Damage Enhancement (Large)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Ice +3% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Neutral Damage Enhancement (Large)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Normal +3% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Dark Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Dark +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Dark Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Dark +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Dark Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Dark +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Dark Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Dark +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Grass Damage Enhancement (Medium)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Leaf +2% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Dark Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Dark +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Ground Damage Enhancement (Medium)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Earth +2% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Dark Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Dark +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Dark Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Dark +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Dark Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Dark +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Ice Damage Enhancement (Large)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Ice +3% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Dark Damage Enhancement (Small)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Dark +1% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Ground Damage Enhancement (Medium)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Earth +2% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Grass Damage Enhancement (Medium)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Leaf +2% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Ice Damage Enhancement (Large)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Ice +3% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Grass Damage Enhancement (Medium)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Leaf +2% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Ground Damage Enhancement (Medium)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Earth +2% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Ice Damage Enhancement (Large)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Ice +3% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Fire Damage Enhancement (Large)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Fire +3% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Water Damage Enhancement (Large)",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Water +3% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": [
+      "Armor",
+      "Accessory"
+    ]
+  },
+  {
+    "name": "Pal Neutral Damage Enhancement Lv. 1",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Normal +6% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal Fire Damage Enhancement Lv. 1",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Fire +6% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal Water Damage Enhancement Lv. 1",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Water +6% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal Electric Damage Enhancement Lv. 1",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Electricity +6% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal Grass Damage Enhancement Lv. 1",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Leaf +6% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal Ice Damage Enhancement Lv. 1",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Ice +6% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal Ground Damage Enhancement Lv. 1",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Earth +6% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal Dark Damage Enhancement Lv. 1",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Dark +6% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal Dragon Damage Enhancement Lv. 1",
+    "rank": 1,
+    "effects": [
+      "ElementBoost_Dragon +6% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal Attack Up Lv. 1",
+    "rank": 1,
+    "effects": [
+      "Attack +4% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal Defense Up Lv. 1",
+    "rank": 1,
+    "effects": [
+      "Defense +5% (ToOtomo)"
+    ],
+    "weight": 100,
+    "types": []
+  },
+  {
+    "name": "Pal EXP Up Lv. 1",
+    "rank": 1,
+    "effects": [
+      "PalExp_Increase +30% (ToSelf)"
+    ],
+    "weight": 100,
+    "types": []
+  }
+]

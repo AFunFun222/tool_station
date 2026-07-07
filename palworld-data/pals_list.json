@@ -1,0 +1,2649 @@
+[
+  {
+    "id": 1,
+    "name": "Lamball",
+    "link": "Lamball",
+    "element": "Neutral",
+    "work_suitability": {
+      "Handiwork": 1,
+      "Transporting": 1,
+      "Farming": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_SheepBall_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Lamball"
+  },
+  {
+    "id": 2,
+    "name": "Cattiva",
+    "link": "Cattiva",
+    "element": "Neutral",
+    "work_suitability": {
+      "Handiwork": 1,
+      "Gathering": 1,
+      "Mining": 1,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_PinkCat_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Cattiva"
+  },
+  {
+    "id": 3,
+    "name": "Chikipi",
+    "link": "Chikipi",
+    "element": "Neutral",
+    "work_suitability": {
+      "Gathering": 1,
+      "Farming": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_ChickenPal_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Chikipi"
+  },
+  {
+    "id": 4,
+    "name": "Lifmunk",
+    "link": "Lifmunk",
+    "element": "Grass",
+    "work_suitability": {
+      "Planting": 1,
+      "Handiwork": 1,
+      "Gathering": 1,
+      "Lumbering": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Carbunclo_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Lifmunk"
+  },
+  {
+    "id": 5,
+    "name": "Foxparks",
+    "link": "Foxparks",
+    "element": "Fire",
+    "work_suitability": {
+      "Kindling": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Kitsunebi_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Foxparks"
+  },
+  {
+    "id": 5,
+    "name": "Foxparks Cryst",
+    "link": "Foxparks_Cryst",
+    "element": "Ice",
+    "work_suitability": {
+      "Cooling": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Kitsunebi_Ice_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Foxparks_Cryst"
+  },
+  {
+    "id": 6,
+    "name": "Fuack",
+    "link": "Fuack",
+    "element": "Water",
+    "work_suitability": {
+      "Watering": 1,
+      "Handiwork": 1,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_BluePlatypus_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Fuack"
+  },
+  {
+    "id": 6,
+    "name": "Fuack Ignis",
+    "link": "Fuack_Ignis",
+    "element": "Water",
+    "work_suitability": {
+      "Kindling": 1,
+      "Watering": 1,
+      "Handiwork": 1,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_BluePlatypus_Fire_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Fuack_Ignis"
+  },
+  {
+    "id": 7,
+    "name": "Sparkit",
+    "link": "Sparkit",
+    "element": "Electric",
+    "work_suitability": {
+      "Handiwork": 1,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_ElecCat_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Sparkit"
+  },
+  {
+    "id": 8,
+    "name": "Tanzee",
+    "link": "Tanzee",
+    "element": "Grass",
+    "work_suitability": {
+      "Planting": 1,
+      "Handiwork": 1,
+      "Gathering": 1,
+      "Lumbering": 1,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Monkey_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Tanzee"
+  },
+  {
+    "id": 9,
+    "name": "Rooby",
+    "link": "Rooby",
+    "element": "Fire",
+    "work_suitability": {
+      "Kindling": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FlameBambi_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Rooby"
+  },
+  {
+    "id": 10,
+    "name": "Pengullet",
+    "link": "Pengullet",
+    "element": "Water",
+    "work_suitability": {
+      "Watering": 1,
+      "Handiwork": 1,
+      "Cooling": 1,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Penguin_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Pengullet"
+  },
+  {
+    "id": 10,
+    "name": "Pengullet Lux",
+    "link": "Pengullet_Lux",
+    "element": "Water",
+    "work_suitability": {
+      "Watering": 1,
+      "Handiwork": 1,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Penguin_Electric_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Pengullet_Lux"
+  },
+  {
+    "id": 11,
+    "name": "Penking",
+    "link": "Penking",
+    "element": "Water",
+    "work_suitability": {
+      "Watering": 2,
+      "Handiwork": 2,
+      "Mining": 2,
+      "Cooling": 2,
+      "Transporting": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_CaptainPenguin_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Penking"
+  },
+  {
+    "id": 11,
+    "name": "Penking Lux",
+    "link": "Penking_Lux",
+    "element": "Water",
+    "work_suitability": {
+      "Watering": 2,
+      "Handiwork": 2,
+      "Mining": 2,
+      "Transporting": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_CaptainPenguin_Black_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Penking_Lux"
+  },
+  {
+    "id": 12,
+    "name": "Jolthog",
+    "link": "Jolthog",
+    "element": "Electric",
+    "work_suitability": {},
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Hedgehog_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Jolthog"
+  },
+  {
+    "id": 12,
+    "name": "Jolthog Cryst",
+    "link": "Jolthog_Cryst",
+    "element": "Ice",
+    "work_suitability": {
+      "Cooling": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Hedgehog_Ice_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Jolthog_Cryst"
+  },
+  {
+    "id": 13,
+    "name": "Gumoss",
+    "link": "Gumoss",
+    "element": "Grass",
+    "work_suitability": {
+      "Planting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_PlantSlime_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Gumoss"
+  },
+  {
+    "id": 14,
+    "name": "Vixy",
+    "link": "Vixy",
+    "element": "Neutral",
+    "work_suitability": {
+      "Gathering": 1,
+      "Farming": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_CuteFox_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Vixy"
+  },
+  {
+    "id": 15,
+    "name": "Hoocrates",
+    "link": "Hoocrates",
+    "element": "Dark",
+    "work_suitability": {
+      "Gathering": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_WizardOwl_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Hoocrates"
+  },
+  {
+    "id": 16,
+    "name": "Teafant",
+    "link": "Teafant",
+    "element": "Water",
+    "work_suitability": {
+      "Watering": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Ganesha_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Teafant"
+  },
+  {
+    "id": 17,
+    "name": "Depresso",
+    "link": "Depresso",
+    "element": "Dark",
+    "work_suitability": {
+      "Handiwork": 1,
+      "Mining": 1,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_NegativeKoala_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Depresso"
+  },
+  {
+    "id": 18,
+    "name": "Cremis",
+    "link": "Cremis",
+    "element": "Neutral",
+    "work_suitability": {
+      "Gathering": 1,
+      "Farming": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_WoolFox_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Cremis"
+  },
+  {
+    "id": 19,
+    "name": "Daedream",
+    "link": "Daedream",
+    "element": "Dark",
+    "work_suitability": {
+      "Handiwork": 1,
+      "Gathering": 1,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_DreamDemon_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Daedream"
+  },
+  {
+    "id": 20,
+    "name": "Rushoar",
+    "link": "Rushoar",
+    "element": "Ground",
+    "work_suitability": {
+      "Mining": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Boar_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Rushoar"
+  },
+  {
+    "id": 21,
+    "name": "Nox",
+    "link": "Nox",
+    "element": "Dark",
+    "work_suitability": {
+      "Gathering": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_NightFox_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Nox"
+  },
+  {
+    "id": 22,
+    "name": "Fuddler",
+    "link": "Fuddler",
+    "element": "Ground",
+    "work_suitability": {
+      "Handiwork": 1,
+      "Mining": 1,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_CuteMole_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Fuddler"
+  },
+  {
+    "id": 23,
+    "name": "Killamari",
+    "link": "Killamari",
+    "element": "Dark",
+    "work_suitability": {
+      "Watering": 1,
+      "Gathering": 1,
+      "Transporting": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_NegativeOctopus_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Killamari"
+  },
+  {
+    "id": 23,
+    "name": "Killamari Primo",
+    "link": "Killamari_Primo",
+    "element": "Neutral",
+    "work_suitability": {
+      "Watering": 1,
+      "Gathering": 1,
+      "Transporting": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_NegativeOctopus_Neutral_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Killamari_Primo"
+  },
+  {
+    "id": 24,
+    "name": "Mau",
+    "link": "Mau",
+    "element": "Dark",
+    "work_suitability": {
+      "Farming": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Bastet_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Mau"
+  },
+  {
+    "id": 24,
+    "name": "Mau Cryst",
+    "link": "Mau_Cryst",
+    "element": "Ice",
+    "work_suitability": {
+      "Cooling": 1,
+      "Farming": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Bastet_Ice_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Mau_Cryst"
+  },
+  {
+    "id": 25,
+    "name": "Celaray",
+    "link": "Celaray",
+    "element": "Water",
+    "work_suitability": {
+      "Watering": 1,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FlyingManta_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Celaray"
+  },
+  {
+    "id": 25,
+    "name": "Celaray Lux",
+    "link": "Celaray_Lux",
+    "element": "Water",
+    "work_suitability": {
+      "Watering": 1,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FlyingManta_Thunder_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Celaray_Lux"
+  },
+  {
+    "id": 26,
+    "name": "Direhowl",
+    "link": "Direhowl",
+    "element": "Neutral",
+    "work_suitability": {
+      "Gathering": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Garm_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Direhowl"
+  },
+  {
+    "id": 27,
+    "name": "Tocotoco",
+    "link": "Tocotoco",
+    "element": "Neutral",
+    "work_suitability": {
+      "Gathering": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_ColorfulBird_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Tocotoco"
+  },
+  {
+    "id": 28,
+    "name": "Flopie",
+    "link": "Flopie",
+    "element": "Grass",
+    "work_suitability": {
+      "Planting": 1,
+      "Handiwork": 1,
+      "Gathering": 1,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FlowerRabbit_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Flopie"
+  },
+  {
+    "id": 29,
+    "name": "Mozzarina",
+    "link": "Mozzarina",
+    "element": "Neutral",
+    "work_suitability": {
+      "Farming": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_CowPal_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Mozzarina"
+  },
+  {
+    "id": 30,
+    "name": "Bristla",
+    "link": "Bristla",
+    "element": "Grass",
+    "work_suitability": {
+      "Planting": 1,
+      "Handiwork": 1,
+      "Gathering": 1,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_LittleBriarRose_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Bristla"
+  },
+  {
+    "id": 31,
+    "name": "Gobfin",
+    "link": "Gobfin",
+    "element": "Water",
+    "work_suitability": {
+      "Watering": 2,
+      "Handiwork": 1,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_SharkKid_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Gobfin"
+  },
+  {
+    "id": 31,
+    "name": "Gobfin Ignis",
+    "link": "Gobfin_Ignis",
+    "element": "Fire",
+    "work_suitability": {
+      "Kindling": 2,
+      "Handiwork": 1,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_SharkKid_Fire_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Gobfin_Ignis"
+  },
+  {
+    "id": 32,
+    "name": "Hangyu",
+    "link": "Hangyu",
+    "element": "Ground",
+    "work_suitability": {
+      "Handiwork": 1,
+      "Gathering": 1,
+      "Transporting": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_WindChimes_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Hangyu"
+  },
+  {
+    "id": 32,
+    "name": "Hangyu Cryst",
+    "link": "Hangyu_Cryst",
+    "element": "Ice",
+    "work_suitability": {
+      "Handiwork": 1,
+      "Gathering": 1,
+      "Cooling": 1,
+      "Transporting": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_WindChimes_Ice_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Hangyu_Cryst"
+  },
+  {
+    "id": 33,
+    "name": "Mossanda",
+    "link": "Mossanda",
+    "element": "Grass",
+    "work_suitability": {
+      "Planting": 2,
+      "Handiwork": 2,
+      "Lumbering": 2,
+      "Transporting": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_GrassPanda_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Mossanda"
+  },
+  {
+    "id": 33,
+    "name": "Mossanda Lux",
+    "link": "Mossanda_Lux",
+    "element": "Electric",
+    "work_suitability": {
+      "Handiwork": 2,
+      "Lumbering": 2,
+      "Transporting": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_GrassPanda_Electric_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Mossanda_Lux"
+  },
+  {
+    "id": 34,
+    "name": "Woolipop",
+    "link": "Woolipop",
+    "element": "Neutral",
+    "work_suitability": {
+      "Farming": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_SweetsSheep_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Woolipop"
+  },
+  {
+    "id": 35,
+    "name": "Caprity",
+    "link": "Caprity",
+    "element": "Grass",
+    "work_suitability": {
+      "Planting": 2,
+      "Farming": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_BerryGoat_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Caprity"
+  },
+  {
+    "id": 35,
+    "name": "Caprity Noct",
+    "link": "Caprity_Noct",
+    "element": "Dark",
+    "work_suitability": {
+      "Planting": 2,
+      "Farming": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_BerryGoat_Dark_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Caprity_Noct"
+  },
+  {
+    "id": 36,
+    "name": "Melpaca",
+    "link": "Melpaca",
+    "element": "Neutral",
+    "work_suitability": {
+      "Farming": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Alpaca_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Melpaca"
+  },
+  {
+    "id": 37,
+    "name": "Eikthyrdeer",
+    "link": "Eikthyrdeer",
+    "element": "Neutral",
+    "work_suitability": {
+      "Lumbering": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Deer_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Eikthyrdeer"
+  },
+  {
+    "id": 37,
+    "name": "Eikthyrdeer Terra",
+    "link": "Eikthyrdeer_Terra",
+    "element": "Ground",
+    "work_suitability": {
+      "Lumbering": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Deer_Ground_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Eikthyrdeer_Terra"
+  },
+  {
+    "id": 38,
+    "name": "Nitewing",
+    "link": "Nitewing",
+    "element": "Neutral",
+    "work_suitability": {
+      "Gathering": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_HawkBird_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Nitewing"
+  },
+  {
+    "id": 39,
+    "name": "Ribbuny",
+    "link": "Ribbuny",
+    "element": "Neutral",
+    "work_suitability": {
+      "Handiwork": 1,
+      "Gathering": 1,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_PinkRabbit_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Ribbuny"
+  },
+  {
+    "id": 39,
+    "name": "Ribbuny Botan",
+    "link": "Ribbuny_Botan",
+    "element": "Grass",
+    "work_suitability": {
+      "Planting": 1,
+      "Handiwork": 1,
+      "Gathering": 1,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_PinkRabbit_Grass_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Ribbuny_Botan"
+  },
+  {
+    "id": 40,
+    "name": "Incineram",
+    "link": "Incineram",
+    "element": "Fire",
+    "work_suitability": {
+      "Kindling": 1,
+      "Handiwork": 2,
+      "Mining": 1,
+      "Transporting": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Baphomet_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Incineram"
+  },
+  {
+    "id": 40,
+    "name": "Incineram Noct",
+    "link": "Incineram_Noct",
+    "element": "Dark",
+    "work_suitability": {
+      "Handiwork": 2,
+      "Mining": 1,
+      "Transporting": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Baphomet_Dark_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Incineram_Noct"
+  },
+  {
+    "id": 41,
+    "name": "Cinnamoth",
+    "link": "Cinnamoth",
+    "element": "Grass",
+    "work_suitability": {
+      "Planting": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_CuteButterfly_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Cinnamoth"
+  },
+  {
+    "id": 42,
+    "name": "Arsox",
+    "link": "Arsox",
+    "element": "Fire",
+    "work_suitability": {
+      "Kindling": 2,
+      "Lumbering": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FlameBuffalo_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Arsox"
+  },
+  {
+    "id": 43,
+    "name": "Dumud",
+    "link": "Dumud",
+    "element": "Ground",
+    "work_suitability": {
+      "Watering": 1,
+      "Mining": 2,
+      "Transporting": 1,
+      "Farming": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_LazyCatfish_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Dumud"
+  },
+  {
+    "id": 43,
+    "name": "Dumud Gild",
+    "link": "Dumud_Gild",
+    "element": "Ground",
+    "work_suitability": {
+      "Watering": 1,
+      "Mining": 2,
+      "Transporting": 1,
+      "Farming": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_LazyCatfish_Gold_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Dumud_Gild"
+  },
+  {
+    "id": 44,
+    "name": "Cawgnito",
+    "link": "Cawgnito",
+    "element": "Dark",
+    "work_suitability": {
+      "Lumbering": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_DarkCrow_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Cawgnito"
+  },
+  {
+    "id": 45,
+    "name": "Leezpunk",
+    "link": "Leezpunk",
+    "element": "Dark",
+    "work_suitability": {
+      "Handiwork": 1,
+      "Gathering": 1,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_LizardMan_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Leezpunk"
+  },
+  {
+    "id": 45,
+    "name": "Leezpunk Ignis",
+    "link": "Leezpunk_Ignis",
+    "element": "Fire",
+    "work_suitability": {
+      "Kindling": 1,
+      "Handiwork": 1,
+      "Gathering": 1,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_LizardMan_Fire_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Leezpunk_Ignis"
+  },
+  {
+    "id": 46,
+    "name": "Loupmoon",
+    "link": "Loupmoon",
+    "element": "Dark",
+    "work_suitability": {
+      "Handiwork": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Werewolf_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Loupmoon"
+  },
+  {
+    "id": 46,
+    "name": "Loupmoon Cryst",
+    "link": "Loupmoon_Cryst",
+    "element": "Ice",
+    "work_suitability": {
+      "Handiwork": 2,
+      "Cooling": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Werewolf_Ice_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Loupmoon_Cryst"
+  },
+  {
+    "id": 47,
+    "name": "Galeclaw",
+    "link": "Galeclaw",
+    "element": "Neutral",
+    "work_suitability": {
+      "Gathering": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Eagle_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Galeclaw"
+  },
+  {
+    "id": 48,
+    "name": "Robinquill",
+    "link": "Robinquill",
+    "element": "Grass",
+    "work_suitability": {
+      "Planting": 1,
+      "Handiwork": 2,
+      "Gathering": 2,
+      "Lumbering": 1,
+      "Transporting": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_RobinHood_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Robinquill"
+  },
+  {
+    "id": 48,
+    "name": "Robinquill Terra",
+    "link": "Robinquill_Terra",
+    "element": "Grass",
+    "work_suitability": {
+      "Handiwork": 2,
+      "Gathering": 2,
+      "Lumbering": 1,
+      "Transporting": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_RobinHood_Ground_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Robinquill_Terra"
+  },
+  {
+    "id": 49,
+    "name": "Gorirat",
+    "link": "Gorirat",
+    "element": "Neutral",
+    "work_suitability": {
+      "Handiwork": 1,
+      "Lumbering": 2,
+      "Transporting": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Gorilla_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Gorirat"
+  },
+  {
+    "id": 49,
+    "name": "Gorirat Terra",
+    "link": "Gorirat_Terra",
+    "element": "Ground",
+    "work_suitability": {
+      "Handiwork": 1,
+      "Mining": 2,
+      "Transporting": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Gorilla_Ground_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Gorirat_Terra"
+  },
+  {
+    "id": 50,
+    "name": "Beegarde",
+    "link": "Beegarde",
+    "element": "Grass",
+    "work_suitability": {
+      "Planting": 1,
+      "Handiwork": 1,
+      "Gathering": 1,
+      "Lumbering": 1,
+      "Transporting": 2,
+      "Farming": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_SoldierBee_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Beegarde"
+  },
+  {
+    "id": 51,
+    "name": "Elizabee",
+    "link": "Elizabee",
+    "element": "Grass",
+    "work_suitability": {
+      "Planting": 2,
+      "Handiwork": 2,
+      "Gathering": 2,
+      "Lumbering": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_QueenBee_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Elizabee"
+  },
+  {
+    "id": 52,
+    "name": "Grintale",
+    "link": "Grintale",
+    "element": "Neutral",
+    "work_suitability": {
+      "Gathering": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_NaughtyCat_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Grintale"
+  },
+  {
+    "id": 53,
+    "name": "Swee",
+    "link": "Swee",
+    "element": "Ice",
+    "work_suitability": {
+      "Gathering": 1,
+      "Cooling": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_MopBaby_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Swee"
+  },
+  {
+    "id": 54,
+    "name": "Sweepa",
+    "link": "Sweepa",
+    "element": "Ice",
+    "work_suitability": {
+      "Gathering": 2,
+      "Cooling": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_MopKing_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Sweepa"
+  },
+  {
+    "id": 55,
+    "name": "Chillet",
+    "link": "Chillet",
+    "element": "Ice",
+    "work_suitability": {
+      "Gathering": 1,
+      "Cooling": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_WeaselDragon_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Chillet"
+  },
+  {
+    "id": 55,
+    "name": "Chillet Ignis",
+    "link": "Chillet_Ignis",
+    "element": "Fire",
+    "work_suitability": {
+      "Kindling": 2,
+      "Gathering": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_WeaselDragon_Fire_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Chillet_Ignis"
+  },
+  {
+    "id": 56,
+    "name": "Univolt",
+    "link": "Univolt",
+    "element": "Electric",
+    "work_suitability": {
+      "Lumbering": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Kirin_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Univolt"
+  },
+  {
+    "id": 57,
+    "name": "Foxcicle",
+    "link": "Foxcicle",
+    "element": "Ice",
+    "work_suitability": {
+      "Cooling": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_IceFox_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Foxcicle"
+  },
+  {
+    "id": 58,
+    "name": "Pyrin",
+    "link": "Pyrin",
+    "element": "Fire",
+    "work_suitability": {
+      "Kindling": 2,
+      "Lumbering": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FireKirin_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Pyrin"
+  },
+  {
+    "id": 58,
+    "name": "Pyrin Noct",
+    "link": "Pyrin_Noct",
+    "element": "Fire",
+    "work_suitability": {
+      "Kindling": 2,
+      "Lumbering": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FireKirin_Dark_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Pyrin_Noct"
+  },
+  {
+    "id": 59,
+    "name": "Reindrix",
+    "link": "Reindrix",
+    "element": "Ice",
+    "work_suitability": {
+      "Lumbering": 2,
+      "Cooling": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_IceDeer_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Reindrix"
+  },
+  {
+    "id": 60,
+    "name": "Rayhound",
+    "link": "Rayhound",
+    "element": "Electric",
+    "work_suitability": {},
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_ThunderDog_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Rayhound"
+  },
+  {
+    "id": 61,
+    "name": "Kitsun",
+    "link": "Kitsun",
+    "element": "Fire",
+    "work_suitability": {
+      "Kindling": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_AmaterasuWolf_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Kitsun"
+  },
+  {
+    "id": 61,
+    "name": "Kitsun Noct",
+    "link": "Kitsun_Noct",
+    "element": "Dark",
+    "work_suitability": {
+      "Kindling": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_AmaterasuWolf_Dark_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Kitsun_Noct"
+  },
+  {
+    "id": 62,
+    "name": "Dazzi",
+    "link": "Dazzi",
+    "element": "Electric",
+    "work_suitability": {
+      "Handiwork": 1,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_RaijinDaughter_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Dazzi"
+  },
+  {
+    "id": 62,
+    "name": "Dazzi Noct",
+    "link": "Dazzi_Noct",
+    "element": "Dark",
+    "work_suitability": {
+      "Handiwork": 1,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_RaijinDaughter_Water_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Dazzi_Noct"
+  },
+  {
+    "id": 63,
+    "name": "Lunaris",
+    "link": "Lunaris",
+    "element": "Neutral",
+    "work_suitability": {
+      "Handiwork": 3,
+      "Gathering": 1,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Mutant_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Lunaris"
+  },
+  {
+    "id": 64,
+    "name": "Dinossom",
+    "link": "Dinossom",
+    "element": "Grass",
+    "work_suitability": {
+      "Planting": 2,
+      "Lumbering": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FlowerDinosaur_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Dinossom"
+  },
+  {
+    "id": 64,
+    "name": "Dinossom Lux",
+    "link": "Dinossom_Lux",
+    "element": "Electric",
+    "work_suitability": {
+      "Lumbering": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FlowerDinosaur_Electric_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Dinossom_Lux"
+  },
+  {
+    "id": 65,
+    "name": "Surfent",
+    "link": "Surfent",
+    "element": "Water",
+    "work_suitability": {
+      "Watering": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Serpent_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Surfent"
+  },
+  {
+    "id": 65,
+    "name": "Surfent Terra",
+    "link": "Surfent_Terra",
+    "element": "Ground",
+    "work_suitability": {
+      "Gathering": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Serpent_Ground_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Surfent_Terra"
+  },
+  {
+    "id": 66,
+    "name": "Maraith",
+    "link": "Maraith",
+    "element": "Dark",
+    "work_suitability": {
+      "Gathering": 2,
+      "Mining": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_GhostBeast_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Maraith"
+  },
+  {
+    "id": 67,
+    "name": "Digtoise",
+    "link": "Digtoise",
+    "element": "Ground",
+    "work_suitability": {
+      "Mining": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_DrillGame_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Digtoise"
+  },
+  {
+    "id": 68,
+    "name": "Tombat",
+    "link": "Tombat",
+    "element": "Dark",
+    "work_suitability": {
+      "Gathering": 2,
+      "Mining": 2,
+      "Transporting": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_CatBat_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Tombat"
+  },
+  {
+    "id": 69,
+    "name": "Lovander",
+    "link": "Lovander",
+    "element": "Neutral",
+    "work_suitability": {
+      "Handiwork": 2,
+      "Mining": 1,
+      "Transporting": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_PinkLizard_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Lovander"
+  },
+  {
+    "id": 70,
+    "name": "Flambelle",
+    "link": "Flambelle",
+    "element": "Fire",
+    "work_suitability": {
+      "Kindling": 1,
+      "Handiwork": 1,
+      "Transporting": 1,
+      "Farming": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_LavaGirl_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Flambelle"
+  },
+  {
+    "id": 71,
+    "name": "Vanwyrm",
+    "link": "Vanwyrm",
+    "element": "Fire",
+    "work_suitability": {
+      "Kindling": 1,
+      "Transporting": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_BirdDragon_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Vanwyrm"
+  },
+  {
+    "id": 71,
+    "name": "Vanwyrm Cryst",
+    "link": "Vanwyrm_Cryst",
+    "element": "Ice",
+    "work_suitability": {
+      "Cooling": 2,
+      "Transporting": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_BirdDragon_Ice_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Vanwyrm_Cryst"
+  },
+  {
+    "id": 72,
+    "name": "Bushi",
+    "link": "Bushi",
+    "element": "Fire",
+    "work_suitability": {
+      "Kindling": 2,
+      "Handiwork": 1,
+      "Gathering": 1,
+      "Lumbering": 3,
+      "Transporting": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Ronin_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Bushi"
+  },
+  {
+    "id": 72,
+    "name": "Bushi Noct",
+    "link": "Bushi_Noct",
+    "element": "Fire",
+    "work_suitability": {
+      "Kindling": 2,
+      "Handiwork": 1,
+      "Gathering": 1,
+      "Lumbering": 3,
+      "Transporting": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Ronin_Dark_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Bushi_Noct"
+  },
+  {
+    "id": 73,
+    "name": "Beakon",
+    "link": "Beakon",
+    "element": "Electric",
+    "work_suitability": {
+      "Gathering": 1,
+      "Transporting": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_ThunderBird_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Beakon"
+  },
+  {
+    "id": 74,
+    "name": "Ragnahawk",
+    "link": "Ragnahawk",
+    "element": "Fire",
+    "work_suitability": {
+      "Kindling": 3,
+      "Transporting": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_RedArmorBird_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Ragnahawk"
+  },
+  {
+    "id": 75,
+    "name": "Katress",
+    "link": "Katress",
+    "element": "Dark",
+    "work_suitability": {
+      "Handiwork": 2,
+      "Transporting": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_CatMage_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Katress"
+  },
+  {
+    "id": 75,
+    "name": "Katress Ignis",
+    "link": "Katress_Ignis",
+    "element": "Dark",
+    "work_suitability": {
+      "Kindling": 2,
+      "Handiwork": 2,
+      "Transporting": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_CatMage_Fire_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Katress_Ignis"
+  },
+  {
+    "id": 76,
+    "name": "Wixen",
+    "link": "Wixen",
+    "element": "Fire",
+    "work_suitability": {
+      "Kindling": 2,
+      "Handiwork": 3,
+      "Transporting": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FoxMage_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Wixen"
+  },
+  {
+    "id": 76,
+    "name": "Wixen Noct",
+    "link": "Wixen_Noct",
+    "element": "Fire",
+    "work_suitability": {
+      "Kindling": 2,
+      "Handiwork": 3,
+      "Transporting": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FoxMage_Dark_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Wixen_Noct"
+  },
+  {
+    "id": 77,
+    "name": "Verdash",
+    "link": "Verdash",
+    "element": "Grass",
+    "work_suitability": {
+      "Planting": 2,
+      "Handiwork": 3,
+      "Gathering": 3,
+      "Lumbering": 2,
+      "Transporting": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_GrassRabbitMan_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Verdash"
+  },
+  {
+    "id": 78,
+    "name": "Vaelet",
+    "link": "Vaelet",
+    "element": "Grass",
+    "work_suitability": {
+      "Planting": 2,
+      "Handiwork": 2,
+      "Gathering": 2,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_VioletFairy_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Vaelet"
+  },
+  {
+    "id": 79,
+    "name": "Sibelyx",
+    "link": "Sibelyx",
+    "element": "Ice",
+    "work_suitability": {
+      "Cooling": 2,
+      "Farming": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_WhiteMoth_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Sibelyx"
+  },
+  {
+    "id": 80,
+    "name": "Elphidran",
+    "link": "Elphidran",
+    "element": "Dragon",
+    "work_suitability": {
+      "Lumbering": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FairyDragon_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Elphidran"
+  },
+  {
+    "id": 80,
+    "name": "Elphidran Aqua",
+    "link": "Elphidran_Aqua",
+    "element": "Dragon",
+    "work_suitability": {
+      "Watering": 3,
+      "Lumbering": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FairyDragon_Water_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Elphidran_Aqua"
+  },
+  {
+    "id": 81,
+    "name": "Kelpsea",
+    "link": "Kelpsea",
+    "element": "Water",
+    "work_suitability": {
+      "Watering": 1,
+      "Farming": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Kelpie_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Kelpsea"
+  },
+  {
+    "id": 81,
+    "name": "Kelpsea Ignis",
+    "link": "Kelpsea_Ignis",
+    "element": "Fire",
+    "work_suitability": {
+      "Kindling": 1,
+      "Farming": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Kelpie_Fire_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Kelpsea_Ignis"
+  },
+  {
+    "id": 82,
+    "name": "Azurobe",
+    "link": "Azurobe",
+    "element": "Water",
+    "work_suitability": {
+      "Watering": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_BlueDragon_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Azurobe"
+  },
+  {
+    "id": 82,
+    "name": "Azurobe Cryst",
+    "link": "Azurobe_Cryst",
+    "element": "Ice",
+    "work_suitability": {
+      "Cooling": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_BlueDragon_Ice_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Azurobe_Cryst"
+  },
+  {
+    "id": 83,
+    "name": "Cryolinx",
+    "link": "Cryolinx",
+    "element": "Ice",
+    "work_suitability": {
+      "Handiwork": 1,
+      "Lumbering": 2,
+      "Cooling": 3,
+      "Transporting": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_WhiteTiger_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Cryolinx"
+  },
+  {
+    "id": 83,
+    "name": "Cryolinx Terra",
+    "link": "Cryolinx_Terra",
+    "element": "Ground",
+    "work_suitability": {
+      "Handiwork": 1,
+      "Lumbering": 2,
+      "Mining": 3,
+      "Transporting": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_WhiteTiger_Ground_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Cryolinx_Terra"
+  },
+  {
+    "id": 84,
+    "name": "Blazehowl",
+    "link": "Blazehowl",
+    "element": "Fire",
+    "work_suitability": {
+      "Kindling": 3,
+      "Lumbering": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Manticore_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Blazehowl"
+  },
+  {
+    "id": 84,
+    "name": "Blazehowl Noct",
+    "link": "Blazehowl_Noct",
+    "element": "Fire",
+    "work_suitability": {
+      "Kindling": 3,
+      "Lumbering": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Manticore_Dark_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Blazehowl_Noct"
+  },
+  {
+    "id": 85,
+    "name": "Relaxaurus",
+    "link": "Relaxaurus",
+    "element": "Dragon",
+    "work_suitability": {
+      "Watering": 2,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_LazyDragon_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Relaxaurus"
+  },
+  {
+    "id": 85,
+    "name": "Relaxaurus Lux",
+    "link": "Relaxaurus_Lux",
+    "element": "Dragon",
+    "work_suitability": {
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_LazyDragon_Electric_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Relaxaurus_Lux"
+  },
+  {
+    "id": 86,
+    "name": "Broncherry",
+    "link": "Broncherry",
+    "element": "Grass",
+    "work_suitability": {
+      "Planting": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_SakuraSaurus_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Broncherry"
+  },
+  {
+    "id": 86,
+    "name": "Broncherry Aqua",
+    "link": "Broncherry_Aqua",
+    "element": "Grass",
+    "work_suitability": {
+      "Watering": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_SakuraSaurus_Water_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Broncherry_Aqua"
+  },
+  {
+    "id": 87,
+    "name": "Petallia",
+    "link": "Petallia",
+    "element": "Grass",
+    "work_suitability": {
+      "Planting": 3,
+      "Handiwork": 2,
+      "Gathering": 2,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FlowerDoll_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Petallia"
+  },
+  {
+    "id": 88,
+    "name": "Reptyro",
+    "link": "Reptyro",
+    "element": "Fire",
+    "work_suitability": {
+      "Kindling": 3,
+      "Mining": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_VolcanicMonster_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Reptyro"
+  },
+  {
+    "id": 88,
+    "name": "Reptyro Cryst",
+    "link": "Reptyro_Cryst",
+    "element": "Ice",
+    "work_suitability": {
+      "Mining": 3,
+      "Cooling": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_VolcanicMonster_Ice_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Reptyro_Cryst"
+  },
+  {
+    "id": 89,
+    "name": "Kingpaca",
+    "link": "Kingpaca",
+    "element": "Neutral",
+    "work_suitability": {
+      "Gathering": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_KingAlpaca_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Kingpaca"
+  },
+  {
+    "id": 89,
+    "name": "Kingpaca Cryst",
+    "link": "Kingpaca_Cryst",
+    "element": "Ice",
+    "work_suitability": {
+      "Gathering": 1,
+      "Cooling": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_KingAlpaca_Ice_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Kingpaca_Cryst"
+  },
+  {
+    "id": 90,
+    "name": "Mammorest",
+    "link": "Mammorest",
+    "element": "Grass",
+    "work_suitability": {
+      "Planting": 2,
+      "Lumbering": 2,
+      "Mining": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_GrassMammoth_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Mammorest"
+  },
+  {
+    "id": 90,
+    "name": "Mammorest Cryst",
+    "link": "Mammorest_Cryst",
+    "element": "Ice",
+    "work_suitability": {
+      "Lumbering": 2,
+      "Mining": 2,
+      "Cooling": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_GrassMammoth_Ice_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Mammorest_Cryst"
+  },
+  {
+    "id": 91,
+    "name": "Wumpo",
+    "link": "Wumpo",
+    "element": "Ice",
+    "work_suitability": {
+      "Handiwork": 2,
+      "Lumbering": 3,
+      "Cooling": 2,
+      "Transporting": 4
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Yeti_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Wumpo"
+  },
+  {
+    "id": 91,
+    "name": "Wumpo Botan",
+    "link": "Wumpo_Botan",
+    "element": "Grass",
+    "work_suitability": {
+      "Planting": 1,
+      "Handiwork": 2,
+      "Lumbering": 3,
+      "Transporting": 4
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Yeti_Grass_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Wumpo_Botan"
+  },
+  {
+    "id": 92,
+    "name": "Warsect",
+    "link": "Warsect",
+    "element": "Ground",
+    "work_suitability": {
+      "Planting": 1,
+      "Handiwork": 1,
+      "Lumbering": 3,
+      "Transporting": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_HerculesBeetle_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Warsect"
+  },
+  {
+    "id": 92,
+    "name": "Warsect Terra",
+    "link": "Warsect_Terra",
+    "element": "Ground",
+    "work_suitability": {
+      "Handiwork": 1,
+      "Mining": 3,
+      "Transporting": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_HerculesBeetle_Ground_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Warsect_Terra"
+  },
+  {
+    "id": 93,
+    "name": "Fenglope",
+    "link": "Fenglope",
+    "element": "Neutral",
+    "work_suitability": {
+      "Lumbering": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FengyunDeeper_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Fenglope"
+  },
+  {
+    "id": 93,
+    "name": "Fenglope Lux",
+    "link": "Fenglope_Lux",
+    "element": "Electric",
+    "work_suitability": {
+      "Lumbering": 2
+    },
+    "icon_url": "",
+    "detail_url": "https://paldb.cc/en/Pals/Fenglope_Lux"
+  },
+  {
+    "id": 94,
+    "name": "Felbat",
+    "link": "Felbat",
+    "element": "Dark",
+    "work_suitability": {},
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_CatVampire_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Felbat"
+  },
+  {
+    "id": 95,
+    "name": "Quivern",
+    "link": "Quivern",
+    "element": "Dragon",
+    "work_suitability": {
+      "Handiwork": 1,
+      "Gathering": 2,
+      "Mining": 2,
+      "Transporting": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_SkyDragon_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Quivern"
+  },
+  {
+    "id": 95,
+    "name": "Quivern Botan",
+    "link": "Quivern_Botan",
+    "element": "Dragon",
+    "work_suitability": {
+      "Planting": 2,
+      "Handiwork": 1,
+      "Gathering": 2,
+      "Mining": 2,
+      "Transporting": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_SkyDragon_Grass_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Quivern_Botan"
+  },
+  {
+    "id": 96,
+    "name": "Blazamut",
+    "link": "Blazamut",
+    "element": "Fire",
+    "work_suitability": {
+      "Kindling": 3,
+      "Mining": 4
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_KingBahamut_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Blazamut"
+  },
+  {
+    "id": 96,
+    "name": "Blazamut Ryu",
+    "link": "Blazamut_Ryu",
+    "element": "Dragon",
+    "work_suitability": {
+      "Kindling": 4,
+      "Mining": 4
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_KingBahamut_Dragon_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Blazamut_Ryu"
+  },
+  {
+    "id": 97,
+    "name": "Helzephyr",
+    "link": "Helzephyr",
+    "element": "Dark",
+    "work_suitability": {
+      "Transporting": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_HadesBird_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Helzephyr"
+  },
+  {
+    "id": 97,
+    "name": "Helzephyr Lux",
+    "link": "Helzephyr_Lux",
+    "element": "Dark",
+    "work_suitability": {
+      "Transporting": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_HadesBird_Electric_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Helzephyr_Lux"
+  },
+  {
+    "id": 98,
+    "name": "Astegon",
+    "link": "Astegon",
+    "element": "Dragon",
+    "work_suitability": {
+      "Handiwork": 1,
+      "Mining": 4
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_BlackMetalDragon_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Astegon"
+  },
+  {
+    "id": 99,
+    "name": "Menasting",
+    "link": "Menasting",
+    "element": "Dark",
+    "work_suitability": {
+      "Lumbering": 2,
+      "Mining": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_DarkScorpion_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Menasting"
+  },
+  {
+    "id": 99,
+    "name": "Menasting Terra",
+    "link": "Menasting_Terra",
+    "element": "Ground",
+    "work_suitability": {
+      "Lumbering": 2,
+      "Mining": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_DarkScorpion_Ground_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Menasting_Terra"
+  },
+  {
+    "id": 100,
+    "name": "Anubis",
+    "link": "Anubis",
+    "element": "Ground",
+    "work_suitability": {
+      "Handiwork": 4,
+      "Mining": 3,
+      "Transporting": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Anubis_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Anubis"
+  },
+  {
+    "id": 101,
+    "name": "Jormuntide",
+    "link": "Jormuntide",
+    "element": "Dragon",
+    "work_suitability": {
+      "Watering": 4
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Umihebi_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Jormuntide"
+  },
+  {
+    "id": 101,
+    "name": "Jormuntide Ignis",
+    "link": "Jormuntide_Ignis",
+    "element": "Dragon",
+    "work_suitability": {
+      "Kindling": 4
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Umihebi_Fire_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Jormuntide_Ignis"
+  },
+  {
+    "id": 102,
+    "name": "Suzaku",
+    "link": "Suzaku",
+    "element": "Fire",
+    "work_suitability": {
+      "Kindling": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Suzaku_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Suzaku"
+  },
+  {
+    "id": 102,
+    "name": "Suzaku Aqua",
+    "link": "Suzaku_Aqua",
+    "element": "Water",
+    "work_suitability": {
+      "Watering": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Suzaku_Water_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Suzaku_Aqua"
+  },
+  {
+    "id": 103,
+    "name": "Grizzbolt",
+    "link": "Grizzbolt",
+    "element": "Electric",
+    "work_suitability": {
+      "Handiwork": 2,
+      "Lumbering": 2,
+      "Transporting": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_ElecPanda_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Grizzbolt"
+  },
+  {
+    "id": 104,
+    "name": "Lyleen",
+    "link": "Lyleen",
+    "element": "Grass",
+    "work_suitability": {
+      "Planting": 4,
+      "Handiwork": 3,
+      "Gathering": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_LilyQueen_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Lyleen"
+  },
+  {
+    "id": 104,
+    "name": "Lyleen Noct",
+    "link": "Lyleen_Noct",
+    "element": "Dark",
+    "work_suitability": {
+      "Handiwork": 3,
+      "Gathering": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_LilyQueen_Dark_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Lyleen_Noct"
+  },
+  {
+    "id": 105,
+    "name": "Faleris",
+    "link": "Faleris",
+    "element": "Fire",
+    "work_suitability": {
+      "Kindling": 3,
+      "Transporting": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Horus_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Faleris"
+  },
+  {
+    "id": 105,
+    "name": "Faleris Aqua",
+    "link": "Faleris_Aqua",
+    "element": "Water",
+    "work_suitability": {
+      "Watering": 4,
+      "Transporting": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Horus_Water_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Faleris_Aqua"
+  },
+  {
+    "id": 106,
+    "name": "Orserk",
+    "link": "Orserk",
+    "element": "Dragon",
+    "work_suitability": {
+      "Handiwork": 2,
+      "Transporting": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_ThunderDragonMan_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Orserk"
+  },
+  {
+    "id": 107,
+    "name": "Shadowbeak",
+    "link": "Shadowbeak",
+    "element": "Dark",
+    "work_suitability": {
+      "Gathering": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_BlackGriffon_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Shadowbeak"
+  },
+  {
+    "id": 108,
+    "name": "Paladius",
+    "link": "Paladius",
+    "element": "Neutral",
+    "work_suitability": {
+      "Lumbering": 2,
+      "Mining": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_SaintCentaur_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Paladius"
+  },
+  {
+    "id": 109,
+    "name": "Necromus",
+    "link": "Necromus",
+    "element": "Dark",
+    "work_suitability": {
+      "Lumbering": 2,
+      "Mining": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_BlackCentaur_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Necromus"
+  },
+  {
+    "id": 110,
+    "name": "Frostallion",
+    "link": "Frostallion",
+    "element": "Ice",
+    "work_suitability": {
+      "Cooling": 4
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_IceHorse_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Frostallion"
+  },
+  {
+    "id": 110,
+    "name": "Frostallion Noct",
+    "link": "Frostallion_Noct",
+    "element": "Dark",
+    "work_suitability": {
+      "Gathering": 4
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_IceHorse_Dark_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Frostallion_Noct"
+  },
+  {
+    "id": 111,
+    "name": "Jetragon",
+    "link": "Jetragon",
+    "element": "Dragon",
+    "work_suitability": {
+      "Gathering": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_JetDragon_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Jetragon"
+  },
+  {
+    "id": 112,
+    "name": "Bellanoir",
+    "link": "Bellanoir",
+    "element": "Dark",
+    "work_suitability": {
+      "Handiwork": 2,
+      "Transporting": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_NightLady_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Bellanoir"
+  },
+  {
+    "id": 112,
+    "name": "Bellanoir Libero",
+    "link": "Bellanoir_Libero",
+    "element": "Dark",
+    "work_suitability": {
+      "Handiwork": 2,
+      "Transporting": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_NightLady_Dark_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Bellanoir_Libero"
+  },
+  {
+    "id": 113,
+    "name": "Selyne",
+    "link": "Selyne",
+    "element": "Dark",
+    "work_suitability": {
+      "Handiwork": 4,
+      "Transporting": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_MoonQueen_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Selyne"
+  },
+  {
+    "id": 114,
+    "name": "Croajiro",
+    "link": "Croajiro",
+    "element": "Water",
+    "work_suitability": {
+      "Watering": 1,
+      "Handiwork": 1,
+      "Gathering": 1,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_KendoFrog_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Croajiro"
+  },
+  {
+    "id": 114,
+    "name": "Croajiro Noct",
+    "link": "Croajiro_Noct",
+    "element": "Water",
+    "work_suitability": {
+      "Watering": 1,
+      "Handiwork": 1,
+      "Gathering": 1,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_KendoFrog_Dark_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Croajiro_Noct"
+  },
+  {
+    "id": 115,
+    "name": "Lullu",
+    "link": "Lullu",
+    "element": "Grass",
+    "work_suitability": {
+      "Planting": 2,
+      "Handiwork": 2,
+      "Gathering": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_LeafPrincess_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Lullu"
+  },
+  {
+    "id": 116,
+    "name": "Shroomer",
+    "link": "Shroomer",
+    "element": "Grass",
+    "work_suitability": {
+      "Planting": 2,
+      "Handiwork": 1,
+      "Gathering": 2,
+      "Lumbering": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_MushroomDragon_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Shroomer"
+  },
+  {
+    "id": 116,
+    "name": "Shroomer Noct",
+    "link": "Shroomer_Noct",
+    "element": "Grass",
+    "work_suitability": {
+      "Planting": 2,
+      "Handiwork": 1,
+      "Gathering": 2,
+      "Lumbering": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_MushroomDragon_Dark_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Shroomer_Noct"
+  },
+  {
+    "id": 117,
+    "name": "Kikit",
+    "link": "Kikit",
+    "element": "Ground",
+    "work_suitability": {
+      "Mining": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_SmallArmadillo_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Kikit"
+  },
+  {
+    "id": 118,
+    "name": "Sootseer",
+    "link": "Sootseer",
+    "element": "Dark",
+    "work_suitability": {
+      "Kindling": 3,
+      "Handiwork": 2,
+      "Gathering": 1,
+      "Mining": 2,
+      "Farming": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_CandleGhost_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Sootseer"
+  },
+  {
+    "id": 119,
+    "name": "Prixter",
+    "link": "Prixter",
+    "element": "Dark",
+    "work_suitability": {
+      "Gathering": 1,
+      "Lumbering": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_ScorpionMan_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Prixter"
+  },
+  {
+    "id": 120,
+    "name": "Knocklem",
+    "link": "Knocklem",
+    "element": "Ground",
+    "work_suitability": {
+      "Gathering": 3,
+      "Mining": 4,
+      "Transporting": 4
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_WingGolem_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Knocklem"
+  },
+  {
+    "id": 121,
+    "name": "Yakumo",
+    "link": "Yakumo",
+    "element": "Neutral",
+    "work_suitability": {
+      "Gathering": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_GuardianDog_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Yakumo"
+  },
+  {
+    "id": 122,
+    "name": "Dogen",
+    "link": "Dogen",
+    "element": "Neutral",
+    "work_suitability": {
+      "Handiwork": 3,
+      "Gathering": 2,
+      "Lumbering": 2,
+      "Transporting": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_SifuDog_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Dogen"
+  },
+  {
+    "id": 123,
+    "name": "Dazemu",
+    "link": "Dazemu",
+    "element": "Ground",
+    "work_suitability": {
+      "Gathering": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FeatherOstrich_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Dazemu"
+  },
+  {
+    "id": 124,
+    "name": "Mimog",
+    "link": "Mimog",
+    "element": "Neutral",
+    "work_suitability": {
+      "Gathering": 1,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_MimicDog_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Mimog"
+  },
+  {
+    "id": 125,
+    "name": "Xenovader",
+    "link": "Xenovader",
+    "element": "Dark",
+    "work_suitability": {
+      "Lumbering": 2,
+      "Transporting": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_DarkAlien_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Xenovader"
+  },
+  {
+    "id": 126,
+    "name": "Xenogard",
+    "link": "Xenogard",
+    "element": "Dragon",
+    "work_suitability": {
+      "Mining": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_WhiteAlienDragon_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Xenogard"
+  },
+  {
+    "id": 127,
+    "name": "Xenolord",
+    "link": "Xenolord",
+    "element": "Dark",
+    "work_suitability": {
+      "Gathering": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_DarkMechaDragon_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Xenolord"
+  },
+  {
+    "id": 128,
+    "name": "Nitemary",
+    "link": "Nitemary",
+    "element": "Dark",
+    "work_suitability": {
+      "Handiwork": 3,
+      "Transporting": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_GhostRabbit_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Nitemary"
+  },
+  {
+    "id": 129,
+    "name": "Starryon",
+    "link": "Starryon",
+    "element": "Dark",
+    "work_suitability": {
+      "Gathering": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_NightBlueHorse_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Starryon"
+  },
+  {
+    "id": 130,
+    "name": "Silvegis",
+    "link": "Silvegis",
+    "element": "Dragon",
+    "work_suitability": {
+      "Lumbering": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_WhiteShieldDragon_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Silvegis"
+  },
+  {
+    "id": 131,
+    "name": "Smokie",
+    "link": "Smokie",
+    "element": "Dark",
+    "work_suitability": {
+      "Gathering": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_BlackPuppy_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Smokie"
+  },
+  {
+    "id": 132,
+    "name": "Celesdir",
+    "link": "Celesdir",
+    "element": "Neutral",
+    "work_suitability": {
+      "Gathering": 1,
+      "Lumbering": 4
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_WhiteDeer_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Celesdir"
+  },
+  {
+    "id": 133,
+    "name": "Omascul",
+    "link": "Omascul",
+    "element": "Dark",
+    "work_suitability": {
+      "Gathering": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_MysteryMask_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Omascul"
+  },
+  {
+    "id": 134,
+    "name": "Splatterina",
+    "link": "Splatterina",
+    "element": "Dark",
+    "work_suitability": {
+      "Handiwork": 4,
+      "Lumbering": 1,
+      "Transporting": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_GrimGirl_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Splatterina"
+  },
+  {
+    "id": 135,
+    "name": "Tarantriss",
+    "link": "Tarantriss",
+    "element": "Dark",
+    "work_suitability": {
+      "Handiwork": 2,
+      "Gathering": 2,
+      "Transporting": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_PurpleSpider_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Tarantriss"
+  },
+  {
+    "id": 136,
+    "name": "Azurmane",
+    "link": "Azurmane",
+    "element": "Electric",
+    "work_suitability": {
+      "Gathering": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_BlueThunderHorse_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Azurmane"
+  },
+  {
+    "id": 137,
+    "name": "Bastigor",
+    "link": "Bastigor",
+    "element": "Ice",
+    "work_suitability": {
+      "Lumbering": 3,
+      "Mining": 3,
+      "Cooling": 4
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_SnowTigerBeastman_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Bastigor"
+  },
+  {
+    "id": 138,
+    "name": "Prunelia",
+    "link": "Prunelia",
+    "element": "Grass",
+    "work_suitability": {
+      "Planting": 3,
+      "Handiwork": 1,
+      "Gathering": 2,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_BlueberryFairy_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Prunelia"
+  },
+  {
+    "id": 139,
+    "name": "Nyafia",
+    "link": "Nyafia",
+    "element": "Dark",
+    "work_suitability": {
+      "Handiwork": 3,
+      "Gathering": 2,
+      "Lumbering": 2,
+      "Transporting": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_BadCatgirl_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Nyafia"
+  },
+  {
+    "id": 140,
+    "name": "Gildane",
+    "link": "Gildane",
+    "element": "Ground",
+    "work_suitability": {
+      "Gathering": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_GoldenHorse_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Gildane"
+  },
+  {
+    "id": 141,
+    "name": "Herbil",
+    "link": "Herbil",
+    "element": "Grass",
+    "work_suitability": {
+      "Planting": 2,
+      "Gathering": 1,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_LeafMomonga_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Herbil"
+  },
+  {
+    "id": 142,
+    "name": "Icelyn",
+    "link": "Icelyn",
+    "element": "Ice",
+    "work_suitability": {
+      "Handiwork": 2,
+      "Cooling": 3,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_IceWitch_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Icelyn"
+  },
+  {
+    "id": 143,
+    "name": "Frostplume",
+    "link": "Frostplume",
+    "element": "Ice",
+    "work_suitability": {
+      "Gathering": 1,
+      "Cooling": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_SnowPeafowl_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Frostplume"
+  },
+  {
+    "id": 144,
+    "name": "Palumba",
+    "link": "Palumba",
+    "element": "Grass",
+    "work_suitability": {
+      "Planting": 2,
+      "Gathering": 2,
+      "Mining": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_TropicalOstrich_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Palumba"
+  },
+  {
+    "id": 145,
+    "name": "Braloha",
+    "link": "Braloha",
+    "element": "Grass",
+    "work_suitability": {
+      "Planting": 4,
+      "Gathering": 4,
+      "Mining": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Plesiosaur_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Braloha"
+  },
+  {
+    "id": 146,
+    "name": "Munchill",
+    "link": "Munchill",
+    "element": "Ice",
+    "work_suitability": {
+      "Watering": 1,
+      "Cooling": 2,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_IceCrocodile_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Munchill"
+  },
+  {
+    "id": 147,
+    "name": "Polapup",
+    "link": "Polapup",
+    "element": "Ice",
+    "work_suitability": {
+      "Watering": 2,
+      "Cooling": 3
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_IceSeal_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Polapup"
+  },
+  {
+    "id": 148,
+    "name": "Turtacle",
+    "link": "Turtacle",
+    "element": "Water",
+    "work_suitability": {
+      "Watering": 2,
+      "Mining": 1,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_TentacleTurtle_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Turtacle"
+  },
+  {
+    "id": 148,
+    "name": "Turtacle Terra",
+    "link": "Turtacle_Terra",
+    "element": "Water",
+    "work_suitability": {
+      "Watering": 2,
+      "Mining": 1,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_TentacleTurtle_Ground_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Turtacle_Terra"
+  },
+  {
+    "id": 149,
+    "name": "Jellroy",
+    "link": "Jellroy",
+    "element": "Water",
+    "work_suitability": {
+      "Watering": 2,
+      "Handiwork": 1,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_JellyfishGhost_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Jellroy"
+  },
+  {
+    "id": 150,
+    "name": "Jelliette",
+    "link": "Jelliette",
+    "element": "Water",
+    "work_suitability": {
+      "Watering": 2,
+      "Handiwork": 1,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_JellyfishFairy_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Jelliette"
+  },
+  {
+    "id": 151,
+    "name": "Gloopie",
+    "link": "Gloopie",
+    "element": "Water",
+    "work_suitability": {
+      "Watering": 2,
+      "Handiwork": 2,
+      "Transporting": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_OctopusGirl_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Gloopie"
+  },
+  {
+    "id": 152,
+    "name": "Finsider",
+    "link": "Finsider",
+    "element": "Water",
+    "work_suitability": {
+      "Watering": 2,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_StuffedShark_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Finsider"
+  },
+  {
+    "id": 152,
+    "name": "Finsider Ignis",
+    "link": "Finsider_Ignis",
+    "element": "Water",
+    "work_suitability": {
+      "Kindling": 2,
+      "Watering": 2,
+      "Transporting": 1
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_StuffedShark_Fire_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Finsider_Ignis"
+  },
+  {
+    "id": 153,
+    "name": "Ghangler",
+    "link": "Ghangler",
+    "element": "Dark",
+    "work_suitability": {
+      "Watering": 4,
+      "Transporting": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_GhostAnglerfish_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Ghangler"
+  },
+  {
+    "id": 153,
+    "name": "Ghangler Ignis",
+    "link": "Ghangler_Ignis",
+    "element": "Fire",
+    "work_suitability": {
+      "Kindling": 3,
+      "Watering": 4,
+      "Transporting": 2
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_GhostAnglerfish_Fire_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Ghangler_Ignis"
+  },
+  {
+    "id": 154,
+    "name": "Whalaska",
+    "link": "Whalaska",
+    "element": "Ice",
+    "work_suitability": {
+      "Watering": 3,
+      "Cooling": 4
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_IceNarwhal_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Whalaska"
+  },
+  {
+    "id": 154,
+    "name": "Whalaska Ignis",
+    "link": "Whalaska_Ignis",
+    "element": "Ice",
+    "work_suitability": {
+      "Kindling": 3,
+      "Cooling": 4
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_IceNarwhal_Fire_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Whalaska_Ignis"
+  },
+  {
+    "id": 155,
+    "name": "Neptilius",
+    "link": "Neptilius",
+    "element": "Water",
+    "work_suitability": {
+      "Watering": 4
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_PoseidonOrca_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Neptilius"
+  },
+  {
+    "id": 156,
+    "name": "Hartalis",
+    "link": "Hartalis",
+    "element": "Neutral",
+    "work_suitability": {
+      "Gathering": 3,
+      "Lumbering": 4
+    },
+    "icon_url": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_LegendDeer_icon_normal.webp",
+    "detail_url": "https://paldb.cc/en/Pals/Hartalis"
+  }
+]

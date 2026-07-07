@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+:root {
+  color: #f8fafc;
+  background: #0f1923;
+  font-family: "Inter", "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(78, 205, 196, 0.18), transparent 28%),
+    radial-gradient(circle at top right, rgba(255, 140, 66, 0.14), transparent 24%),
+    linear-gradient(180deg, #0f1923 0%, #0b131c 100%);
+}
+
+#app {
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.glass-panel {
+  background: rgba(15, 25, 35, 0.78);
+  backdrop-filter: blur(18px);
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #ffffff 0%, #9be7df 45%, #ffb37f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.card-glow {
+  box-shadow: 0 0 0 1px rgba(148, 163, 184, 0.12), 0 18px 40px rgba(15, 23, 42, 0.35);
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
