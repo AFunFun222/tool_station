@@ -1,0 +1,392 @@
+{
+  "Alpha Pal": {
+    "category": "Enemies",
+    "fixed_icon": "https://cdn.paldb.cc/image/ui/T_icon_compass_06_2.webp",
+    "label": "Alpha Pal",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Kinship Peach": {
+    "category": "Resource",
+    "fixed_icon": "https://cdn.paldb.cc/image/Others/InventoryItemIcon/Texture/T_itemicon_Consume_AffectionFruit_01.webp",
+    "label": "Kinship Peach",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Enemy Camp": {
+    "category": "Enemies",
+    "fixed_icon": "https://cdn.paldb.cc/image/Pal/Texture/UI/InGame/T_icon_compass_11.webp",
+    "label": "Enemy Camp",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Heat Source": {
+    "category": "Locations",
+    "fixed_icon": "https://cdn.paldb.cc/image/Pal/Texture/UI/InGame/T_icon_palwork_00.webp",
+    "label": "Heat Source",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Fishing Spot": {
+    "category": "Fishing",
+    "fixed_icon": "https://cdn.paldb.cc/image/Others/InventoryItemIcon/Texture/T_itemicon_Weapon_FishingRod_1.webp",
+    "label": "Fishing Spot",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Salvage Rank1": {
+    "category": "Fishing",
+    "fixed_icon": "https://cdn.paldb.cc/image/Pal/Texture/UI/InGame/T_icon_compass_02.webp",
+    "label": "Salvage Rank1",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Salvage Rank2": {
+    "category": "Fishing",
+    "fixed_icon": "https://cdn.paldb.cc/image/Pal/Texture/UI/InGame/T_icon_compass_02.webp",
+    "label": "Salvage Rank2",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Treasure Map": {
+    "category": "Locations",
+    "fixed_icon": "https://cdn.paldb.cc/image/Pal/Texture/UI/InGame/T_icon_compass_TreasureMap_01.webp",
+    "label": "Treasure Map",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Rampaging": {
+    "category": "Enemies",
+    "fixed_icon": "https://cdn.paldb.cc/image/ui/T_icon_compass_06_2.webp",
+    "label": "Rampaging",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Anti-Air Turret": {
+    "category": "Enemies",
+    "fixed_icon": "https://cdn.paldb.cc/image/Pal/Texture/BuildObject/PNG/T_icon_buildObject_efenseBulletLauncher_Missile.webp",
+    "label": "Anti-Air Turret",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Bounty": {
+    "category": "Enemies",
+    "fixed_icon": "https://cdn.paldb.cc/image/Pal/Texture/UI/InGame/T_icon_compass_Bounty.webp",
+    "label": "Bounty",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Feybreak Egg": {
+    "category": "Eggs",
+    "group": "Eggs",
+    "fixed_icon": "https://cdn.paldb.cc/image/Others/InventoryItemIcon/Texture/T_itemicon_Material_PalEgg_Water_01.webp",
+    "label": "Feybreak Egg",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Nightstar Sand": {
+    "category": "Resource",
+    "fixed_icon": "https://cdn.paldb.cc/image/Others/InventoryItemIcon/Texture/T_itemicon_Material_NightStone.webp",
+    "label": "Nightstar Sand",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Chromite": {
+    "category": "Mine",
+    "fixed_icon": "https://cdn.paldb.cc/image/Others/InventoryItemIcon/Texture/T_itemicon_Material_Chromium.webp",
+    "label": "Chromite",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Hexolite Quartz": {
+    "category": "Mine",
+    "fixed_icon": "https://cdn.paldb.cc/image/Others/InventoryItemIcon/Texture/T_itemicon_Material_RainbowCrystal.webp",
+    "label": "Hexolite Quartz",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Fast Travel": {
+    "category": "Locations",
+    "fixed_icon": "https://cdn.paldb.cc/image/Pal/Texture/UI/InGame/T_icon_compass_FTtower.webp",
+    "label": "Fast Travel",
+    "icon_width": 40,
+    "icon_height": 40
+  },
+  "Tower": {
+    "category": "Enemies",
+    "fixed_icon": "https://cdn.paldb.cc/image/Pal/Texture/UI/InGame/T_icon_compass_tower.webp",
+    "label": "Tower",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Dungeon": {
+    "category": "Locations",
+    "fixed_icon": "https://cdn.paldb.cc/image/Pal/Texture/UI/InGame/T_icon_compass_dungeon.webp",
+    "label": "Dungeon",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Fruit Tree": {
+    "category": "Resource",
+    "fixed_icon": "https://cdn.paldb.cc/image/Others/InventoryItemIcon/Texture/T_itemicon_Consume_SkillCard_Neutral.webp",
+    "label": "Fruit Tree",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Wandering Merchant": {
+    "category": "NPCs",
+    "fixed_icon": "https://cdn.paldb.cc/image/Others/InventoryItemIcon/Texture/T_itemicon_Material_Money.webp",
+    "label": "Wandering Merchant",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Black Marketeer": {
+    "category": "NPCs",
+    "fixed_icon": "https://cdn.paldb.cc/image/Others/InventoryItemIcon/Texture/T_itemicon_PalSphere_Legend.webp",
+    "label": "Black Marketeer",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Lifmunk Effigy": {
+    "category": "Collectibles",
+    "fixed_icon": "https://cdn.paldb.cc/image/Others/InventoryItemIcon/Texture/T_itemicon_Relic.webp",
+    "label": "Lifmunk Effigy",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Crude Oil": {
+    "category": "Resource",
+    "fixed_icon": "https://cdn.paldb.cc/image/Others/InventoryItemIcon/Texture/T_itemicon_Material_CrudeOil.webp",
+    "label": "Crude Oil",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Junk": {
+    "category": "Resource",
+    "fixed_icon": "https://cdn.paldb.cc/image/ui/Wood_Planks_Icon.webp",
+    "label": "Junk",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Pure Quartz": {
+    "category": "Mine",
+    "fixed_icon": "https://cdn.paldb.cc/image/Others/InventoryItemIcon/Texture/T_itemicon_Material_Quartz.webp",
+    "label": "Pure Quartz",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Pure Quartz Cluster": {
+    "category": "Mine",
+    "fixed_icon": "https://cdn.paldb.cc/image/Others/InventoryItemIcon/Texture/T_itemicon_Material_Quartz_Cluster4.webp",
+    "label": "Pure Quartz Cluster",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Sulfur": {
+    "category": "Mine",
+    "fixed_icon": "https://cdn.paldb.cc/image/Others/InventoryItemIcon/Texture/T_itemicon_Material_Sulfur.webp",
+    "label": "Sulfur",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Sulfur Cluster": {
+    "category": "Mine",
+    "fixed_icon": "https://cdn.paldb.cc/image/Others/InventoryItemIcon/Texture/T_itemicon_Material_Sulfur_Cluster4.webp",
+    "label": "Sulfur Cluster",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Ore": {
+    "category": "Mine",
+    "fixed_icon": "https://cdn.paldb.cc/image/Others/InventoryItemIcon/Texture/T_itemicon_Material_CopperOre.webp",
+    "label": "Ore",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Ore Cluster": {
+    "category": "Mine",
+    "fixed_icon": "https://cdn.paldb.cc/image/Others/InventoryItemIcon/Texture/T_itemicon_Material_CopperOre_Cluster4.webp",
+    "label": "Ore Cluster",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Coal": {
+    "category": "Mine",
+    "fixed_icon": "https://cdn.paldb.cc/image/Others/InventoryItemIcon/Texture/T_itemicon_Material_Coal.webp",
+    "label": "Coal",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Coal Cluster": {
+    "category": "Mine",
+    "fixed_icon": "https://cdn.paldb.cc/image/Others/InventoryItemIcon/Texture/T_itemicon_Material_Coal_Cluster4.webp",
+    "label": "Coal Cluster",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Bullet": {
+    "fixed_icon": "https://cdn.paldb.cc/image/Others/InventoryItemIcon/Texture/T_itemicon_Ammo_InkBullet.webp",
+    "label": "Decal Ink",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Journals": {
+    "category": "Collectibles",
+    "fixed_icon": "https://cdn.paldb.cc/image/ui/memo.webp",
+    "label": "Journals",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Cave Entrance": {
+    "category": "Enemies",
+    "fixed_icon": "https://cdn.paldb.cc/image/ui/door5.webp",
+    "label": "Cave Entrance",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Home": {
+    "category": "Locations",
+    "fixed_icon": "https://cdn.paldb.cc/image/Pal/Texture/UI/InGame/T_icon_compass_07.webp",
+    "label": "Home",
+    "icon_width": 40,
+    "icon_height": 40
+  },
+  "Treasure Element": {
+    "category": "Resource",
+    "fixed_icon": "https://cdn.paldb.cc/image/Pal/Texture/UI/InGame/T_icon_compass_02.webp",
+    "label": "Treasure Element",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Treasure": {
+    "category": "Resource",
+    "fixed_icon": "https://cdn.paldb.cc/image/Pal/Texture/UI/InGame/T_icon_compass_02.webp",
+    "label": "Treasure",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Oilrig Treasure": {
+    "category": "Oilrig",
+    "fixed_icon": "https://cdn.paldb.cc/image/Pal/Texture/UI/InGame/T_icon_compass_02.webp",
+    "label": "Oilrig Treasure",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Oilrig Treasure Goal": {
+    "category": "Oilrig",
+    "fixed_icon": "https://cdn.paldb.cc/image/Pal/Texture/UI/InGame/T_icon_compass_02.webp",
+    "label": "Oilrig Treasure Goal",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Grass Egg": {
+    "category": "Eggs",
+    "group": "Eggs",
+    "fixed_icon": "https://cdn.paldb.cc/image/Others/InventoryItemIcon/Texture/T_itemicon_Material_PalEgg_Leaf_01.webp",
+    "label": "Grass Egg",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Volcano Egg": {
+    "category": "Eggs",
+    "group": "Eggs",
+    "fixed_icon": "https://cdn.paldb.cc/image/Others/InventoryItemIcon/Texture/T_itemicon_Material_PalEgg_Fire_01.webp",
+    "label": "Volcano Egg",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Frozen Egg": {
+    "category": "Eggs",
+    "group": "Eggs",
+    "fixed_icon": "https://cdn.paldb.cc/image/Others/InventoryItemIcon/Texture/T_itemicon_Material_PalEgg_Ice_01.webp",
+    "label": "Frozen Egg",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Desert Egg": {
+    "category": "Eggs",
+    "group": "Eggs",
+    "fixed_icon": "https://cdn.paldb.cc/image/Others/InventoryItemIcon/Texture/T_itemicon_Material_PalEgg_Earth_01.webp",
+    "label": "Desert Egg",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Sakura Egg": {
+    "category": "Eggs",
+    "group": "Eggs",
+    "fixed_icon": "https://cdn.paldb.cc/image/Others/InventoryItemIcon/Texture/T_itemicon_Material_PalEgg_Dragon_01.webp",
+    "label": "Sakura Egg",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "NPC": {
+    "category": "NPCs",
+    "fixed_icon": "https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_CommonHuman_icon_normal.webp",
+    "label": "NPC",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Beautiful Flower": {
+    "category": "Resource",
+    "fixed_icon": "https://cdn.paldb.cc/image/Others/InventoryItemIcon/Texture/T_itemicon_Food_Poppy.webp",
+    "label": "Beautiful Flower",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Respawn": {
+    "category": "Locations",
+    "fixed_icon": "https://cdn.paldb.cc/image/ui/T_worldmap_icon_fasttravel.webp",
+    "label": "Respawn",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Region": {
+    "category": "Locations",
+    "fixed_icon": "https://cdn.paldb.cc/image/Pal/Texture/UI/InGame/T_icon_compass_00.webp",
+    "label": "Region",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Incident": {
+    "category": "Enemies",
+    "fixed_icon": "https://cdn.paldb.cc/image/Pal/Texture/UI/Main_Menu/T_icon_unknown.webp",
+    "label": "Incident",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Supply": {
+    "category": "Resource",
+    "fixed_icon": "https://cdn.paldb.cc/image/Pal/Texture/UI/InGame/T_icon_compass_16.webp",
+    "label": "Supply",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Arrogant Pal Critic": {
+    "category": "NPCs",
+    "fixed_icon": "https://cdn.paldb.cc/image/Pal/Texture/UI/InGame/T_icon_compass_11.webp",
+    "label": "Arrogant Pal Critic",
+    "icon_width": 40,
+    "icon_height": 40
+  },
+  "Unknown": {
+    "category": "Other",
+    "fixed_icon": "https://cdn.paldb.cc/image/Pal/Texture/UI/Main_Menu/T_icon_unknown.webp",
+    "label": "Unknown",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Torch": {
+    "category": "Other",
+    "fixed_icon": "https://cdn.paldb.cc/image/Pal/Texture/UI/InGame/T_icon_construction_tab_05.webp",
+    "label": "Torch",
+    "icon_width": 30,
+    "icon_height": 30
+  },
+  "Test": {
+    "category": "Other",
+    "fixed_icon": "https://cdn.paldb.cc/image/Pal/Texture/UI/InGame/T_icon_construction_tab_05.webp",
+    "label": "Test",
+    "icon_width": 30,
+    "icon_height": 30
+  }
+}

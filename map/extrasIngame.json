@@ -1,0 +1,229 @@
+[
+  {
+    "item": "Home",
+    "type": "Home",
+    "comment": "Early Ore mine base",
+    "ipos": {
+      "X": 5,
+      "Y": -523
+    }
+  },
+  {
+    "item": "Home",
+    "type": "Home",
+    "comment": "Flat ground fro triple Base",
+    "ipos": {
+      "X": -361,
+      "Y": 13
+    }
+  },
+  {
+    "item": "Home",
+    "type": "Home",
+    "comment": "Crude Oil x3",
+    "ipos": {
+      "X": -858,
+      "Y": -455
+    }
+  },
+  {
+    "item": "Home",
+    "type": "Home",
+    "comment": "Hexolite Quartz x2, Crude Oil x1",
+    "ipos": {
+      "X": -1331,
+      "Y": -1289
+    }
+  },
+  {
+    "item": "Home",
+    "type": "Home",
+    "comment": "Hexolite Quartz x3, Crude Oil x1",
+    "ipos": {
+      "X": -1067,
+      "Y": -1430
+    }
+  },
+  {
+    "item": "Home",
+    "type": "Home",
+    "comment": "Flat Ground",
+    "ipos": {
+      "X": -85,
+      "Y": -313
+    }
+  },
+  {
+    "item": "Home",
+    "type": "Home",
+    "comment": "Flower Ground",
+    "ipos": {
+      "X": -57,
+      "Y": -419
+    }
+  },
+  {
+    "item": "Home",
+    "type": "Home",
+    "ipos": {
+      "X": -265,
+      "Y": -366
+    }
+  },
+  {
+    "item": "Home",
+    "type": "Home",
+    "comment": "Flat Ground",
+    "ipos": {
+      "X": -485,
+      "Y": -84
+    }
+  },
+  {
+    "item": "Home",
+    "type": "Home",
+    "comment": "Flat Ground in circle and light, no raid",
+    "ipos": {
+      "X": -85,
+      "Y": 195
+    }
+  },
+  {
+    "item": "Home",
+    "type": "Home",
+    "comment": "6 Coal and and 8 Ore, no raid",
+    "ipos": {
+      "X": 186,
+      "Y": -40
+    }
+  },
+  {
+    "item": "Home",
+    "type": "Home",
+    "comment": "Flat ground for triple Base",
+    "ipos": {
+      "X": -262,
+      "Y": 52
+    }
+  },
+  {
+    "item": "Friendly Pal Tamer",
+    "type": "Cave Entrance",
+    "ipos": {
+      "X": -912,
+      "Y": -1318
+    }
+  },
+  {
+    "item": "Dinossom Lux",
+    "type": "Cave Entrance",
+    "ipos": {
+      "X": 343,
+      "Y": 571
+    }
+  },
+  {
+    "item": "Fenglope",
+    "type": "Cave Entrance",
+    "ipos": {
+      "X": -252,
+      "Y": -431
+    }
+  },
+  {
+    "item": "Menasting",
+    "type": "Cave Entrance",
+    "ipos": {
+      "X": 489,
+      "Y": 83
+    }
+  },
+  {
+    "item": "Broncherry Aqua",
+    "type": "Cave Entrance",
+    "ipos": {
+      "X": -145,
+      "Y": -436
+    }
+  },
+  {
+    "item": "Astegon",
+    "type": "Cave Entrance",
+    "ipos": {
+      "X": -584,
+      "Y": -415
+    }
+  },
+  {
+    "item": "Lyleen Noct",
+    "type": "Cave Entrance",
+    "ipos": {
+      "X": -147,
+      "Y": 323
+    }
+  },
+  {
+    "item": "Blazamut",
+    "type": "Cave Entrance",
+    "ipos": {
+      "X": -439,
+      "Y": -530
+    }
+  },
+  {
+    "item": "Kingpaca Cryst",
+    "type": "Cave Entrance",
+    "ipos": {
+      "X": -259,
+      "Y": 481
+    }
+  },
+  {
+    "item": "Elizabee",
+    "type": "Cave Entrance",
+    "ipos": {
+      "X": 28,
+      "Y": -182
+    }
+  },
+  {
+    "item": "Silvegis",
+    "type": "Cave Entrance",
+    "ipos": {
+      "X": -962,
+      "Y": -979
+    }
+  },
+  {
+    "item": "Splatterina",
+    "type": "Cave Entrance",
+    "ipos": {
+      "X": -1203,
+      "Y": -1386
+    }
+  },
+  {
+    "item": "Kitsun Noct",
+    "type": "Cave Entrance",
+    "ipos": {
+      "X": -1038,
+      "Y": -1196
+    }
+  },
+  {
+    "item": "Breaking and Entering Ram",
+    "type": "Cave Entrance",
+    "ipos": {
+      "X": -1209,
+      "Y": -1104
+    }
+  },
+  {
+    "item": "Cannibal Gnaw",
+    "type": "Cave Entrance",
+    "ipos": {
+      "X": -733,
+      "Y": -1029
+    }
+  }
+]

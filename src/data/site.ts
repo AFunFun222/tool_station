@@ -1,11 +1,12 @@
 import type { NavItem, QuickTool } from '@/types/common'
 
 export const navItems: NavItem[] = [
-  { label: '首页', route: '/' },
-  { label: '图鉴', route: '/pals' },
-  { label: '配种', route: '/breeding' },
-  { label: '攻略', route: '/beginner' },
-  { label: '1.0变更', route: '/veteran-analysis' },
+  { label: 'Home', route: '/' },
+  { label: 'Book', route: '/pals' },
+  { label: 'Breeding', route: '/breeding' },
+  { label: 'Strategy', route: '/beginner' },
+  { label: 'map', route: '/map' },
+  { label: 'Change', route: '/veteran-analysis' },
 ]
 
 export const quickTools: QuickTool[] = [
@@ -40,5 +41,13 @@ export const quickTools: QuickTool[] = [
     route: '/veteran-analysis',
     accent: 'orange',
     icon: 'Radar',
+  },
+  {
+    id: 'map',
+    title: '互动地图',
+    description: '查看区域、Boss、洞穴、黑市与帕鲁昼夜分布。',
+    route: '/map',
+    accent: 'purple',
+    icon: 'Map',
   },
 ]

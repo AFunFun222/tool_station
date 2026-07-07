@@ -1,0 +1,16 @@
+{
+  "minMapTextureBlockSize": {
+    "X": 8192,
+    "Y": 8192
+  },
+  "landScapeRealPositionMin": {
+    "X": -999940,
+    "Y": -737262,
+    "Z": 1
+  },
+  "landScapeRealPositionMax": {
+    "X": 447900,
+    "Y": 710578,
+    "Z": 1
+  }
+}
