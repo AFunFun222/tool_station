@@ -268,13 +268,13 @@
         <HeartIcon :size="18" class="text-sky-400" />
         <h2 class="text-lg font-semibold text-white">Related Breeding</h2>
       </div>
-      <div class="flex flex-wrap gap-4">
+      <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
         <RouterLink
-          v-for="item in pal.breedingRelations.slice(0, 4)"
+          v-for="item in pal.breedingRelations.slice(0, 6)"
           :key="item.formula"
           :to="item.route"
           class="flex items-center gap-3 rounded-2xl px-5 py-4 transition hover:border-sky-400/40 group"
-          style="background: rgba(10,22,48,0.7); border: 1px solid rgba(255,255,255,0.08); min-width: 320px;"
+          style="background: rgba(10,22,48,0.7); border: 1px solid rgba(255,255,255,0.08);"
         >
           <!-- parentA -->
           <div class="flex flex-col items-center gap-1 w-14 shrink-0">
