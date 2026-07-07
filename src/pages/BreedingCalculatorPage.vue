@@ -19,20 +19,34 @@
         </div>
         <BaseButton class="mt-5" tone="teal">Calculate</BaseButton>
 
+        <!-- Result Card: 左图右文布局 -->
         <BaseCard v-if="forwardResult" class="mt-5 border-teal-400/20 bg-teal-400/10">
-          <p class="text-sm text-slate-300">Result</p>
-          <h3 class="mt-3 text-2xl font-semibold text-white">{{ getPalName(forwardResult.childId) }}</h3>
-          <p class="mt-2 text-sm text-slate-300">{{ getPalElements(forwardResult.childId) }}</p>
-          <img
-            v-if="getPal(forwardResult.childId)?.avatar"
-            :src="getPal(forwardResult.childId)?.avatar"
-            :alt="getPalName(forwardResult.childId)"
-            class="mt-4 h-40 w-full rounded-2xl object-cover"
-          />
-          <p class="mt-4 text-sm text-slate-200">Required Materials: {{ forwardResult.materials }}</p>
-          <p class="mt-2 text-sm text-slate-200">Estimated Time: {{ forwardResult.estimatedTime }} · Success Rate: {{ forwardResult.successRate }}</p>
-          <p class="mt-2 text-xs text-teal-100/80">Data Source: {{ forwardResult.source === 'forward' ? 'breeding_table.json' : 'breeding_reverse.json' }}</p>
-          <RouterLink :to="`/pals/${forwardResult.childId}`" class="mt-4 inline-block text-sm text-teal-200">View Details</RouterLink>
+          <p class="mb-3 text-sm text-slate-300">Result</p>
+          <div class="flex items-stretch gap-4">
+            <!-- 左侧图片区域，固定宽高保证完整显示 -->
+            <div class="flex h-48 w-48 shrink-0 items-center justify-center rounded-2xl bg-white/5">
+              <img
+                v-if="getPal(forwardResult.childId)?.avatar"
+                :src="getPal(forwardResult.childId)?.avatar"
+                :alt="getPalName(forwardResult.childId)"
+                class="h-44 w-44 object-contain drop-shadow-lg"
+              />
+              <div v-else class="flex h-44 w-44 items-center justify-center text-slate-500 text-4xl">?</div>
+            </div>
+            <!-- 右侧信息 -->
+            <div class="flex flex-1 flex-col justify-between py-1">
+              <div>
+                <h3 class="text-2xl font-semibold text-white">{{ getPalName(forwardResult.childId) }}</h3>
+                <p class="mt-1 text-sm text-slate-300">{{ getPalElements(forwardResult.childId) }}</p>
+                <p class="mt-3 text-sm text-slate-200">Materials: {{ forwardResult.materials }}</p>
+                <p class="mt-1 text-sm text-slate-200">Time: {{ forwardResult.estimatedTime }} · {{ forwardResult.successRate }}</p>
+                <p class="mt-1 text-xs text-teal-100/80">{{ forwardResult.source === 'forward' ? 'breeding_table.json' : 'breeding_reverse.json' }}</p>
+              </div>
+              <RouterLink :to="`/pals/${forwardResult.childId}`" class="mt-2 inline-block text-sm text-teal-200 hover:underline">
+                View Details →
+              </RouterLink>
+            </div>
+          </div>
         </BaseCard>
 
         <BaseCard v-else class="mt-5 border border-dashed border-white/10 bg-white/5 text-sm text-slate-300">
@@ -66,20 +80,31 @@
       </BaseCard>
     </section>
 
+    <!-- Popular Recipes: 卡片改为左图右文布局 -->
     <section class="space-y-6">
       <SectionTitle title="Popular Recipes" eyebrow="Popular Recipes" />
       <div class="flex gap-4 overflow-x-auto pb-2 scrollbar-hidden">
-        <BaseCard v-for="recipe in featuredRecipes" :key="recipe.id" class="min-w-[280px]">
-          <p class="text-sm text-slate-300">{{ getPalName(recipe.parentAId) }} × {{ getPalName(recipe.parentBId) }}</p>
-          <h3 class="mt-3 text-xl font-semibold text-white">{{ getPalName(recipe.childId) }}</h3>
-          <img
-            v-if="getPal(recipe.childId)?.avatar"
-            :src="getPal(recipe.childId)?.avatar"
-            :alt="getPalName(recipe.childId)"
-            class="mt-3 h-32 w-full rounded-2xl object-cover"
-          />
-          <p class="mt-2 text-sm text-slate-300">{{ recipe.materials }} · {{ recipe.successRate }}</p>
-          <p class="mt-2 text-xs text-slate-400">{{ recipe.source === 'reverse' ? 'Reverse Result' : 'Forward Result' }}</p>
+        <BaseCard v-for="recipe in featuredRecipes" :key="recipe.id" class="min-w-[340px]">
+          <!-- 父代信息 -->
+          <p class="text-xs text-slate-400">{{ getPalName(recipe.parentAId) }} × {{ getPalName(recipe.parentBId) }}</p>
+          <!-- 左图右文 -->
+          <div class="mt-3 flex items-center gap-3">
+            <div class="flex h-28 w-28 shrink-0 items-center justify-center rounded-xl bg-white/5">
+              <img
+                v-if="getPal(recipe.childId)?.avatar"
+                :src="getPal(recipe.childId)?.avatar"
+                :alt="getPalName(recipe.childId)"
+                class="h-24 w-24 object-contain drop-shadow-md"
+              />
+              <div v-else class="text-3xl text-slate-500">?</div>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-lg font-semibold text-white">{{ getPalName(recipe.childId) }}</h3>
+              <p class="mt-1 text-sm text-slate-300">{{ recipe.materials }}</p>
+              <p class="mt-1 text-sm text-slate-400">{{ recipe.successRate }}</p>
+              <p class="mt-1 text-xs text-slate-500">{{ recipe.source === 'reverse' ? 'Reverse Result' : 'Forward Result' }}</p>
+            </div>
+          </div>
           <BaseButton class="mt-4 w-full" tone="ghost" @click="fillRecipe(recipe.parentAId, recipe.parentBId)">Try It</BaseButton>
         </BaseCard>
       </div>
