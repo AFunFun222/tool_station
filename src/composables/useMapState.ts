@@ -10,11 +10,21 @@ import configRaw from '../../map/config.json'
 // ── 地图配置 ─────────────────────────────────────────────
 const mapConfig = configRaw as MapConfig
 
-// 游戏世界坐标范围（除以1000缩放为ipos单位）
-const MAP_MIN_X = mapConfig.landScapeRealPositionMin.X / 1000
-const MAP_MAX_X = mapConfig.landScapeRealPositionMax.X / 1000
-const MAP_MIN_Y = mapConfig.landScapeRealPositionMin.Y / 1000
-const MAP_MAX_Y = mapConfig.landScapeRealPositionMax.Y / 1000
+// 使用实际数据的坐标范围（而不是配置文件中可能不准确的范围）
+// 实际数据范围：X: -2160 到 1118, Y: -2049 到 996
+// 添加5%的边距以确保标记不会触及边界
+const DATA_MIN_X = -2160
+const DATA_MAX_X = 1118
+const DATA_MIN_Y = -2049
+const DATA_MAX_Y = 996
+
+const marginX = (DATA_MAX_X - DATA_MIN_X) * 0.05
+const marginY = (DATA_MAX_Y - DATA_MIN_Y) * 0.05
+
+const MAP_MIN_X = DATA_MIN_X - marginX
+const MAP_MAX_X = DATA_MAX_X + marginX
+const MAP_MIN_Y = DATA_MIN_Y - marginY
+const MAP_MAX_Y = DATA_MAX_Y + marginY
 const MAP_WIDTH = MAP_MAX_X - MAP_MIN_X
 const MAP_HEIGHT = MAP_MAX_Y - MAP_MIN_Y
 
