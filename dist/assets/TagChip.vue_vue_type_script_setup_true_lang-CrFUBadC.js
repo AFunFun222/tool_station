@@ -1,0 +1,1 @@
+import{d as t,o,e as s,t as a}from"./index-DmndfDO8.js";const r={class:"rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-200"},c=t({__name:"TagChip",props:{label:{}},setup(e){return(n,l)=>(o(),s("span",r,a(e.label),1))}});export{c as _};

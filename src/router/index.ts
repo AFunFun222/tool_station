@@ -51,6 +51,18 @@ const router = createRouter({
       component: () => import('@/pages/MapPage.vue'),
       meta: { title: '互动地图', accent: 'purple' },
     },
+    {
+      path: '/community',
+      name: 'community',
+      component: () => import('@/pages/CommunityHubPage.vue'),
+      meta: { title: 'Community Hub', accent: 'indigo' },
+    },
+    {
+      path: '/community/:type/:id',
+      name: 'community-detail',
+      component: () => import('@/pages/CommunityDetailPage.vue'),
+      meta: { title: 'Community Hub', accent: 'indigo' },
+    },
   ],
   scrollBehavior() {
     return { top: 0 }

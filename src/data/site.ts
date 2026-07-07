@@ -5,7 +5,8 @@ export const navItems: NavItem[] = [
   { label: 'Book', route: '/pals' },
   { label: 'Breeding', route: '/breeding' },
   { label: 'Strategy', route: '/beginner' },
-  { label: 'map', route: '/map' },
+  { label: 'Map', route: '/map' },
+  { label: 'Community', route: '/community' },
   { label: 'Change', route: '/veteran-analysis' },
 ]
 

@@ -9,7 +9,7 @@ export interface ImpactCard {
 export interface TransferSuggestion {
   name: string
   reason: string
-  priority?: '高' | '中' | '低'
+  priority?: '高' | '中' | '低' | 'High' | 'Medium' | 'Low'
 }
 
 export interface NewContentCard {
@@ -25,7 +25,7 @@ export interface ChecklistItem {
 
 export interface ImpactDetail {
   name: string
-  status: '削弱' | '不变' | '增强' | '新配种'
+  status: '削弱' | '不变' | '增强' | '新配种' | 'Nerfed' | 'Unchanged' | 'Enhanced' | 'New Breeding' | 'Weakened'
   description: string
   action: string
 }
