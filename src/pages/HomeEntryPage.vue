@@ -26,17 +26,6 @@
         <p class="mt-6 max-w-2xl text-base leading-8 text-slate-400">
           AI automatically aggregates guides from across the web, cleanses structured data, and dynamically recommends the most suitable content based on your player type and current needs.
         </p>
-
-        <!-- Stats row -->
-        <div class="mt-8 flex flex-wrap gap-6">
-          <div v-for="stat in heroStats" :key="stat.label" class="flex items-center gap-3">
-            <div class="h-8 w-1 rounded-full" :style="`background: linear-gradient(180deg, ${stat.color}, ${stat.color}44);`" />
-            <div>
-              <p class="text-lg font-bold text-white font-mono" :style="`color: ${stat.color}; text-shadow: 0 0 12px ${stat.color}66;`">{{ stat.value }}</p>
-              <p class="text-[11px] text-slate-500 uppercase tracking-widest font-mono">{{ stat.label }}</p>
-            </div>
-          </div>
-        </div>
       </div>
 
       <!-- Hero visual card -->
@@ -199,12 +188,6 @@ import { hotGuides } from '@/data/guides'
 import { quickTools } from '@/data/site'
 
 const router = useRouter()
-
-const heroStats = [
-  { value: '200+', label: 'Pals', color: '#00e5ff' },
-  { value: '1.0', label: 'Version', color: '#a855f7' },
-  { value: 'AI', label: 'Powered', color: '#ff0080' },
-]
 
 const advisorTabs = [
   { id: 'beginner', label: '新手' },
