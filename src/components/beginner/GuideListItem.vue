@@ -1,6 +1,6 @@
 <template>
   <BaseCard interactive class="p-0">
-    <RouterLink :to="guide.route" class="grid items-center gap-4 p-4 md:grid-cols-[120px_1fr_auto]">
+    <RouterLink :to="guide.route!" class="grid items-center gap-4 p-4 md:grid-cols-[120px_1fr_auto]">
       <img :src="guide.cover" :alt="guide.title" class="h-24 w-full rounded-2xl object-cover" />
       <div>
         <h3 class="text-lg font-semibold text-white">{{ guide.title }}</h3>

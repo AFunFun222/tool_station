@@ -1,6 +1,6 @@
 <template>
   <BaseCard interactive class="overflow-hidden p-0">
-    <RouterLink :to="guide.route" class="grid h-full gap-0 md:grid-cols-[220px_1fr]">
+    <RouterLink :to="guide.route!" class="grid h-full gap-0 md:grid-cols-[220px_1fr]">
       <img :src="guide.cover" :alt="guide.title" class="h-full min-h-[180px] w-full object-cover" />
       <div class="flex flex-col gap-4 p-5">
         <div class="flex flex-wrap gap-2">
