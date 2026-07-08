@@ -45,13 +45,9 @@
 
     <!-- AI Advisor Section -->
     <section class="space-y-6">
-      <div class="flex flex-wrap items-center justify-between gap-4">
-        <SectionTitle title="AI Advisor" eyebrow="Ask Anything" description="Select your player type and pick a question to get personalized AI advice." />
-        <StatusBadge label="AI Online" tone="teal" />
-      </div>
-
       <!-- Tabs -->
-      <div class="flex gap-2 flex-wrap">
+      <div class="flex items-center justify-between gap-3 flex-wrap">
+        <div class="flex gap-2 flex-wrap">
         <button
           v-for="tab in advisorTabs"
           :key="tab.id"
@@ -63,12 +59,21 @@
         >
           {{ tab.label }}
         </button>
+        </div>
+
+        <button
+          class="inline-flex h-9 w-9 items-center justify-center rounded-xl border border-cyan-400/25 bg-cyan-400/8 text-cyan-300 transition hover:border-cyan-300/50 hover:bg-cyan-400/15"
+          title="刷新参考问题"
+          @click="refreshQuestions"
+        >
+          <RefreshCw class="h-4 w-4" />
+        </button>
       </div>
 
       <!-- Question chips -->
       <div class="grid gap-3 sm:grid-cols-3">
         <button
-          v-for="q in currentTabQuestions"
+          v-for="q in visibleQuestions"
           :key="q"
           class="question-card group relative overflow-hidden border border-white/8 bg-white/3 px-5 py-4 text-left text-sm text-slate-300 transition-all duration-200 hover:border-cyan-400/30 hover:bg-cyan-400/5 hover:text-white"
           style="clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));"
@@ -174,9 +179,9 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref, watch } from 'vue'
 import { useRouter, RouterLink } from 'vue-router'
-import { Map as MapIcon, ArrowRight, Users, MessageCircle } from 'lucide-vue-next'
+import { Map as MapIcon, ArrowRight, Users, MessageCircle, RefreshCw } from 'lucide-vue-next'
 import AiCapabilityBanner from '@/components/home/AiCapabilityBanner.vue'
 import HotGuideCard from '@/components/home/HotGuideCard.vue'
 import QuickToolGrid from '@/components/home/QuickToolGrid.vue'
@@ -191,8 +196,8 @@ const router = useRouter()
 
 const advisorTabs = [
   { id: 'beginner', label: '新手' },
-  { id: 'veteran', label: '老手' },
-  { id: 'crossgame', label: '有其他游戏经验' },
+  { id: 'returning', label: '回归玩家' },
+  { id: 'hardcore', label: '硬核党' },
 ]
 
 const activeTab = ref('beginner')
@@ -200,22 +205,46 @@ const activeTab = ref('beginner')
 const tabQuestions: Record<string, string[]> = {
   beginner: [
     '刚进游戏我应该先做什么？',
+    '开局 30 分钟优先做哪些任务最不亏？',
     '新手阶段最适合捕捉哪些帕鲁？',
     '怎么快速搭建第一个稳定的基地？',
+    '前期科技点和古代科技点怎么分配更稳？',
+    '第一把飞行坐骑多久能拿到，路线怎么走？',
+    '前期缺矿、缺球时该优先刷什么资源？',
   ],
-  veteran: [
-    'EA 版到 1.0 最大的变化有哪些？',
+  returning: [
+    'EA 到 1.0 版本最影响体验的改动有哪些？',
+    '回归后第一天的重建优先级应该怎么排？',
+    '老档继续玩还是重开更划算？',
     '回归玩家需要优先重做哪些内容？',
-    '1.0 版本新增了哪些强力帕鲁？',
+    '版本更新后配种、工作适应性有何关键变化？',
+    '回归后如何快速补齐落后的科技与装备？',
+    '1.0 新增内容里最值得先体验的是哪几项？',
   ],
-  crossgame: [
-    '玩过《幻兽帕鲁》类似游戏，上手需要注意什么？',
-    '和宝可梦相比，帕鲁的培育系统有哪些独特之处？',
-    '有 ARK 经验的玩家如何快速掌握基地建造？',
+  hardcore: [
+    '高难度据点攻防怎么配队容错率最高？',
+    '毕业战斗帕鲁的词条与技能如何做最优组合？',
+    '多基地联动下的自动化生产线怎么设计最省人力？',
+    'PVE 高压战中骑乘切换与技能循环怎么安排？',
+    '后期高效刷稀有素材的路线与时间窗怎么规划？',
+    '极限效率流如何平衡发电、运输与制造瓶颈？',
   ],
 }
 
-const currentTabQuestions = computed(() => tabQuestions[activeTab.value] ?? [])
+const QUESTIONS_PER_VIEW = 3
+const visibleQuestions = ref<string[]>([])
+
+const pickRandomQuestions = (pool: string[], count: number) => {
+  const shuffled = [...pool].sort(() => Math.random() - 0.5)
+  return shuffled.slice(0, Math.min(count, pool.length))
+}
+
+const refreshQuestions = () => {
+  const pool = tabQuestions[activeTab.value] ?? []
+  visibleQuestions.value = pickRandomQuestions(pool, QUESTIONS_PER_VIEW)
+}
+
+watch(activeTab, refreshQuestions, { immediate: true })
 
 const goToAdvisor = (question: string) => {
   router.push({ path: '/advisor', query: { q: question, autoSend: '1' } })
