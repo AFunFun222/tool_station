@@ -1,8 +1,8 @@
 <template>
   <AppShell>
     <BreadcrumbBar :items="breadcrumbs" />
-    <section class="grid gap-5 xl:grid-cols-[280px_1fr]">
-      <BaseCard>
+    <section class="grid h-[calc(100vh-220px)] min-h-[560px] gap-5 overflow-hidden xl:grid-cols-[280px_1fr]">
+      <BaseCard class="overflow-y-auto">
         <h3 class="text-lg font-semibold text-white">Recent Chats</h3>
         <div class="mt-4 space-y-3">
           <button
@@ -21,18 +21,8 @@
         </div>
       </BaseCard>
 
-      <BaseCard class="flex flex-col overflow-hidden">
-        <div class="mb-4 flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
-          <div>
-            <p class="text-sm font-semibold text-white">Chat Window</p>
-            <p class="mt-1 text-xs text-slate-400">Supports streaming output, answers are displayed in segments automatically.</p>
-          </div>
-          <div class="rounded-full border border-teal-400/30 bg-teal-400/10 px-3 py-1 text-xs text-teal-200">
-            {{ isSending ? 'Bot Thinking' : 'Ready to Ask' }}
-          </div>
-        </div>
-
-        <div class="mt-5 max-h-[52vh] flex-1 space-y-4 overflow-y-auto rounded-3xl border border-white/10 bg-slate-950/40 p-4 pr-2 scrollbar-hidden">
+      <BaseCard class="flex min-h-0 flex-col overflow-hidden">
+        <div class="mt-5 min-h-0 flex-1 space-y-4 overflow-y-auto rounded-3xl border border-white/10 bg-slate-950/40 p-4 pr-2 scrollbar-hidden">
           <ChatMessageBubble v-for="message in messages" :key="message.id" :message="message" />
         </div>
 
@@ -49,7 +39,7 @@
           </div>
 
           <div class="flex flex-col gap-3 md:flex-row">
-            <div class="flex-1 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 transition focus-within:border-teal-400/60 focus-within:bg-white/8">
+            <div class="flex-1 rounded-2xl border border-teal-400/45 bg-teal-400/10 px-4 py-3 shadow-[0_0_0_1px_rgba(45,212,191,0.15)] transition focus-within:border-teal-300 focus-within:bg-teal-400/15 focus-within:shadow-[0_0_0_2px_rgba(45,212,191,0.35)]">
               <p class="mb-2 text-xs text-slate-400">Enter Question</p>
               <input
                 v-model="draft"

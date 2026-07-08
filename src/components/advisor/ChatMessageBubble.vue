@@ -1,16 +1,12 @@
 <template>
   <div class="flex" :class="message.role === 'user' ? 'justify-end' : 'justify-start'">
     <div
-      class="max-w-3xl rounded-3xl px-5 py-4 shadow-lg shadow-black/10"
-      :class="message.role === 'user' ? 'bg-teal-400 text-slate-950' : 'border border-white/10 bg-slate-900/80 text-white'"
+      class="shadow-lg shadow-black/10"
+      :class="message.role === 'user'
+        ? 'max-w-[72%] rounded-2xl px-4 py-2.5 bg-[#218678] text-white'
+        : 'max-w-3xl rounded-3xl border border-white/10 bg-slate-900/80 px-5 py-4 text-white'"
     >
-      <div class="mb-3 flex items-center gap-2 text-xs">
-        <span
-          class="rounded-full px-2.5 py-1"
-          :class="message.role === 'user' ? 'bg-slate-950/10 text-slate-900' : 'bg-white/10 text-slate-300'"
-        >
-          {{ message.role === 'user' ? 'Me' : 'AI Advisor' }}
-        </span>
+      <div v-if="message.status === 'streaming' || message.status === 'error'" class="mb-3 flex items-center gap-2 text-xs">
         <span v-if="message.status === 'streaming'" class="text-teal-300">Generating...</span>
         <span v-else-if="message.status === 'error'" class="text-rose-300">Generation Failed</span>
       </div>
