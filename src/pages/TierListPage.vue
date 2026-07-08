@@ -3,7 +3,7 @@
     <AppHeader />
     <main class="mx-auto flex max-w-7xl flex-col gap-6 px-4 py-6 sm:px-6 lg:px-8">
       <!-- 面包屑 -->
-      <BreadcrumbBar :crumbs="crumbs" />
+      <BreadcrumbBar :items="crumbs" />
 
       <!-- iframe 容器 -->
       <div class="w-full overflow-hidden rounded-2xl border border-white/10 bg-[#0a0e1a] shadow-2xl">

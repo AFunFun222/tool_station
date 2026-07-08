@@ -45,7 +45,7 @@ export const homePosts: CommunityPost[] = [
     summary: 'Combine fire starter, bed, chest, and workbench into a minimum loop — efficiency matters more than appearance.',
     author: 'Pal Observer',
     timeAgo: '10 min ago',
-    route: '/community/home/1',
+    route: 'https://game8.co/games/Palworld/archives/607085',
   },
   {
     id: 'post-2',
@@ -55,7 +55,7 @@ export const homePosts: CommunityPost[] = [
     summary: 'Comparing ore density, patrol range, and transfer costs to find the most cost-effective mining spot.',
     author: 'DeepDigger',
     timeAgo: '25 min ago',
-    route: '/community/home/2',
+    route: 'https://hostedgg.com/wiki/palworld',
   },
   {
     id: 'post-3',
@@ -65,7 +65,7 @@ export const homePosts: CommunityPost[] = [
     summary: 'Skip the random breeding trap — use a fixed combination strategy to guarantee your desired passive skills.',
     author: 'BreedMaster',
     timeAgo: '1 hr ago',
-    route: '/community/home/3',
+    route: 'https://expcarry.com/palworld-1-0-update',
   },
   {
     id: 'post-4',

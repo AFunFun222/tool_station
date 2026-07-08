@@ -4,9 +4,9 @@ export const navItems: NavItem[] = [
   { label: 'Home', route: '/' },
   { label: 'Book', route: '/pals' },
   { label: 'Breeding', route: '/breeding' },
-  { label: 'Strategy', route: '/beginner' },
   { label: 'Map', route: '/map' },
   { label: 'Community', route: '/community' },
+  { label: 'Strategy', route: '/beginner' },
   { label: 'Change', route: '/changelog' },
   { label: 'Team Builds', route: '/tier-list' },
 ]

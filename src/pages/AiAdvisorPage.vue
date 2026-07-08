@@ -81,7 +81,7 @@ const breadcrumbs = [
 ]
 
 const draft = ref((route.query.q as string) ?? '')
-const messages = ref([])
+const messages = ref<ChatMessage[]>([])
 const isSending = ref(false)
 
 // 自动发送：仅在页面首次挂载时触发一次，防止重复发送

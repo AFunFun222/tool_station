@@ -7,5 +7,6 @@ export interface GuideCard {
   viewCount: string
   cover: string
   tags: string[]
-  route: string
+  route?: string
+  url?: string
 }

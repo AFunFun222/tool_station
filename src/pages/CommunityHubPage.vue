@@ -43,11 +43,14 @@
       <!-- Home Tab -->
       <div v-if="activeTab === 'home'" class="space-y-4">
         <div class="grid gap-4">
-          <RouterLink
+          <a
             v-for="post in visiblePosts"
             :key="post.id"
-            :to="post.route"
+            :href="post.route"
+            :target="post.route.startsWith('http') ? '_blank' : '_self'"
+            :rel="post.route.startsWith('http') ? 'noopener noreferrer' : undefined"
             class="block group"
+            @click.prevent="post.route.startsWith('http') ? openExternal(post.route) : $router.push(post.route)"
           >
             <div class="rounded-2xl border border-white/10 bg-slate-900/70 p-5 transition-all duration-200 hover:border-indigo-500/30 hover:bg-slate-800/70 hover:shadow-[0_0_20px_rgba(99,102,241,0.1)]">
               <!-- Top row -->
@@ -75,7 +78,7 @@
                 <ArrowRight class="h-3.5 w-3.5 text-indigo-400 ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
             </div>
-          </RouterLink>
+          </a>
         </div>
 
         <!-- Show More / No More -->
@@ -299,6 +302,10 @@ const visibleServers = computed(() => filteredServers.value.slice(0, serversVisi
 const canShowMorePosts = computed(() => postsVisible.value < filteredPosts.value.length)
 const canShowMoreRooms = computed(() => roomsVisible.value < filteredRooms.value.length)
 const canShowMoreServers = computed(() => serversVisible.value < filteredServers.value.length)
+
+function openExternal(url: string) {
+  window.open(url, '_blank', 'noopener,noreferrer')
+}
 
 function showMorePosts() {
   postsVisible.value = Math.min(postsVisible.value + STEP, filteredPosts.value.length)

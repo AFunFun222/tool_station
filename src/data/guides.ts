@@ -10,7 +10,7 @@ export const hotGuides: GuideCard[] = [
     viewCount: '128K',
     cover: './pic/show1.png',
     tags: ['Base Building', 'Must-See for Beginners'],
-    route: '/beginner',
+    route: '/changelog',
   },
   {
     id: 'guide-2',
@@ -21,7 +21,7 @@ export const hotGuides: GuideCard[] = [
     viewCount: '94K',
     cover: './pic/show2.png',
     tags: ['Lineup Recommendation', 'Early Exploration Route'],
-    route: '/beginner',
+    route: '/tier-list',
   },
   {
     id: 'guide-3',
