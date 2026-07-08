@@ -1,9 +1,13 @@
 <template>
-  <nav class="flex flex-wrap items-center gap-2 text-sm text-slate-400">
+  <nav class="flex flex-wrap items-center gap-2 font-mono text-xs text-slate-500 uppercase tracking-widest">
     <template v-for="(item, index) in items" :key="`${item.label}-${index}`">
-      <RouterLink v-if="item.route" :to="item.route" class="transition hover:text-white">{{ item.label }}</RouterLink>
-      <span v-else class="text-white">{{ item.label }}</span>
-      <span v-if="index < items.length - 1">&gt;</span>
+      <RouterLink
+        v-if="item.route"
+        :to="item.route"
+        class="text-cyan-400/60 transition hover:text-cyan-300"
+      >{{ item.label }}</RouterLink>
+      <span v-else class="text-cyan-300">{{ item.label }}</span>
+      <span v-if="index < items.length - 1" class="text-cyan-400/30 mx-1">›</span>
     </template>
   </nav>
 </template>
