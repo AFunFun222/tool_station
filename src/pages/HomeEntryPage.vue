@@ -218,7 +218,7 @@ const tabQuestions: Record<string, string[]> = {
 const currentTabQuestions = computed(() => tabQuestions[activeTab.value] ?? [])
 
 const goToAdvisor = (question: string) => {
-  router.push({ path: '/advisor', query: { q: question } })
+  router.push({ path: '/advisor', query: { q: question, autoSend: '1' } })
 }
 </script>
 

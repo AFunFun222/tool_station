@@ -1,12 +1,6 @@
 <template>
   <AppShell>
     <BreadcrumbBar :items="breadcrumbs" />
-
-    <div class="flex flex-wrap items-center justify-between gap-4">
-      <SectionTitle title="AI Pal Advisor" description="Ask in natural language to get actionable breeding advice." />
-      <StatusBadge label="AI Advisor Online" tone="teal" />
-    </div>
-
     <section class="grid gap-5 xl:grid-cols-[280px_1fr]">
       <BaseCard>
         <h3 class="text-lg font-semibold text-white">Recent Chats</h3>
@@ -27,7 +21,7 @@
         </div>
       </BaseCard>
 
-      <BaseCard class="flex min-h-[720px] flex-col overflow-hidden">
+      <BaseCard class="flex flex-col overflow-hidden">
         <div class="mb-4 flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
           <div>
             <p class="text-sm font-semibold text-white">Chat Window</p>
@@ -38,7 +32,7 @@
           </div>
         </div>
 
-        <div class="flex-1 space-y-4 overflow-y-auto rounded-3xl border border-white/10 bg-slate-950/40 p-4 pr-2 scrollbar-hidden">
+        <div class="mt-5 max-h-[52vh] flex-1 space-y-4 overflow-y-auto rounded-3xl border border-white/10 bg-slate-950/40 p-4 pr-2 scrollbar-hidden">
           <ChatMessageBubble v-for="message in messages" :key="message.id" :message="message" />
         </div>
 
@@ -76,7 +70,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import BaseButton from '@/components/common/BaseButton.vue'
 import BaseCard from '@/components/common/BaseCard.vue'
@@ -86,7 +80,7 @@ import StatusBadge from '@/components/common/StatusBadge.vue'
 import TagChip from '@/components/common/TagChip.vue'
 import ChatMessageBubble from '@/components/advisor/ChatMessageBubble.vue'
 import AppShell from '@/layouts/AppShell.vue'
-import { hotQuestions, initialMessages, recentChats } from '@/data/advisor'
+import { hotQuestions, recentChats } from '@/data/advisor'
 import type { ChatMessage } from '@/types/chat'
 
 const route = useRoute()
@@ -97,8 +91,15 @@ const breadcrumbs = [
 ]
 
 const draft = ref((route.query.q as string) ?? '')
-const messages = ref([...initialMessages])
+const messages = ref([])
 const isSending = ref(false)
+
+// 自动发送：仅在页面首次挂载时触发一次，防止重复发送
+onMounted(() => {
+  if (route.query.autoSend === '1' && draft.value.trim()) {
+    sendMessage()
+  }
+})
 
 const API_URL = 'https://llm.huya.info/v1/chat-messages'
 const API_KEY = 'app-aTzqVVOz4ND9Z62lJLnLiL1q'
