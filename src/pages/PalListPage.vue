@@ -69,9 +69,9 @@
                   <p class="text-xs uppercase tracking-[0.25em] text-slate-400">{{ pal.number }}</p>
                   <h3 class="mt-2 text-xl font-semibold text-white">{{ pal.name }}</h3>
                 </div>
-                <span class="rounded-full bg-sky-400/15 px-3 py-1 text-xs text-sky-200">
-                  {{ pal.elements.join(' / ') }}
-                </span>
+                <div class="flex flex-wrap gap-1">
+                  <ElementBadge v-for="el in pal.elements" :key="el" :element="el" size="sm" />
+                </div>
               </div>
 
               <p class="text-sm leading-6 text-slate-300">{{ pal.recommendation }}</p>
@@ -114,6 +114,7 @@ import { RouterLink } from 'vue-router'
 import BaseCard from '@/components/common/BaseCard.vue'
 import BreadcrumbBar from '@/components/common/BreadcrumbBar.vue'
 import SectionTitle from '@/components/common/SectionTitle.vue'
+import ElementBadge from '@/components/common/ElementBadge.vue'
 import AppShell from '@/layouts/AppShell.vue'
 import { palOptions } from '@/data/pals'
 

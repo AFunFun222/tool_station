@@ -37,7 +37,14 @@
             <div class="flex flex-1 flex-col justify-between py-1">
               <div>
                 <h3 class="text-2xl font-semibold text-white">{{ getPalName(forwardResult.childId) }}</h3>
-                <p class="mt-1 text-sm text-slate-300">{{ getPalElements(forwardResult.childId) }}</p>
+                <div class="mt-1.5 flex flex-wrap gap-1">
+                  <ElementBadge
+                    v-for="el in (getPal(forwardResult.childId)?.elements ?? [])"
+                    :key="el"
+                    :element="el"
+                    size="sm"
+                  />
+                </div>
                 <p class="mt-3 text-sm text-slate-200">Materials: {{ forwardResult.materials }}</p>
                 <p class="mt-1 text-sm text-slate-200">Time: {{ forwardResult.estimatedTime }} · {{ forwardResult.successRate }}</p>
                 <p class="mt-1 text-xs text-teal-100/80">{{ forwardResult.source === 'forward' ? 'breeding_table.json' : 'breeding_reverse.json' }}</p>
@@ -119,6 +126,7 @@ import BaseCard from '@/components/common/BaseCard.vue'
 import BreadcrumbBar from '@/components/common/BreadcrumbBar.vue'
 import SectionTitle from '@/components/common/SectionTitle.vue'
 import PalSelectField from '@/components/breeding/PalSelectField.vue'
+import ElementBadge from '@/components/common/ElementBadge.vue'
 import AppShell from '@/layouts/AppShell.vue'
 import { useBreedingCalculator } from '@/composables/useBreedingCalculator'
 import { palOptions } from '@/data/pals'

@@ -156,10 +156,10 @@
             >
               <div class="flex items-center justify-between gap-2 mb-2">
                 <h4 class="text-sm font-semibold text-white">{{ skill.name }}</h4>
-                <span class="text-xs px-2 py-0.5 rounded-full shrink-0"
-                      style="background: rgba(56,189,248,0.12); color: #38bdf8; border: 1px solid rgba(56,189,248,0.25);">
-                  {{ skill.element }} Lv{{ skill.level }}
-                </span>
+                <div class="flex items-center gap-1.5 shrink-0">
+                  <ElementBadge :element="skill.element" size="sm" />
+                  <span class="text-xs text-sky-300">Lv{{ skill.level }}</span>
+                </div>
               </div>
               <p class="text-xs text-slate-300 leading-relaxed">{{ skill.description }}</p>
               <p class="mt-2 text-xs text-sky-300">Power {{ skill.power }} · Cooldown {{ skill.cooltime }}s</p>
@@ -349,6 +349,7 @@ import {
 } from 'lucide-vue-next'
 import BreadcrumbBar from '@/components/common/BreadcrumbBar.vue'
 import PalHeroCard from '@/components/pal/PalHeroCard.vue'
+import ElementBadge from '@/components/common/ElementBadge.vue'
 import AppShell from '@/layouts/AppShell.vue'
 import { palDetails } from '@/data/pals'
 

@@ -26,10 +26,8 @@
 
       <!-- 属性标签 + 稀有度 -->
       <div class="mt-3 flex items-center gap-4">
-        <div class="flex items-center gap-1.5 rounded-lg px-3 py-1.5"
-             style="background: rgba(139, 92, 246, 0.25); border: 1px solid rgba(139, 92, 246, 0.4);">
-          <span class="text-base">🐉</span>
-          <span class="text-sm font-medium text-purple-300">{{ pal.elements.join(' / ') }}</span>
+        <div class="flex items-center gap-2">
+          <ElementBadge v-for="el in pal.elements" :key="el" :element="el" size="md" />
         </div>
         <div class="flex items-center gap-0.5">
           <template v-for="i in 5" :key="i">
@@ -110,6 +108,7 @@
 <script setup lang="ts">
 import { Star as StarIcon, AlertCircle as AlertCircleIcon, Hammer as HammerIcon, Flame, Droplets, Leaf, Zap, Wind, Mountain, ShieldHalf, Wrench, Wheat, TreePine, Fish } from 'lucide-vue-next'
 import type { PalDetail } from '@/types/pal'
+import ElementBadge from '@/components/common/ElementBadge.vue'
 
 defineProps<{
   pal: PalDetail

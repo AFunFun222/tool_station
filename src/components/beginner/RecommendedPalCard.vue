@@ -17,7 +17,9 @@
           <h3 class="text-xl font-semibold text-white">{{ pal.name }}</h3>
           <p class="mt-2 text-sm text-slate-300">Recommendation: {{ pal.recommendation }}</p>
         </div>
-        <StatusBadge :label="pal.elements.join(' / ')" tone="teal" />
+        <div class="flex flex-wrap gap-1">
+          <ElementBadge v-for="el in pal.elements" :key="el" :element="el" size="sm" />
+        </div>
       </div>
 
       <div v-if="pal.workSuitability?.length" class="flex flex-wrap gap-2">
@@ -54,7 +56,7 @@ import { computed } from 'vue'
 import { RouterLink } from 'vue-router'
 import BaseButton from '@/components/common/BaseButton.vue'
 import BaseCard from '@/components/common/BaseCard.vue'
-import StatusBadge from '@/components/common/StatusBadge.vue'
+import ElementBadge from '@/components/common/ElementBadge.vue'
 import type { PalSummary } from '@/types/pal'
 
 const props = defineProps<{

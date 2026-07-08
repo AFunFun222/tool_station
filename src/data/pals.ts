@@ -51,7 +51,7 @@ const breedingTable = breedingTableRaw as {
 }
 
 const elementLabelMap: Record<string, string> = {
-  Neutral: 'None',
+  Neutral: 'Neutral',
   Grass: 'Grass',
   Fire: 'Fire',
   Water: 'Water',
