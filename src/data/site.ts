@@ -8,6 +8,7 @@ export const navItems: NavItem[] = [
   { label: 'Map', route: '/map' },
   { label: 'Community', route: '/community' },
   { label: 'Change', route: '/changelog' },
+  { label: 'Team Builds', route: '/tier-list' },
 ]
 
 export const quickTools: QuickTool[] = [

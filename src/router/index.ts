@@ -69,6 +69,12 @@ const router = createRouter({
       component: () => import('@/pages/PalworldUpdatePage.vue'),
       meta: { title: '1.0 版本更新', accent: 'orange' },
     },
+    {
+      path: '/tier-list',
+      name: 'tier-list',
+      component: () => import('@/pages/TierListPage.vue'),
+      meta: { title: 'Team Builds', accent: 'teal' },
+    },
   ],
   scrollBehavior() {
     return { top: 0 }

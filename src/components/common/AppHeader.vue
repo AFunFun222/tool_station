@@ -7,7 +7,7 @@
 
     <div class="mx-auto flex max-w-7xl items-center gap-4 px-4 py-3 sm:px-6 lg:px-8">
       <!-- Logo / Brand -->
-      <RouterLink to="/" class="group flex items-center gap-3 text-lg font-bold tracking-wide text-white">
+      <RouterLink to="/" class="group flex shrink-0 items-center gap-3 text-lg font-bold tracking-wide text-white">
         <div class="logo-box relative flex h-10 w-10 items-center justify-center overflow-hidden border border-cyan-400/40 bg-cyan-400/10 text-cyan-300 transition-all duration-300 group-hover:border-cyan-400/80 group-hover:shadow-[0_0_16px_rgba(0,229,255,0.4)]"
           style="clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px));">
           <Sparkles class="h-5 w-5" />
@@ -21,34 +21,17 @@
       </RouterLink>
 
       <!-- Nav -->
-      <nav class="hidden items-center gap-1 md:flex ml-2">
+      <nav class="hidden flex-1 items-center md:flex">
         <RouterLink
           v-for="item in navItems"
           :key="item.route"
           :to="item.route"
-          class="nav-link px-3 py-1.5 text-xs font-semibold uppercase tracking-widest text-slate-400 transition-all duration-200 hover:text-cyan-300"
+          class="nav-link flex-1 py-1.5 text-center text-xs font-semibold uppercase tracking-widest text-slate-400 transition-all duration-200 hover:text-cyan-300"
           active-class="nav-link-active"
         >
           {{ item.label }}
         </RouterLink>
       </nav>
-
-      <!-- Search -->
-      <div class="ml-auto hidden min-w-[220px] items-center gap-2 border border-cyan-400/15 bg-cyan-400/5 px-3 py-2 md:flex transition-all duration-200 hover:border-cyan-400/35 hover:bg-cyan-400/8 focus-within:border-cyan-400/50 focus-within:shadow-[0_0_12px_rgba(0,229,255,0.15)]"
-        style="clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 0 100%);">
-        <Search class="h-4 w-4 text-cyan-400/60 shrink-0" />
-        <input
-          class="w-full bg-transparent text-sm text-cyan-100 outline-none placeholder:text-slate-500 font-mono"
-          placeholder="Search Pals / Guides..."
-        />
-        <span class="text-[10px] font-mono text-slate-600 tracking-widest shrink-0">⌘K</span>
-      </div>
-
-      <!-- Status indicator -->
-      <div class="hidden items-center gap-1.5 md:flex">
-        <span class="h-2 w-2 rounded-full bg-cyan-400 animate-pulse-dot" style="box-shadow: 0 0 6px rgba(0,229,255,0.8);" />
-        <span class="text-[10px] font-mono uppercase tracking-widest text-cyan-400/70">ONLINE</span>
-      </div>
     </div>
   </header>
 </template>

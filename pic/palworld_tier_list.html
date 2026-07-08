@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>幻兽帕鲁 1.0 — 硬核玩家阵容养成推荐</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --bg-deep: #0a0e1a;
+  --bg-card: #131829;
+  --bg-card-hover: #1a2138;
+  --border: #2a3252;
+  --text: #e2e8f5;
+  --text-dim: #8893b0;
+  --accent-green: #4ade80;
+  --accent-blue: #60a5fa;
+  --accent-red: #ff3366;
+  --accent-orange: #ff8800;
+  --accent-purple: #a78bfa;
+  --core-color: #ff3366;
+  --mid-color: #ff8800;
+  --low-color: #64748b;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: var(--bg-deep);
+  color: var(--text);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+/* Hero */
+.hero {
+  position: relative;
+  padding: 80px 0 60px;
+  text-align: center;
+  background: radial-gradient(ellipse at top, #1a2a3a 0%, var(--bg-deep) 60%);
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background:
+    radial-gradient(circle at 20% 50%, rgba(255,51,102,0.06) 0%, transparent 50%),
+    radial-gradient(circle at 80% 50%, rgba(96,165,250,0.06) 0%, transparent 50%);
+  pointer-events: none;
+}
+.hero-badge {
+  display: inline-block;
+  background: rgba(255,51,102,0.15);
+  border: 1px solid rgba(255,51,102,0.3);
+  color: var(--accent-red);
+  padding: 6px 20px;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  position: relative;
+}
+.hero h1 {
+  font-size: clamp(32px, 6vw, 56px);
+  font-weight: 800;
+  background: linear-gradient(135deg, #ff3366, #ff8800, #4ade80);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 16px;
+  position: relative;
+  letter-spacing: 2px;
+}
+.hero-sub {
+  font-size: clamp(15px, 2.5vw, 20px);
+  color: var(--text-dim);
+  margin-bottom: 32px;
+  position: relative;
+}
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  position: relative;
+}
+.hero-stat { text-align: center; }
+.hero-stat-num {
+  font-size: clamp(24px, 4vw, 36px);
+  font-weight: 800;
+  background: linear-gradient(135deg, #ff3366, #ff8800);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero-stat-label { font-size: 13px; color: var(--text-dim); margin-top: 4px; }
+
+/* Section */
+.section {
+  padding: 60px 0;
+  border-top: 1px solid var(--border);
+}
+.section-title {
+  font-size: clamp(22px, 4vw, 32px);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.section-desc {
+  color: var(--text-dim);
+  font-size: 15px;
+  margin-bottom: 32px;
+}
+
+/* Nav */
+.cat-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 32px;
+  padding: 12px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  color: var(--text-dim);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.nav-link:hover {
+  background: rgba(255,51,102,0.15);
+  border-color: var(--accent-red);
+  color: var(--accent-red);
+}
+
+/* Tier sections */
+.tier-section {
+  margin-bottom: 32px;
+  border-left: 4px solid;
+  border-radius: 0 12px 12px 0;
+  overflow: hidden;
+}
+.tier-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 20px;
+}
+.tier-badge {
+  padding: 6px 16px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+.tier-desc { font-size: 14px; color: var(--text-dim); }
+
+/* Pals grid */
+.pals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+.pal-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  transition: all 0.25s;
+}
+.pal-card:hover {
+  background: var(--bg-card-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+.pal-card-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.pal-card-top img {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  background: #0d1220;
+  flex-shrink: 0;
+}
+.pal-icon-placeholder {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.pal-card-info { flex: 1; }
+.pal-name-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.pal-name-zh { font-size: 18px; font-weight: 700; }
+.pal-element-tag {
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.pal-name-en { font-size: 12px; color: var(--text-dim); margin-top: 2px; }
+.pal-stats-row {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+.stat-pill {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-dim);
+}
+.stat-pill.rarity { color: var(--accent-orange); }
+.pal-role {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent-blue);
+  margin-bottom: 6px;
+}
+.pal-note {
+  font-size: 13px;
+  color: var(--text-dim);
+  line-height: 1.7;
+}
+
+/* Element cards */
+.elements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+.element-card {
+  background: var(--bg-card);
+  border: 1px solid;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+.element-card:hover { transform: translateY(-2px); }
+.element-header {
+  padding: 12px 16px;
+  text-align: center;
+}
+.element-icon { font-size: 18px; font-weight: 800; }
+.element-best { padding: 10px 16px 4px; font-size: 15px; font-weight: 700; }
+.element-alt { padding: 0 16px 4px; font-size: 13px; color: var(--text-dim); }
+.element-note { padding: 0 16px 14px; font-size: 12px; color: var(--text-dim); line-height: 1.6; }
+
+/* Trait cards */
+.traits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+.trait-card {
+  background: var(--bg-card);
+  border: 1px solid;
+  border-radius: 12px;
+  padding: 20px;
+}
+.trait-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.trait-icon { font-size: 24px; }
+.trait-header h4 { font-size: 17px; font-weight: 700; }
+.trait-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.trait-tag {
+  padding: 4px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.trait-note { font-size: 13px; color: var(--text-dim); line-height: 1.7; }
+
+/* Team cards */
+.teams-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px;
+}
+.team-card {
+  background: var(--bg-card);
+  border: 1px solid;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.team-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 20px;
+}
+.team-icon { font-size: 24px; }
+.team-header h4 { font-size: 18px; font-weight: 700; }
+.team-desc { padding: 8px 20px; font-size: 14px; color: var(--text-dim); }
+.team-members { padding: 8px 20px 16px; }
+.team-member {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+.team-member:last-child { border-bottom: none; }
+.member-name { font-weight: 700; font-size: 14px; min-width: 100px; }
+.member-role { font-size: 13px; color: var(--accent-blue); }
+.member-note { font-size: 12px; color: var(--text-dim); }
+
+/* Impact cards */
+.impacts-list { display: flex; flex-direction: column; gap: 16px; }
+.impact-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--mid-color);
+  border-radius: 12px;
+  padding: 20px;
+}
+.impact-card.level-core { border-left-color: var(--core-color); }
+.impact-card.level-mid { border-left-color: var(--mid-color); }
+.impact-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.impact-icon { font-size: 24px; }
+.impact-header h4 { font-size: 16px; font-weight: 700; flex: 1; }
+.level-badge {
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.level-badge.level-core { background: rgba(255,51,102,0.15); color: var(--core-color); }
+.level-badge.level-mid { background: rgba(255,136,0,0.15); color: var(--mid-color); }
+.impact-body { padding-left: 34px; }
+.impact-text { font-size: 14px; line-height: 1.8; margin-bottom: 8px; }
+.impact-action { font-size: 14px; line-height: 1.8; color: var(--accent-green); }
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 40px 20px;
+  border-top: 1px solid var(--border);
+  color: var(--text-dim);
+  font-size: 13px;
+}
+
+/* Smooth scroll */
+html { scroll-behavior: smooth; }
+
+/* Animations */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.tier-section, .element-card, .trait-card, .team-card, .impact-card {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Warning box */
+.warning-box {
+  background: rgba(255,136,0,0.08);
+  border: 1px solid rgba(255,136,0,0.3);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.warning-icon { font-size: 28px; flex-shrink: 0; }
+.warning-text { font-size: 14px; line-height: 1.8; }
+.warning-text strong { color: var(--accent-orange); }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="container">
+    <div class="hero-badge">硬核玩家专属 | Palworld 1.0 阵容养成指南</div>
+    <h1>帕鲁 Tier List 与养成推荐</h1>
+    <p class="hero-sub">T0毕业级 | 各属性最强 | 阵容搭配 | 词条配置 | 1.0变动影响分析</p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-num">24</div>
+        <div class="hero-stat-label">帕鲁排行</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">9</div>
+        <div class="hero-stat-label">属性覆盖</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">4</div>
+        <div class="hero-stat-label">阵容配置</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">7</div>
+        <div class="hero-stat-label">1.0变动</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    <div class="warning-box">
+      <span class="warning-icon">⚠️</span>
+      <div class="warning-text">
+        <strong>1.0 更新警告：</strong>1.0 正式版将全面重调所有帕鲁数值和词条系统，当前 Tier List 可能在 7月10日上线后大幅变动。本页面基于 EA 阶段社区数据整理，作为<strong>变更前参考基准</strong>使用。上线后请第一时间查阅 27 页 patch notes 重新评估。页面底部「1.0变动影响」章节详细分析了各项改动对 Meta 的影响。
+      </div>
+    </div>
+    <div class="cat-nav">
+      <a href="#tierlist" class="nav-link">Tier List</a><a href="#elements" class="nav-link">各属性最强</a><a href="#teams" class="nav-link">阵容推荐</a><a href="#traits" class="nav-link">词条搭配</a><a href="#update" class="nav-link">1.0变动影响</a>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="tierlist">
+  <div class="container">
+    <h2 class="section-title">🏆 帕鲁 Tier List</h2>
+    <p class="section-desc">基于社区共识和数值分析的全图鉴帕鲁排行 — T0为毕业级必抓，T1为强力推荐，T2为过渡实用</p>
+    <div class="tier-section" style="border-color:#ff3366;"><div class="tier-header" style="background:#ff336618;"><span class="tier-badge" style="background:#ff336622;color:#ff3366;border:1px solid #ff336644;">T0 毕业级</span><span class="tier-desc">全游戏最强帕鲁， Rarity 20 传说级，必抓必养</span></div><div class="pals-grid"><div class="pal-card"><div class="pal-card-top"><img src="https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_JetDragon_icon_normal.webp" alt="空涡龙" loading="lazy" onerror="this.style.display='none'"/><div class="pal-card-info"><div class="pal-name-row"><span class="pal-name-zh">空涡龙</span><span class="pal-element-tag" style="background:#a78bfa22;color:#a78bfa;">龙</span></div><div class="pal-name-en">Jetragon &middot; No.111</div></div></div><div class="pal-stats-row"><span class="stat-pill">HP 110</span><span class="stat-pill">ATK 140</span><span class="stat-pill">DEF 110</span><span class="stat-pill rarity">R20</span></div><div class="pal-role">战斗+飞行坐骑</div><div class="pal-note">攻击种族值140，全图鉴最快飞行速度，骑乘释放导弹轰炸。传说+神龙词条固定。PVE清图和BOSS战泛用性最强。</div></div><div class="pal-card"><div class="pal-card-top"><img src="https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_IceHorse_icon_normal.webp" alt="唤冬兽" loading="lazy" onerror="this.style.display='none'"/><div class="pal-card-info"><div class="pal-name-row"><span class="pal-name-zh">唤冬兽</span><span class="pal-element-tag" style="background:#60a5fa22;color:#60a5fa;">冰</span></div><div class="pal-name-en">Frostallion &middot; No.110</div></div></div><div class="pal-stats-row"><span class="stat-pill">HP 140</span><span class="stat-pill">ATK 140</span><span class="stat-pill">DEF 120</span><span class="stat-pill rarity">R20</span></div><div class="pal-role">控制+飞行坐骑</div><div class="pal-note">HP140+ATK140双顶级，骑乘附加冰元素伤害，钻石星辰AOE控场。肉厚有控有AOE还能骑。</div></div><div class="pal-card"><div class="pal-card-top"><img src="https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_BlackCentaur_icon_normal.webp" alt="混沌骑士" loading="lazy" onerror="this.style.display='none'"/><div class="pal-card-info"><div class="pal-name-row"><span class="pal-name-zh">混沌骑士</span><span class="pal-element-tag" style="background:#9ca3af22;color:#9ca3af;">暗</span></div><div class="pal-name-en">Necromus &middot; No.109</div></div></div><div class="pal-stats-row"><span class="stat-pill">HP 130</span><span class="stat-pill">ATK 145</span><span class="stat-pill">DEF 120</span><span class="stat-pill rarity">R20</span></div><div class="pal-role">单体爆发输出</div><div class="pal-note">ATK145全图鉴最高攻击，混沌状态叠加机制持续提升DPS。二段跳机动性强。高难度首领战首选。</div></div><div class="pal-card"><div class="pal-card-top"><img src="https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_SaintCentaur_icon_normal.webp" alt="圣光骑士" loading="lazy" onerror="this.style.display='none'"/><div class="pal-card-info"><div class="pal-name-row"><span class="pal-name-zh">圣光骑士</span><span class="pal-element-tag" style="background:#e2e8f522;color:#e2e8f5;">无属性</span></div><div class="pal-name-en">Paladius &middot; No.108</div></div></div><div class="pal-stats-row"><span class="stat-pill">HP 130</span><span class="stat-pill">ATK 120</span><span class="stat-pill">DEF 145</span><span class="stat-pill rarity">R20</span></div><div class="pal-role">主T+机动位移</div><div class="pal-note">DEF145全图鉴最高防御，三段跳跃机制，复杂地形探索与垂直作战机动性突出。主抗首选。</div></div><div class="pal-card"><div class="pal-card-top"><img src="https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_NightLady_icon_normal.webp" alt="波鲁杰克斯" loading="lazy" onerror="this.style.display='none'"/><div class="pal-card-info"><div class="pal-name-row"><span class="pal-name-zh">波鲁杰克斯</span><span class="pal-element-tag" style="background:#9ca3af22;color:#9ca3af;">暗</span></div><div class="pal-name-en">Bellanoir &middot; No.112</div></div></div><div class="pal-stats-row"><span class="stat-pill">HP 120</span><span class="stat-pill">ATK 150</span><span class="stat-pill">DEF 100</span><span class="stat-pill rarity">R20</span></div><div class="pal-role">极限输出</div><div class="pal-note">ATK150全图鉴最高攻击力，Nightmare Iris技能爆发恐怖。Raid和Tower Boss战终极输出手。</div></div></div></div><div class="tier-section" style="border-color:#ff8800;"><div class="tier-header" style="background:#ff880018;"><span class="tier-badge" style="background:#ff880022;color:#ff8800;border:1px solid #ff880044;">T0.5 准毕业</span><span class="tier-desc">Rarity 9-10，各属性天花板，特定场景优于T0</span></div><div class="pals-grid"><div class="pal-card"><div class="pal-card-top"><img src="https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_BlackMetalDragon_icon_normal.webp" alt="异构格里芬" loading="lazy" onerror="this.style.display='none'"/><div class="pal-card-info"><div class="pal-name-row"><span class="pal-name-zh">异构格里芬</span><span class="pal-element-tag" style="background:#a78bfa22;color:#a78bfa;">龙</span></div><div class="pal-name-en">Astegon &middot; No.98</div></div></div><div class="pal-stats-row"><span class="stat-pill">HP 100</span><span class="stat-pill">ATK 125</span><span class="stat-pill">DEF 125</span><span class="stat-pill rarity">R9</span></div><div class="pal-role">暗属性输出</div><div class="pal-note">ATK125+DEF125攻防均衡，神圣灾祸技能强力。骑乘增强暗属性攻击，采集效率加成显著。</div></div><div class="pal-card"><div class="pal-card-top"><img src="https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Anubis_icon_normal.webp" alt="阿努比斯" loading="lazy" onerror="this.style.display='none'"/><div class="pal-card-info"><div class="pal-name-row"><span class="pal-name-zh">阿努比斯</span><span class="pal-element-tag" style="background:#d4a37322;color:#d4a373;">地</span></div><div class="pal-name-en">Anubis &middot; No.100</div></div></div><div class="pal-stats-row"><span class="stat-pill">HP 120</span><span class="stat-pill">ATK 130</span><span class="stat-pill">DEF 100</span><span class="stat-pill rarity">R10</span></div><div class="pal-role">地系输出+手工</div><div class="pal-note">ATK130高攻击，独占火影体术。同时也是手工4星顶级打工帕鲁，战斗工作两不误。</div></div><div class="pal-card"><div class="pal-card-top"><img src="https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_ThunderDragonMan_icon_normal.webp" alt="暴电龙" loading="lazy" onerror="this.style.display='none'"/><div class="pal-card-info"><div class="pal-name-row"><span class="pal-name-zh">暴电龙</span><span class="pal-element-tag" style="background:#a78bfa22;color:#a78bfa;">龙</span></div><div class="pal-name-en">Orserk &middot; No.106</div></div></div><div class="pal-stats-row"><span class="stat-pill">HP 100</span><span class="stat-pill">ATK 130</span><span class="stat-pill">DEF 100</span><span class="stat-pill rarity">R9</span></div><div class="pal-role">雷系输出</div><div class="pal-note">ATK130高攻击，Ferocious Thunder Dragon技能爆发强。雷系毕业输出手。</div></div><div class="pal-card"><div class="pal-card-top"><img src="https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Horus_icon_normal.webp" alt="荷鲁斯" loading="lazy" onerror="this.style.display='none'"/><div class="pal-card-info"><div class="pal-name-row"><span class="pal-name-zh">荷鲁斯</span><span class="pal-element-tag" style="background:#fb923c22;color:#fb923c;">火</span></div><div class="pal-name-en">Faleris &middot; No.105</div></div></div><div class="pal-stats-row"><span class="stat-pill">HP 100</span><span class="stat-pill">ATK 105</span><span class="stat-pill">DEF 110</span><span class="stat-pill rarity">R9</span></div><div class="pal-role">火系输出+飞行</div><div class="pal-note">火系斗兽第一名，骑乘可飞行。综合火系最强，Scorching Predator技能倍率高。</div></div><div class="pal-card"><div class="pal-card-top"><img src="https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Umihebi_Fire_icon_normal.webp" alt="腾炎龙" loading="lazy" onerror="this.style.display='none'"/><div class="pal-card-info"><div class="pal-name-row"><span class="pal-name-zh">腾炎龙</span><span class="pal-element-tag" style="background:#a78bfa22;color:#a78bfa;">龙</span></div><div class="pal-name-en">Jormuntide Ignis &middot; No.101</div></div></div><div class="pal-stats-row"><span class="stat-pill">HP 130</span><span class="stat-pill">ATK 130</span><span class="stat-pill">DEF 100</span><span class="stat-pill rarity">R9</span></div><div class="pal-role">火系AOE+坦克</div><div class="pal-note">HP130+ATK130双高，火系龙系双属性覆盖。Stormbringer Lava Dragon技能AOE清怪。</div></div><div class="pal-card"><div class="pal-card-top"><img src="https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_LilyQueen_Dark_icon_normal.webp" alt="黑月女王" loading="lazy" onerror="this.style.display='none'"/><div class="pal-card-info"><div class="pal-name-row"><span class="pal-name-zh">黑月女王</span><span class="pal-element-tag" style="background:#9ca3af22;color:#9ca3af;">暗</span></div><div class="pal-name-en">Lyleen Noct &middot; No.104</div></div></div><div class="pal-stats-row"><span class="stat-pill">HP 110</span><span class="stat-pill">ATK 110</span><span class="stat-pill">DEF 115</span><span class="stat-pill rarity">R10</span></div><div class="pal-role">暗系辅助+治疗</div><div class="pal-note">暗属性百合女王变体，DEF115偏高。Goddess of the Tranquil Light技能兼具输出与辅助。</div></div><div class="pal-card"><div class="pal-card-top"><img src="https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_KingBahamut_Dragon_icon_normal.webp" alt="暴电熊" loading="lazy" onerror="this.style.display='none'"/><div class="pal-card-info"><div class="pal-name-row"><span class="pal-name-zh">暴电熊</span><span class="pal-element-tag" style="background:#a78bfa22;color:#a78bfa;">龙</span></div><div class="pal-name-en">Blazamut Ryu &middot; No.96</div></div></div><div class="pal-stats-row"><span class="stat-pill">HP 105</span><span class="stat-pill">ATK 130</span><span class="stat-pill">DEF 125</span><span class="stat-pill rarity">R10</span></div><div class="pal-role">龙系坦克输出</div><div class="pal-note">ATK130+DEF125攻防一体，Blazamut龙系变体。综合生存能力优秀。</div></div></div></div><div class="tier-section" style="border-color:#00ff88;"><div class="tier-header" style="background:#00ff8818;"><span class="tier-badge" style="background:#00ff8822;color:#00ff88;border:1px solid #00ff8844;">T1 强力推荐</span><span class="tier-desc">Rarity 8-9，中期到后期核心战力，易获取性价比高</span></div><div class="pals-grid"><div class="pal-card"><div class="pal-card-top"><img src="https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_FengyunDeeper_icon_normal.webp" alt="云海鹿" loading="lazy" onerror="this.style.display='none'"/><div class="pal-card-info"><div class="pal-name-row"><span class="pal-name-zh">云海鹿</span><span class="pal-element-tag" style="background:#e2e8f522;color:#e2e8f5;">无属性</span></div><div class="pal-name-en">Fenglope &middot; No.93</div></div></div><div class="pal-stats-row"><span class="stat-pill">HP 110</span><span class="stat-pill">ATK 110</span><span class="stat-pill">DEF 90</span><span class="stat-pill rarity">R3</span></div><div class="pal-role">地面坐骑</div><div class="pal-note">地面旅行神宠，跑图速度极快。HP110+ATK110+DEF90均衡，前中后期都好用。</div></div><div class="pal-card"><div class="pal-card-top"><img src="https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_HadesBird_icon_normal.webp" alt="雷冥鸟" loading="lazy" onerror="this.style.display='none'"/><div class="pal-card-info"><div class="pal-name-row"><span class="pal-name-zh">雷冥鸟</span><span class="pal-element-tag" style="background:#9ca3af22;color:#9ca3af;">暗</span></div><div class="pal-name-en">Helzephyr &middot; No.97</div></div></div><div class="pal-stats-row"><span class="stat-pill">HP 100</span><span class="stat-pill">ATK 125</span><span class="stat-pill">DEF 100</span><span class="stat-pill rarity">R7</span></div><div class="pal-role">暗系飞行+发电</div><div class="pal-note">ATK125高攻击暗系飞行帕鲁，Wings of Death技能强力。同时发电效率顶尖。</div></div><div class="pal-card"><div class="pal-card-top"><img src="https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_SkyDragon_icon_normal.webp" alt="天羽龙" loading="lazy" onerror="this.style.display='none'"/><div class="pal-card-info"><div class="pal-name-row"><span class="pal-name-zh">天羽龙</span><span class="pal-element-tag" style="background:#a78bfa22;color:#a78bfa;">龙</span></div><div class="pal-name-en">Quivern &middot; No.95</div></div></div><div class="pal-stats-row"><span class="stat-pill">HP 105</span><span class="stat-pill">ATK 100</span><span class="stat-pill">DEF 100</span><span class="stat-pill rarity">R7</span></div><div class="pal-role">龙系飞行坐骑</div><div class="pal-note">HP105+ATK100+DEF100均衡，Sky Dragon Affection骑乘增强龙属性攻击。前期飞行坐骑首选。</div></div><div class="pal-card"><div class="pal-card-top"><img src="https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Umihebi_icon_normal.webp" alt="覆海龙" loading="lazy" onerror="this.style.display='none'"/><div class="pal-card-info"><div class="pal-name-row"><span class="pal-name-zh">覆海龙</span><span class="pal-element-tag" style="background:#a78bfa22;color:#a78bfa;">龙</span></div><div class="pal-name-en">Jormuntide &middot; No.101</div></div></div><div class="pal-stats-row"><span class="stat-pill">HP 130</span><span class="stat-pill">ATK 120</span><span class="stat-pill">DEF 100</span><span class="stat-pill rarity">R8</span></div><div class="pal-role">水系坦克</div><div class="pal-note">HP130血厚耐操，Stormbringer Sea Dragon技能强力。水系场景和Tank位置。</div></div><div class="pal-card"><div class="pal-card-top"><img src="https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_Suzaku_icon_normal.webp" alt="朱雀" loading="lazy" onerror="this.style.display='none'"/><div class="pal-card-info"><div class="pal-name-row"><span class="pal-name-zh">朱雀</span><span class="pal-element-tag" style="background:#fb923c22;color:#fb923c;">火</span></div><div class="pal-name-en">Suzaku &middot; No.102</div></div></div><div class="pal-stats-row"><span class="stat-pill">HP 120</span><span class="stat-pill">ATK 105</span><span class="stat-pill">DEF 105</span><span class="stat-pill rarity">R8</span></div><div class="pal-role">火系飞行</div><div class="pal-note">HP120+ATK105+DEF105均衡火系飞行帕鲁，Wings of Flame骑乘增强火属性攻击。</div></div><div class="pal-card"><div class="pal-card-top"><img src="https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_LilyQueen_icon_normal.webp" alt="百合女王" loading="lazy" onerror="this.style.display='none'"/><div class="pal-card-info"><div class="pal-name-row"><span class="pal-name-zh">百合女王</span><span class="pal-element-tag" style="background:#4ade8022;color:#4ade80;">草</span></div><div class="pal-name-en">Lyleen &middot; No.104</div></div></div><div class="pal-stats-row"><span class="stat-pill">HP 110</span><span class="stat-pill">ATK 110</span><span class="stat-pill">DEF 105</span><span class="stat-pill rarity">R9</span></div><div class="pal-role">草系辅助+种植</div><div class="pal-note">Harvest Goddess技能兼具治疗与辅助。同时播种4星顶级基地帕鲁。</div></div><div class="pal-card"><div class="pal-card-top"><img src="https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_DarkScorpion_icon_normal.webp" alt="魔渊龙" loading="lazy" onerror="this.style.display='none'"/><div class="pal-card-info"><div class="pal-name-row"><span class="pal-name-zh">魔渊龙</span><span class="pal-element-tag" style="background:#9ca3af22;color:#9ca3af;">暗</span></div><div class="pal-name-en">Menasting &middot; No.99</div></div></div><div class="pal-stats-row"><span class="stat-pill">HP 100</span><span class="stat-pill">ATK 100</span><span class="stat-pill">DEF 130</span><span class="stat-pill rarity">R9</span></div><div class="pal-role">暗系坦克</div><div class="pal-note">DEF130高防御暗系帕鲁，Steel Scorpion技能减伤。Tank位置备选。</div></div><div class="pal-card"><div class="pal-card-top"><img src="https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_KingBahamut_icon_normal.webp" alt="焰煌" loading="lazy" onerror="this.style.display='none'"/><div class="pal-card-info"><div class="pal-name-row"><span class="pal-name-zh">焰煌</span><span class="pal-element-tag" style="background:#fb923c22;color:#fb923c;">火</span></div><div class="pal-name-en">Blazamut &middot; No.96</div></div></div><div class="pal-stats-row"><span class="stat-pill">HP 100</span><span class="stat-pill">ATK 125</span><span class="stat-pill">DEF 120</span><span class="stat-pill rarity">R9</span></div><div class="pal-role">火系输出</div><div class="pal-note">ATK125+DEF120火系高攻高防，Lava Emperor技能爆发强。火山区域主场优势。</div></div></div></div><div class="tier-section" style="border-color:#60a5fa;"><div class="tier-header" style="background:#60a5fa18;"><span class="tier-badge" style="background:#60a5fa22;color:#60a5fa;border:1px solid #60a5fa44;">T2 过渡实用</span><span class="tier-desc">Rarity 7-8，前期开荒到中期主力，特定功能不可替代</span></div><div class="pals-grid"><div class="pal-card"><div class="pal-card-top"><img src="https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_BlackGriffon_icon_normal.webp" alt="暗影龙" loading="lazy" onerror="this.style.display='none'"/><div class="pal-card-info"><div class="pal-name-row"><span class="pal-name-zh">暗影龙</span><span class="pal-element-tag" style="background:#9ca3af22;color:#9ca3af;">暗</span></div><div class="pal-name-en">Shadowbeak &middot; No.107</div></div></div><div class="pal-stats-row"><span class="stat-pill">HP 120</span><span class="stat-pill">ATK 120</span><span class="stat-pill">DEF 140</span><span class="stat-pill rarity">R10</span></div><div class="pal-role">暗系防御</div><div class="pal-note">DEF140极高防御暗系帕鲁，Modified DNA伙伴技能。肉盾定位，特定Boss战有用。</div></div><div class="pal-card"><div class="pal-card-top"><img src="https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_LazyDragon_icon_normal.webp" alt="寐龙" loading="lazy" onerror="this.style.display='none'"/><div class="pal-card-info"><div class="pal-name-row"><span class="pal-name-zh">寐龙</span><span class="pal-element-tag" style="background:#a78bfa22;color:#a78bfa;">龙</span></div><div class="pal-name-en">Relaxaurus &middot; No.85</div></div></div><div class="pal-stats-row"><span class="stat-pill">HP 110</span><span class="stat-pill">ATK 100</span><span class="stat-pill">DEF 70</span><span class="stat-pill rarity">R8</span></div><div class="pal-role">龙系输出</div><div class="pal-note">HP110均衡龙系，Hungry Missile导弹技能。前期容易获取的龙系输出。</div></div><div class="pal-card"><div class="pal-card-top"><img src="https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_WingGolem_icon_normal.webp" alt="巨力王" loading="lazy" onerror="this.style.display='none'"/><div class="pal-card-info"><div class="pal-name-row"><span class="pal-name-zh">巨力王</span><span class="pal-element-tag" style="background:#d4a37322;color:#d4a373;">地</span></div><div class="pal-name-en">Knocklem &middot; No.120</div></div></div><div class="pal-stats-row"><span class="stat-pill">HP 105</span><span class="stat-pill">ATK 110</span><span class="stat-pill">DEF 135</span><span class="stat-pill rarity">R9</span></div><div class="pal-role">地系坦克+采矿</div><div class="pal-note">DEF135高防御，同时采矿4星。战斗和基地双用帕鲁。</div></div><div class="pal-card"><div class="pal-card-top"><img src="https://cdn.paldb.cc/image/Pal/Texture/PalIcon/Normal/T_MoonQueen_icon_normal.webp" alt="月神" loading="lazy" onerror="this.style.display='none'"/><div class="pal-card-info"><div class="pal-name-row"><span class="pal-name-zh">月神</span><span class="pal-element-tag" style="background:#9ca3af22;color:#9ca3af;">暗</span></div><div class="pal-name-en">Selyne &middot; No.113</div></div></div><div class="pal-stats-row"><span class="stat-pill">HP 130</span><span class="stat-pill">ATK 115</span><span class="stat-pill">DEF 110</span><span class="stat-pill rarity">R9</span></div><div class="pal-role">暗系辅助</div><div class="pal-note">HP130血厚暗系辅助帕鲁，兼具治疗和增益能力。</div></div></div></div>
+  </div>
+</div>
+
+<div class="section" id="elements">
+  <div class="container">
+    <h2 class="section-title">🔥 各属性最强帕鲁</h2>
+    <p class="section-desc">9大属性各自的天花板帕鲁 — 根据敌人弱点灵活搭配，实现最优输出</p>
+    <div class="elements-grid">
+      <div class="element-card" style="border-color:#a78bfa44;"><div class="element-header" style="background:#a78bfa18;"><span class="element-icon" style="color:#a78bfa;">龙系</span></div><div class="element-best">空涡龙</div><div class="element-alt">腾炎龙/暴电龙</div><div class="element-note">空涡龙ATK140+全图鉴最快飞行，综合最强</div></div><div class="element-card" style="border-color:#60a5fa44;"><div class="element-header" style="background:#60a5fa18;"><span class="element-icon" style="color:#60a5fa;">冰系</span></div><div class="element-best">唤冬兽</div><div class="element-alt">冰棘兽</div><div class="element-note">HP140+ATK140双顶级，骑乘附加冰伤</div></div><div class="element-card" style="border-color:#9ca3af44;"><div class="element-header" style="background:#9ca3af18;"><span class="element-icon" style="color:#9ca3af;">暗系</span></div><div class="element-best">混沌骑士/波鲁杰克斯</div><div class="element-alt">异构格里芬/黑月女王</div><div class="element-note">混沌骑士ATK145最高攻击，波鲁杰克斯ATK150极限输出</div></div><div class="element-card" style="border-color:#e2e8f544;"><div class="element-header" style="background:#e2e8f518;"><span class="element-icon" style="color:#e2e8f5;">无属性</span></div><div class="element-best">圣光骑士</div><div class="element-alt">云海鹿</div><div class="element-note">DEF145全图鉴最高防御，三段跳机动性</div></div><div class="element-card" style="border-color:#fb923c44;"><div class="element-header" style="background:#fb923c18;"><span class="element-icon" style="color:#fb923c;">火系</span></div><div class="element-best">荷鲁斯</div><div class="element-alt">腾炎龙/焰煌</div><div class="element-note">火系斗兽第一，骑乘可飞行</div></div><div class="element-card" style="border-color:#d4a37344;"><div class="element-header" style="background:#d4a37318;"><span class="element-icon" style="color:#d4a373;">地系</span></div><div class="element-best">阿努比斯</div><div class="element-alt">巨力王</div><div class="element-note">ATK130高攻击，独占火影体术+手工4星</div></div><div class="element-card" style="border-color:#4ade8044;"><div class="element-header" style="background:#4ade8018;"><span class="element-icon" style="color:#4ade80;">草系</span></div><div class="element-best">百合女王</div><div class="element-alt">黑月女王(暗变体)</div><div class="element-note">Harvest Goddess治疗+辅助，播种4星</div></div><div class="element-card" style="border-color:#38bdf844;"><div class="element-header" style="background:#38bdf818;"><span class="element-icon" style="color:#38bdf8;">水系</span></div><div class="element-best">清雀(朱雀水变体)</div><div class="element-alt">覆海龙</div><div class="element-note">HP125偏高水系飞行，Wings of Water</div></div><div class="element-card" style="border-color:#fbbf2444;"><div class="element-header" style="background:#fbbf2418;"><span class="element-icon" style="color:#fbbf24;">雷系</span></div><div class="element-best">暴电龙</div><div class="element-alt">雷冥鸟</div><div class="element-note">ATK130高攻击龙雷双属性，Ferocious Thunder Dragon</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="teams">
+  <div class="container">
+    <h2 class="section-title">⚔️ 毕业阵容推荐</h2>
+    <p class="section-desc">四大核心方向阵容配置 — 战斗、坐骑、据点、辅助，覆盖全部玩法场景</p>
+    <div class="teams-grid">
+      <div class="team-card" style="border:1px solid #ff336633;"><div class="team-header" style="background:#ff336612;"><span class="team-icon">⚔️</span><h4 style="color:#ff3366;">战斗队</h4></div><p class="team-desc">3-4只不同属性高伤帕鲁，配齐伤害词条，多属性打击</p><div class="team-members"><div class="team-member"><span class="member-name">空涡龙</span><span class="member-role">龙系输出+飞行</span><span class="member-note">清图+BOSS泛用</span></div><div class="team-member"><span class="member-name">唤冬兽</span><span class="member-role">冰系控制+AOE</span><span class="member-note">群怪清剿+控场</span></div><div class="team-member"><span class="member-name">混沌骑士</span><span class="member-role">暗系单体爆发</span><span class="member-note">高难度首领战</span></div><div class="team-member"><span class="member-name">荷鲁斯</span><span class="member-role">火系输出+飞行</span><span class="member-note">属性覆盖补充</span></div></div></div><div class="team-card" style="border:1px solid #60a5fa33;"><div class="team-header" style="background:#60a5fa12;"><span class="team-icon">🐎</span><h4 style="color:#60a5fa;">坐骑队</h4></div><p class="team-desc">至少1只极速型坐骑+1只战斗型坐骑+1只特殊移动</p><div class="team-members"><div class="team-member"><span class="member-name">空涡龙</span><span class="member-role">极速飞行</span><span class="member-note">全图鉴最快飞行速度</span></div><div class="team-member"><span class="member-name">云海鹿</span><span class="member-role">极速地面</span><span class="member-note">跑图效率极高</span></div><div class="team-member"><span class="member-name">天擒鸟</span><span class="member-role">滑翔+战斗</span><span class="member-note">升满星后滑翔堪比空涡龙</span></div></div></div><div class="team-card" style="border:1px solid #4ade8033;"><div class="team-header" style="background:#4ade8012;"><span class="team-icon">🛠️</span><h4 style="color:#4ade80;">据点工作队</h4></div><p class="team-desc">全功能覆盖，每种工作分配2-3只专职帕鲁</p><div class="team-members"><div class="team-member"><span class="member-name">阿努比斯</span><span class="member-role">手工4星+战斗</span><span class="member-note">手工效率顶级</span></div><div class="team-member"><span class="member-name">百合女王</span><span class="member-role">播种4星+治疗</span><span class="member-note">种植+辅助</span></div><div class="team-member"><span class="member-name">覆海龙</span><span class="member-role">浇水4星</span><span class="member-note">水利设施核心</span></div><div class="team-member"><span class="member-name">巨力王</span><span class="member-role">采矿4星+坦克</span><span class="member-note">矿石生产+防御</span></div></div></div><div class="team-card" style="border:1px solid #a78bfa33;"><div class="team-header" style="background:#a78bfa12;"><span class="team-icon">🎯</span><h4 style="color:#a78bfa;">辅助增益队</h4></div><p class="team-desc">根据战斗场景切换，BOSS战优先携带玩家增益类</p><div class="team-members"><div class="team-member"><span class="member-name">鲨小子(4星)</span><span class="member-role">玩家攻击+20%</span><span class="member-note">躺了也给加成</span></div><div class="team-member"><span class="member-name">突袭指挥官</span><span class="member-role">玩家攻击+10%</span><span class="member-note">团队增益</span></div><div class="team-member"><span class="member-name">铁壁军师</span><span class="member-role">玩家防御+10%</span><span class="member-note">生存保障</span></div></div></div>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="traits">
+  <div class="container">
+    <h2 class="section-title">🧬 词条搭配方案</h2>
+    <p class="section-desc">四种核心词条配置 — 输出、速度、工作、防御，根据帕鲁定位选择最优组合</p>
+    <div class="traits-grid">
+      <div class="trait-card" style="border:1px solid #ff336633;"><div class="trait-header"><span class="trait-icon">⚔️</span><h4 style="color:#ff3366;">战斗输出型</h4></div><div class="trait-tags"><span class="trait-tag" style="border:1px solid #ff336644;color:#ff3366;">鬼神 (+30%伤害)</span><span class="trait-tag" style="border:1px solid #ff336644;color:#ff3366;">脑筋 (+30%伤害)</span><span class="trait-tag" style="border:1px solid #ff336644;color:#ff3366;">传说 (+20%伤害)</span><span class="trait-tag" style="border:1px solid #ff336644;color:#ff3366;">凶猛 (+20%伤害)</span></div><p class="trait-note">极限输出配置，总伤害加成+100%。适用于所有战斗帕鲁。神兽被动(如神龙/冰帝/冥王)可替换凶猛，对应属性额外+20%。</p></div><div class="trait-card" style="border:1px solid #60a5fa33;"><div class="trait-header"><span class="trait-icon">🏃</span><h4 style="color:#60a5fa;">速度坐骑型</h4></div><div class="trait-tags"><span class="trait-tag" style="border:1px solid #60a5fa44;color:#60a5fa;">神速 (+30%移速)</span><span class="trait-tag" style="border:1px solid #60a5fa44;color:#60a5fa;">运动健将 (+20%移速)</span><span class="trait-tag" style="border:1px solid #60a5fa44;color:#60a5fa;">传说 (+15%移速)</span><span class="trait-tag" style="border:1px solid #60a5fa44;color:#60a5fa;">俐落 (+10%移速)</span></div><p class="trait-note">极致移动速度，总移速加成+75%。适用于空涡龙、云海鹿、天擒鸟等坐骑帕鲁。跑图效率拉满。</p></div><div class="trait-card" style="border:1px solid #4ade8033;"><div class="trait-header"><span class="trait-icon">🏗️</span><h4 style="color:#4ade80;">基地工作型</h4></div><div class="trait-tags"><span class="trait-tag" style="border:1px solid #4ade8044;color:#4ade80;">卓绝技艺 (+75%工作速度)</span><span class="trait-tag" style="border:1px solid #4ade8044;color:#4ade80;">工匠精神 (+50%工作速度)</span><span class="trait-tag" style="border:1px solid #4ade8044;color:#4ade80;">社畜 (+30%工作速度)</span><span class="trait-tag" style="border:1px solid #4ade8044;color:#4ade80;">认真 (+20%工作速度)</span></div><p class="trait-note">工作效率最大化，总工作速度+175%。适用于据点打工帕鲁。搭配工作适应性4星帕鲁效果最佳。</p></div><div class="trait-card" style="border:1px solid #fbbf2433;"><div class="trait-header"><span class="trait-icon">🛡️</span><h4 style="color:#fbbf24;">坦克防御型</h4></div><div class="trait-tags"><span class="trait-tag" style="border:1px solid #fbbf2444;color:#fbbf24;">铁壁军师 (+10%防御)</span><span class="trait-tag" style="border:1px solid #fbbf2444;color:#fbbf24;">传说 (+20%防御)</span><span class="trait-tag" style="border:1px solid #fbbf2444;color:#fbbf24;">坚固之体 (+30%防御)</span><span class="trait-tag" style="border:1px solid #fbbf2444;color:#fbbf24;">铁壁 (+10%防御)</span></div><p class="trait-note">极限防御配置，总防御加成+70%。适用于圣光骑士、暗影龙等坦克定位帕鲁。BOSS战主抗首选。</p></div>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="update">
+  <div class="container">
+    <h2 class="section-title">🔄 1.0 更新对 Meta 的影响</h2>
+    <p class="section-desc">7大核心变动如何改变帕鲁排行榜和阵容搭配 — 硬核玩家必须关注的 Meta 洗牌</p>
+    <div class="impacts-list">
+      <div class="impact-card level-core"><div class="impact-header"><span class="impact-icon">🔄</span><h4>全帕鲁数值重调 — Meta彻底洗牌</h4><span class="level-badge level-core">核心</span></div><div class="impact-body"><p class="impact-text"><strong>影响：</strong>所有帕鲁基础数值（HP/ATK/DEF/工作速度）全面重新调整。当前T0排名可能完全打乱，空涡龙的ATK140霸主地位是否动摇待确认。词条系统重做，部分正负收益词条效果重新设计。建议上线后第一时间查阅27页patch notes评估你的满配帕鲁升值或贬值。</p><p class="impact-action"><strong>行动：</strong>上线后72小时内密集关注社区实测数据，重新评估Tier List</p></div></div><div class="impact-card level-core"><div class="impact-header"><span class="impact-icon">🐾</span><h4>50+新帕鲁加入 — 图鉴扩充最大规模</h4><span class="level-badge level-core">核心</span></div><div class="impact-body"><p class="impact-text"><strong>影响：</strong>已曝光新帕鲁：莲花龙(东方龙+莲花)、电气狮子(幼狮+电光)、拔刀鱼(武士鱼→变刀刃武器)、塞赫麦特(古埃及猫娘+采矿)、大红呱。50+新帕鲁中可能有新的T0级战力，改变现有属性克制格局。</p><p class="impact-action"><strong>行动：</strong>优先捕捉和测试新帕鲁，评估是否有替代当前T0的新战力</p></div></div><div class="impact-card level-core"><div class="impact-header"><span class="impact-icon">⚔️</span><h4>人帕一体系统 — 战斗方式革命</h4><span class="level-badge level-core">核心</span></div><div class="impact-body"><p class="impact-text"><strong>影响：</strong>部分新帕鲁可直接化身为主角使用的武器。拔刀鱼已展示变身为近战刀刃的实机画面。此机制属于终局解锁的高级战斗系统，可能创造全新的战斗Meta——人帕一体武器帕鲁可能成为新T0。</p><p class="impact-action"><strong>行动：</strong>解锁人帕一体后优先测试各武器形态DPS，重新评估战斗阵容</p></div></div><div class="impact-card level-mid"><div class="impact-header"><span class="impact-icon">🧬</span><h4>基因重组繁殖 — 养成深度暴增</h4><span class="level-badge level-mid">中等</span></div><div class="impact-body"><p class="impact-text"><strong>影响：</strong>部分帕鲁拥有专属被动天赋与合体技能，可通过基因重组繁殖培育。世界树能量变异帕鲁携带普通帕鲁无法获得的特殊被动。这意味着配种不再是简单的词条继承，而是全新的养成维度。现有4金词条配种路线可能被替代。</p><p class="impact-action"><strong>行动：</strong>收集变异帕鲁，研究基因重组配方，更新配种路线图</p></div></div><div class="impact-card level-core"><div class="impact-header"><span class="impact-icon">🏰</span><h4>Raid重做+塔主苍璃 — BOSS战全变</h4><span class="level-badge level-core">核心</span></div><div class="impact-body"><p class="impact-text"><strong>影响：</strong>Raid突袭机制彻底重做，Boss拥有全新机制，需要完全不同的策略。新增塔主「苍璃」，EA阶段打法经验全部失效。Boss战难度和战术深度大幅提升，不再是数值碾压。当前纯DPS配队可能需要转向机制应对型阵容。</p><p class="impact-action"><strong>行动：</strong>准备多属性+多功能的灵活配队，不再依赖单一输出碾压</p></div></div><div class="impact-card level-mid"><div class="impact-header"><span class="impact-icon">🥊</span><h4>PvP 1v1/2v2 — 独立平衡体系</h4><span class="level-badge level-mid">中等</span></div><div class="impact-body"><p class="impact-text"><strong>影响：</strong>PvP模式拥有独立平衡性调整，与PVE数值体系分离。这意味着PvP Tier List将独立于PVE排名。当前PVE T0帕鲁在PvP中可能表现不同。需要建立两套独立的阵容和养成路线。</p><p class="impact-action"><strong>行动：</strong>PvP和PVE分别建队，关注PvP专属平衡公告</p></div></div><div class="impact-card level-mid"><div class="impact-header"><span class="impact-icon">📈</span><h4>等级上限可能上调 — 养成空间扩大</h4><span class="level-badge level-mid">中等</span></div><div class="impact-body"><p class="impact-text"><strong>影响：</strong>当前65级上限可能上调。如果等级上限提升，帕鲁的最终面板数值将相应变化，现有65级满配帕鲁可能需要重新升级。终局养成目标改变，配种和词条优化的重要性进一步提升。</p><p class="impact-action"><strong>行动：</strong>预留升级资源，关注等级上限变更公告</p></div></div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>幻兽帕鲁 1.0 硬核玩家阵容养成推荐 | 数据基于EA阶段社区共识 + paldb.cc数据库</p>
+  <p style="margin-top:8px;">1.0正式版2026年7月10日上线后 Tier List 可能大幅变动 | 仅供参考，请以实际版本数据为准</p>
+</div>
+
+</body>
+</html>
