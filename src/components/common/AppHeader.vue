@@ -10,7 +10,7 @@
       <RouterLink to="/" class="group flex shrink-0 items-center gap-3 text-lg font-bold tracking-wide text-white">
         <div class="logo-box relative flex h-10 w-10 items-center justify-center overflow-hidden border border-cyan-400/40 bg-cyan-400/10 text-cyan-300 transition-all duration-300 group-hover:border-cyan-400/80 group-hover:shadow-[0_0_16px_rgba(0,229,255,0.4)]"
           style="clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px));">
-          <Sparkles class="h-5 w-5" />
+          <img src="/pic/huyaIcon.jpg" alt="Logo" class="h-full w-full object-cover" />
           <!-- sweep -->
           <span class="logo-sweep" />
         </div>
@@ -37,7 +37,7 @@
 </template>
 
 <script setup lang="ts">
-import { Search, Sparkles } from 'lucide-vue-next'
+import { Search } from 'lucide-vue-next'
 import { RouterLink } from 'vue-router'
 import { navItems } from '@/data/site'
 </script>
